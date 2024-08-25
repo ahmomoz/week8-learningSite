@@ -1,0 +1,59 @@
+.btn-primary {
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+.btn-white {
+  background-color: $white;
+}
+.btn-white:hover, .btn-primary-active {
+  color: $white;
+  background-color: $primary-100;
+  border-color: $primary-100;
+}
+.label-btn {
+  position: absolute;
+  bottom: 144px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  padding: 16px 32px 16px 16px;
+
+  @include lg-pc {
+    text-align: left;
+    width: 343px;
+    bottom: 48px;
+    margin-left: 0;
+    padding: 8px 24px 8px 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.banner-btn {
+  border: 0;
+  padding: 32px 80px 32px 120px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+
+  @include lg-pc {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: 0;
+    position: static;
+  }
+
+  span {
+    font-size: 44px;
+
+    @include lg-pc {
+      font-size: 16px;
+    }
+  }
+}

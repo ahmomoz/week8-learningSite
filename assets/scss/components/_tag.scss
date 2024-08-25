@@ -1,0 +1,27 @@
+.tag {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 8px 12px;
+}
+.tag-sm {
+  font-size: 14px;
+  border-radius: 100px;
+  padding: 4px 12px;
+}
+.bg-primary-tag {
+  color: $primary-100;
+  background-color: $primary-10;
+}
+.bg-white-tag {
+  color: $primary-100;
+  background-color: $white;
+}
+.bg-alert-tag {
+  color: $alert-100;
+  background-color: $alert-10;
+}
+.bg-gray-tag {
+  color: $neutral-80;
+  background-color: $neutral-40;
+}

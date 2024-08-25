@@ -1,3 +1,154 @@
-.index-title {
-  font-size: 100px;
+/* index-banner-section */
+.index-banner-section {
+  padding-bottom: 72px;
+
+  @include lg-pc {
+    padding-bottom: 0;
+  }
+
+  h2, h6 {
+    @include lg-pc {
+      font-size: 14px;
+    }
+  }
+}
+
+/* index-fundraising-course-section */
+.index-fundraising-course-section {
+  h6 {
+    white-space: wrap;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    background-image: url(/assets/images/deco/flower-2.png);
+    top: 0; left: -60px;
+    z-index: -1;
+
+    @include pad {
+      transform: scale(0.36);
+      transform-origin: top left;
+      left: -100px;
+    }
+  }
+
+  .info {
+    padding-top: 160px;
+
+    @include lg-pc {
+      padding-top: 0;
+    }
+  }
+
+  .category-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    @include pad {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+
+    .btn {
+      @include pad {
+        display: inline-block;
+      }
+    }
+  }
+
+  .container {
+    @include lg-pc {
+      position: relative;
+      padding-bottom: 80px;
+    }
+  }
+
+  .button-btn {
+    @include lg-pc {
+      padding: 0 12px;
+      position: absolute;
+      right: 0; left: 0; bottom: 0;
+    }
+
+    .btn {
+      @include lg-pc {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* index-course-section */
+.index-course-section {
+  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+  position: relative;
+  overflow: visible;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background-image: url(/assets/images/deco/flower-3.png);
+    left: -240px; bottom: 120px;
+    z-index: 0;
+
+    @include pad {
+      display: none;
+    }
+  }
+}
+
+/* index-course-section &
+index-teacher-section */
+.index-course-section,
+.index-teacher-section  {
+  .title-deco {
+    position: relative;
+    z-index: 1;
+  }
+  .title-deco::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(/assets/images/deco/flower-1.png);
+    top: -20px; left: -24px;
+    z-index: -1;
+  }
+
+  .info {
+    text-align: center;
+
+    @include pad {
+      text-align-last: left;
+    }
+  }
+}
+
+/* index-category-section */
+.index-category-section {
+  .info {
+    padding-top: 131px;
+
+    @include lg-pc {
+      padding-top: 0;
+    }
+  }
+}
+
+/* index-teacher-section  */
+.index-teacher-section {
+  background-image: url(/assets/images/deco/line-1.png);
 }

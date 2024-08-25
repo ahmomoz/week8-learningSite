@@ -1,0 +1,22 @@
+$custom-colors: (
+  "primary-10":    $primary-10,
+  "primary-40":    $primary-40,
+  "primary-60":    $primary-60,
+  "primary-80":    $primary-80,
+  "primary-dark":  $primary-dark,
+  "success-10":    $green-10,
+  "success-20":    $green-20,
+  "success-dark":  $success-dark,
+  "info-10":       $cyan-10,
+  "info-20":       $cyan-20,
+  "info-dark":     $info-dark,
+  "alert-10":      $red-10,
+  "alert-20":      $red-20,
+  "alert-dark":    $alert-dark,
+  "neutral-10":    $neutral-10,
+  "neutral-40":    $neutral-40,
+  "neutral-60":    $neutral-60,
+  "neutral-80":    $neutral-80
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

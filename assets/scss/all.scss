@@ -1,10 +1,20 @@
 @import "bootstrap/scss/functions";
 @import "./utils/variables";
+@import './components/custom-colors.scss';
 @import "bootstrap/scss/bootstrap";
 
 @import './base/base.scss';
+@import './base/font.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
+@import './vendors/swiper.scss';
+
+@import './components/btn.scss';
+@import './components/tag.scss';
+@import './components/link-hover.scss';
+@import './components/dropdown-menu.scss';
+@import './components/course-card.scss';
+@import './components/category-item.scss';
 
 @import './pages/index.scss';

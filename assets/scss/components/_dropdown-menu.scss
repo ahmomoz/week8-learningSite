@@ -1,0 +1,42 @@
+/* common*/
+.dropdown-menu-center {
+  left: 50%;
+  transform: translateX(-40%);
+}
+.dropdown-menu-right {
+  transform: translateX(-20%);
+}
+
+/* nav-alert-dropdown-menu */
+.nav-alert-dropdown-menu {
+  width: 320px;
+  height: 300px;
+  overflow-y: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .dropdown-content {
+    white-space: normal;
+  }
+}
+
+/* nav-user-dropdown-menu */
+.nav-user-dropdown-menu {
+  width: 237px;
+
+  .list-group-item {
+    border: 0;
+    border-radius: 12px;
+    padding: 12px 24px;
+
+    &:hover {
+      color: $white;
+      background-color: $primary-100;
+    }
+  }
+}

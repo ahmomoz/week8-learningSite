@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+  letter-spacing: 0.02em;
+}
+
+.inter {
+  font-family: "Inter";
+}
+
+i {
+  line-height: 1;
+}
+
+h1,.title-font {
+  font-size: 48px;
+  
+  @include pad {
+    font-size: 48px;
+  }
+}
+.title-subtitle {
+  @include pad {
+    font-size: 20px;
+  }
+}

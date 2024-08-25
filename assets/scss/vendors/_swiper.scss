@@ -1,0 +1,127 @@
+/* common */
+.swiper-btn-white {
+  color: $primary-100; 
+  background-color: $white;
+  box-shadow: 0px 10px 15px -3px #0000001A;
+
+  &::after {
+    font-family: "Material Symbols Outlined";
+    border: none;
+    font-size: 24px;
+  }
+  &:nth-child(3)::after {
+    content: "\e5c4";
+  }
+  &:nth-child(2)::after {
+    content: "\e5c8";
+  }
+}
+.swiper-btn-sm {
+  border-radius: 12px;
+  padding: 28px;
+
+  @include lg-pc {
+    display: none;
+  }
+}
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 100px;
+}
+
+/* banner-Swiper  */
+.banner-Swiper {
+  .card {
+    border: 0;
+    border-radius: 80px;
+    overflow: hidden;
+
+    @include lg-pc {
+      border-radius: 0px;
+    }
+    @include mobile {
+      height: 400px;
+    }
+
+    img {
+      @include lg-pc {
+        border-radius: 0px;
+      }
+    }
+  }
+
+  .swiper-slide {
+    position: relative;
+  }
+
+  .swiper-btn-sm:nth-child(3) {
+    margin-left: 140px;
+  }
+  .swiper-btn-sm:nth-child(2) {
+    margin-right: 140px;
+  }
+
+  .swiper-slide-next,
+  .swiper-slide-prev {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #EDEDEDB2;
+      border-radius: 80px;
+      z-index: 1;
+
+      @include lg-pc {
+        border-radius: 0px;
+      }
+    }
+  }
+  .swiper-pagination {
+    bottom: 64px;
+  }
+}
+
+/* fundraising-course-swiper */
+.fundraising-course-swiper {
+  .swiper-slide {
+    width: 320px;
+  }
+
+  .swiper-pagination {
+    position: static;
+    margin-top: 24px;
+  }
+}
+
+/* course-swiper */
+.course-swiper {
+  .swiper-wrapper {
+    width: 1296px;
+    padding-bottom: 120px;
+
+    @include pad {
+      padding-bottom: 80px;
+    }
+  }
+  .swiper-slide {
+    width: 306px;
+    flex-shrink: 0;
+  }
+
+  .swiper-btn-sm:nth-child(3),
+  .swiper-btn-sm:nth-child(2) {
+    top: 50%;
+    transform: translateY(-100%);
+  }
+  .swiper-btn-sm:nth-child(3) {
+    margin-left: 324px;
+  }
+  .swiper-btn-sm:nth-child(2) {
+    margin-right: 324px;
+    color: $white; 
+    background-color: $primary-100;
+  }
+}
