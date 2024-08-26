@@ -37,10 +37,16 @@ input[type="search"]::-moz-search-clear-button {
 
 .wrap {
   padding: 120px 0;
-}
-.wrap {
+
   @include pad {
     padding: 80px 0;
+  }
+}
+.wrap-sm {
+  padding: 80px 0;
+
+  @include pad {
+    padding: 40px 0;
   }
 }
 
@@ -60,7 +66,24 @@ input[type="search"]::-moz-search-clear-button {
   justify-content: space-between;
   align-items: center;
 }
+.f-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
 .f-column {
   display: flex;
   flex-direction: column;
+}
+
+.card-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.w-xl-50 {
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
 }

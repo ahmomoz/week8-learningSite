@@ -125,3 +125,31 @@
     background-color: $primary-100;
   }
 }
+
+/* courses-most-swiper */
+.courses-most-swiper {
+  .swiper-wrapper {
+    width: 1296px;
+  }
+  .swiper-slide {
+    width: 306px;
+  }
+  .swiper-btn-sm:nth-child(3) {
+    margin-left: 320px;
+  }
+  .swiper-btn-sm:nth-child(2) {
+    margin-right: 320px;
+    color: $white; 
+    background-color: $primary-100;
+  }
+}
+
+/* courseCategorySwiper */
+.course-theme-swiper {
+  .swiper-wrapper {
+    width: 1296px;
+  }
+  .swiper-slide {
+    width: 196px;
+  }
+}

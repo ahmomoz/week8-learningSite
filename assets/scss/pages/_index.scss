@@ -87,7 +87,14 @@
     }
   }
 }
+.fundraising-course-card-wrap {
+  flex-wrap: wrap;
+  gap: 24px;
 
+  .course-card {
+    width: 416px; 
+  }
+}
 /* index-course-section */
 .index-course-section {
   background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
@@ -118,6 +125,7 @@ index-teacher-section */
     position: relative;
     z-index: 1;
   }
+  
   .title-deco::before {
     content: '';
     position: absolute;

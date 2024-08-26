@@ -1,0 +1,22 @@
+.nav-tabs {
+  gap: 32px;
+  
+  .nav-link {
+    padding: 16px 0;
+  }
+}
+.nav-link.active {
+  font-weight: 600;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $primary-100;
+    width: 32px; height: 4px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
