@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>Learning - 首頁</title>
-    <script type="module" crossorigin src="/week8-learningSite/assets/bootstrap.min-d5b2f272.js"></script>
-    <link rel="stylesheet" href="/week8-learningSite/assets/bootstrap-dd5f2e61.css">
+    <script type="module" crossorigin src="/week8-learningSite/assets/bootstrap.min-0bba0b5a.js"></script>
+    <link rel="stylesheet" href="/week8-learningSite/assets/bootstrap-bcdcd588.css">
   </head>
   <body>
     <nav class="layout-nav-wrap container-xl pt-0 pb-0 pt-xl-10 pb-xl-4">
@@ -29,13 +29,193 @@
         alt="logo-image"
         class="logo-image">
     </a>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav align-items-center">
+    <!-- 行動版選單 -->
+    <div
+      class="mobile-nav-menu offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-body py-0">
+        <!-- 行動版navbar -->
+        <ul
+          class="nav nav-tabs border-bottom d-xl-none"
+          id="mobileNavTab"
+          role="tablist">
+          <li class="nav-item w-50" role="presentation">
+            <button
+              class="nav-link mx-auto py-4 active"
+              id="search-list-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#search-list"
+              type="button"
+              role="tab"
+              aria-controls="search-list"
+              aria-selected="true">
+              探索
+            </button>
+          </li>
+          <li class="nav-item w-50" role="presentation">
+            <button
+              class="nav-link mx-auto py-4"
+              id="user-list-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#user-list"
+              type="button"
+              role="tab"
+              aria-controls="user-list"
+              aria-selected="false">
+              我的會員
+            </button>
+          </li>
+        </ul>
+        <div class="d-xl-none tab-content position-relative" id="mobileNavTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="search-list"
+            role="tabpanel"
+            aria-labelledby="search-list-tab">
+            <ul class="list-group py-6">
+              <li class="list-group-item border-0">
+                <a href="#" class="f-between-center">
+                  探索全部
+                  <span class="material-symbols-outlined fs-5">chevron_right</span>
+                </a>
+              </li>
+              <li class="list-group-item border-0 mt-2">
+                <a href="#" class="f-between-center">
+                  音樂
+                  <span class="material-symbols-outlined fs-5">chevron_right</span>
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#" class="f-between-center">
+                  攝影
+                  <span class="material-symbols-outlined fs-5">chevron_right</span>
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a
+                  class="f-between-center"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  程式
+                  <span class="material-symbols-outlined fs-5">chevron_right</span>
+                </a>
+                <ul
+                class="mobile-nav-menu-sec list-group bg-white py-6 dropdown-menu"
+                aria-labelledby="navbarDropdown">
+                <li class="list-group-item border-0">
+                  <a href="#" class="border-bottom border-neutral-40">
+                    所有程式
+                  </a>
+                </li>
+                <li class="list-group-item border-0 mt-2">
+                  <a href="#">
+                    程式入門
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    網頁前端
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    網頁後端
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    網站架設
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    資訊安全
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    程式語言
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    遊戲開發
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    資料科學
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    人工智慧
+                  </a>
+                </li>
+                <li class="list-group-item border-0">
+                  <a href="#">
+                    量化分析
+                  </a>
+                </li>
+              </ul>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  網站架設
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  資訊安全
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  程式語言
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  遊戲開發
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  資料科學
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  人工智慧
+                </a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">
+                  量化分析
+                </a>
+              </li>
+            </ul>
+            <div class="d-xl-none border-top bg-white w-100 position-fixed bottom-0 p-3">
+              
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="user-list"
+            role="tabpanel"
+            aria-labelledby="user-list-tab">
+            <div>123</div>
+          </div>
+        </div>
+
+        <!-- 電腦版navbar -->
+        <ul class="navbar-nav d-none d-xl-flex align-items-center">
           <li class="nav-item dropdown px-6">
             <a
               class="nav-link dropdown-toggle d-flex align-items-center"
@@ -48,274 +228,327 @@
               探索
             </a>
 
-            <!-- 電腦版探索選單 -->
-            <ul
-              class="dropdown-menu search-dropdown-menu shadow mt-9"
-              aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item f-between-center rounded-1" href="#">
-                  探索全部
-                </a>
-              </li>
-              <li class="mt-2">
-                <a class="dropdown-item f-between-center" href="#">
-                  攝影
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  音樂
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item f-between-center"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  data-bs-auto-close="outside">
-                  程式
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-                  <!-- 第二層 -->
-                  <ul
-                    class="dropdown-menu search-dropdown-sec-menu bg-white p-3 top-0"
-                    aria-labelledby="navbarDropdown"
+            <!-- 電腦版探索下拉選單 -->
+            <div
+            class="desktop-nav-dropdowm-menu dropdown-menu overflow-hidden shadow mt-9"
+            data-bs-popper="static">
+            <div class="d-flex bg-white">
+              <!-- 第一層 -->
+              <ul class="list-unstyled dropdown-menu-fir" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item f-between-center rounded-1" href="#">
+                    探索全部
+                  </a>
+                </li>
+                <li class="mt-2">
+                  <a class="dropdown-item f-between-center" href="#">
+                    攝影
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    音樂
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item f-between-center active"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
                     data-bs-auto-close="outside"
-                    style="left: 232px;height: 100%;">
-                    <li>
-                      <a class="dropdown-item f-between-center rounded-1" href="#">
-                        所有程式
-                      </a>
-                    </li>
-                    <li class="mt-2">
-                      <a class="dropdown-item f-between-center" href="#">
-                        程式入門
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item f-between-center"
-                        href="#"
-                        data-bs-toggle="dropdown">
-                        網頁前端
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                      <!-- 第三層 -->
-                      <ul
-                        class="dropdown-menu search-dropdown-th-menu bg-white py-3 px-6 border-0 mt-0 top-0"
-                        aria-labelledby="navbarDropdown"
-                        style="left: 232px;height: 100%;width: 397px;">
-                        <li>
-                          <div class="d-flex align-items-center border-bottom pb-4">
-                            <img
-                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR0SURBVHgB7ZlBbxNHFMf/Y+wlLZHqVKooFVE3XBoOFPcW91JzaC89NJag5dZw7An6CeJ8A/IJ4p5aiVQOx4pWdi8EqYckRUicYEEcQEJKgABxHHaYN+sE7+7M7qx3F0uIn2TZ+2Z3/N6892bezALv0cNnztZ49VybV3+cRU4UkQO8NlvGrrUkfnmKcywiJzI3gH99roIuWmDcPhAyXkZOZGqAVB5ogyE3hYMUkBF85rwNUh4q5d0KciITA6Ty7JVGebqhcBo5kY0H2F5DhI2tb0dNJnYOpDZAxP0cGPs59sZucQ4G8L9XlnzXwvAo49N7gGPe6D7GLsZ29c/VedGfP1+6pTXsltq6Z1IZ4I1+ROj4sXn1p0vavv5qzcLlDXC+qOi/ovNCOg+Yjv4+zJ0XithQayJGnv/Kvqs3Zdc0MQz237Vqyi4xJHJ0gCUkx4HVO8M6K462b7mSlzri58DsxRfY9eVG8N7hPcAQG9MabIrp/gCEoPoprLz8w4pajSHor7hrSI8jPlfFOuGIdaQMzr6hKVd3L7t+ZSooHM6A6tmm0dSZNVZvQoTe1qBoyBASIzUaQjNRYgNkjJpPndnStUJ5kNwDDHMYFYqyXFtO96eydn/KG4i7kYWPYGCP0UfvgZ0iuauCnnWwmIw0fAjGPg+K9AYUmC2/Ob8kFZcdjDB8NETsyMhd/Vm2wGjhWQeQ28bECDfs/SRJPFrlNWS2pTRmrOR9MiKXY5VILnwLfDoBdP4XO+ibSMvb9cCY5SlP1L4EzpxCWiIMYA6yZuqo/5qMsI/CGIYnQZHegEPuFrLmi+NhWRIvMGwGRXoDeqV1ZM2UYrTJA6Ze4PxeUKQ1gN34wxFfybwQNbucnBS15BFN23EYwQuhQY1OYg5zL5Byv3yvD4nTU/pnpydhBA+Htc8A3m7ZvlbmbsAUSkgyQhUOxyY8D+xTFJ46PPbmmp6bOII42I3lTlDm98AeGvxaq3Zw7bIVmEAKfHXC+00GDHqB2s4HCtjxcbG7svyyj8YRCUdHJS6GbmKyZJA3k8WiBiK3RR8L2prpceu59x2M/Q8/AJ4+9cvIAw70aKLB5wF5JrONpv8WHv9yYlqRhKR45YQ6cTfFmGxvIxG9QlMlDiUxq9f9iWLtXUYcxz5GIl6+QEIc9t8V5YQSW0p4uzE32gvl+ASM5eVuVOuCrsGsFrJeNaBbE8YsZALlixo6D2rqGo0MkF7gXD0KO7tIDfXxcFPXuhD1qHE1ylaXLwsjfoNOgTTcfqBpcBejRp9IVk4f3qPj8XAyPUxZ963dUUk3+qEbSSIDZCi5h+oIGuE8wtBQ6ISfF8r3asFjRBWJNzSyyBNnRb6ZafX2cGG00wN+/9cvozA1VF7qgxTII3J6CUFnRbRo1avmD5PyS9cGk9cRb2guqOqdKFIZsE//rP8iZqYrqE7HrwsUMq1Vb+qUNY5I1tU/zequAJkYsI98LXTqsxomP/kB1ZNl3yne42fi82QLt+472LhLG5N1ESorpqHyzvIazfJhQAXu8d0AAAAASUVORK5CYII="
-                              alt="icon-fire"
-                              style="width: 24px;height: 24px;">
-                            <p class="fw-semibold ms-2">
-                              熱門網頁前端課程
-                            </p>
+                    aria-expanded="false">
+                    程式
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    程式
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    藝術
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    人文
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    行銷
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    投資理財
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    心靈成長
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    職場技能
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center rounded-1" href="#">
+                    生活品味
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+              </ul>
+          
+              <!-- 第二層 -->
+              <ul
+                class="list-unstyled dropdown-menu-sec border-0 rounded-0 p-3 top-0"
+                aria-labelledby="navbarDropdown"
+                data-bs-auto-close="outside">
+                <li>
+                  <a class="dropdown-item f-between-center rounded-1" href="#">
+                    所有程式
+                  </a>
+                </li>
+                <li class="mt-2">
+                  <a class="dropdown-item f-between-center" href="#">
+                    程式入門
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item f-between-center active"
+                    href="#"
+                    data-bs-toggle="dropdown">
+                    網頁前端
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    網頁後端
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    網站架設
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    資訊安全
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    程式語言
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    遊戲開發
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    資訊科學
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center" href="#">
+                    人工智慧
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item f-between-center rounded-1" href="#">
+                    量化分析
+                    <span class="material-symbols-outlined fs-5">chevron_right</span>
+                  </a>
+                </li>
+              </ul>
+          
+              <!-- 第三層 -->
+              <ul
+                class="list-unstyled dropdown-menu-thr py-3 px-6 border-0 mt-0 top-0"
+                aria-labelledby="navbarDropdown">
+                <li>
+                  <div class="d-flex align-items-center border-bottom pb-4">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR0SURBVHgB7ZlBbxNHFMf/Y+wlLZHqVKooFVE3XBoOFPcW91JzaC89NJag5dZw7An6CeJ8A/IJ4p5aiVQOx4pWdi8EqYckRUicYEEcQEJKgABxHHaYN+sE7+7M7qx3F0uIn2TZ+2Z3/N6892bezALv0cNnztZ49VybV3+cRU4UkQO8NlvGrrUkfnmKcywiJzI3gH99roIuWmDcPhAyXkZOZGqAVB5ogyE3hYMUkBF85rwNUh4q5d0KciITA6Ty7JVGebqhcBo5kY0H2F5DhI2tb0dNJnYOpDZAxP0cGPs59sZucQ4G8L9XlnzXwvAo49N7gGPe6D7GLsZ29c/VedGfP1+6pTXsltq6Z1IZ4I1+ROj4sXn1p0vavv5qzcLlDXC+qOi/ovNCOg+Yjv4+zJ0XithQayJGnv/Kvqs3Zdc0MQz237Vqyi4xJHJ0gCUkx4HVO8M6K462b7mSlzri58DsxRfY9eVG8N7hPcAQG9MabIrp/gCEoPoprLz8w4pajSHor7hrSI8jPlfFOuGIdaQMzr6hKVd3L7t+ZSooHM6A6tmm0dSZNVZvQoTe1qBoyBASIzUaQjNRYgNkjJpPndnStUJ5kNwDDHMYFYqyXFtO96eydn/KG4i7kYWPYGCP0UfvgZ0iuauCnnWwmIw0fAjGPg+K9AYUmC2/Ob8kFZcdjDB8NETsyMhd/Vm2wGjhWQeQ28bECDfs/SRJPFrlNWS2pTRmrOR9MiKXY5VILnwLfDoBdP4XO+ibSMvb9cCY5SlP1L4EzpxCWiIMYA6yZuqo/5qMsI/CGIYnQZHegEPuFrLmi+NhWRIvMGwGRXoDeqV1ZM2UYrTJA6Ze4PxeUKQ1gN34wxFfybwQNbucnBS15BFN23EYwQuhQY1OYg5zL5Byv3yvD4nTU/pnpydhBA+Htc8A3m7ZvlbmbsAUSkgyQhUOxyY8D+xTFJ46PPbmmp6bOII42I3lTlDm98AeGvxaq3Zw7bIVmEAKfHXC+00GDHqB2s4HCtjxcbG7svyyj8YRCUdHJS6GbmKyZJA3k8WiBiK3RR8L2prpceu59x2M/Q8/AJ4+9cvIAw70aKLB5wF5JrONpv8WHv9yYlqRhKR45YQ6cTfFmGxvIxG9QlMlDiUxq9f9iWLtXUYcxz5GIl6+QEIc9t8V5YQSW0p4uzE32gvl+ASM5eVuVOuCrsGsFrJeNaBbE8YsZALlixo6D2rqGo0MkF7gXD0KO7tIDfXxcFPXuhD1qHE1ylaXLwsjfoNOgTTcfqBpcBejRp9IVk4f3qPj8XAyPUxZ963dUUk3+qEbSSIDZCi5h+oIGuE8wtBQ6ISfF8r3asFjRBWJNzSyyBNnRb6ZafX2cGG00wN+/9cvozA1VF7qgxTII3J6CUFnRbRo1avmD5PyS9cGk9cRb2guqOqdKFIZsE//rP8iZqYrqE7HrwsUMq1Vb+qUNY5I1tU/zequAJkYsI98LXTqsxomP/kB1ZNl3yne42fi82QLt+472LhLG5N1ESorpqHyzvIazfJhQAXu8d0AAAAASUVORK5CYII="
+                      alt="icon-fire"
+                      style="width: 24px;height: 24px;">
+                    <p class="fw-semibold ms-2">
+                      熱門網頁前端課程
+                    </p>
+                  </div>
+                  <div class="pt-4 pb-6">
+                    <a href="#" class="mobile-course-card card border-0 d-flex flex-row position-relative">
+                      <div class="course-card-img flex-shrink-0">
+                        <img
+                          src="/week8-learningSite/assets/course-5-18abd620.png"
+                          class="card-img rounded-0"
+                          alt="course-image">
+                      </div>
+                      <div class="card-body card-column flex-grow-1 ms-2 p-0">
+                        <h6 class="card-title fs-7">
+                          小白也會！從零開始學習 Python 程式設計
+                        </h6>
+                        <div class="f-between-center mt-4">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="data:image/png;base64,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"
+                                alt="user-image"
+                                class="rounded-circle me-2"
+                                style="width: 44px; height: 44px;">
+                            </div>
+                            <div class="flex-grow-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
                           </div>
-                          <div class="mt-4">
-                            <a href="#" class="course-card card border-0 d-flex flex-row position-relative">
-                              <div class="course-card-img flex-shrink-0">
-                                <img
-                                  src="/week8-learningSite/assets/course-5-18abd620.png"
-                                  class="card-img rounded-0"
-                                  alt="course-image">
-                              </div>
-                              <div class="card-body card-column flex-grow-1 ms-2 p-0">
-                                <h6 class="card-title fs-7">
-                                  小白也會！從零開始學習 Python 程式設計
-                                </h6>
-                                <div class="f-between-center mt-4">
-                                  <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                      <img
-                                        src="data:image/png;base64,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"
-                                        alt="user-image"
-                                        class="rounded-circle object-fit-cover me-2"
-                                        style="width: 44px; height: 44px;">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                      <p class="text-neutral-80">Kelly Hsu</p>
-                                    </div>
-                                  </div>
-                                  <div class="text-end">
-                                    <h6 class="text-primary fw-semibold">NT$ 2,480</h6>
-                                    <del class="fs-8" style="color: #808080;">
-                                      NT$ 3,200
-                                    </del>
-                                  </div>
-                                </div>
-                                <div class="border-top f-between-center py-2 mt-2">
-                                  <div>
-                                    <p class="fs-8 mt-1">已有 420 位同學加入</p>
-                                  </div>
-                                  <div class="d-flex align-items-center">
-                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-                                    <p class="fs-8 fw-medium ms-1" style="color: #180000;">4.0</p>
-                                    <p class="fs-8 fw-medium ms-1" style="color: #808080;">(333)</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="bg-alert-tag tag position-absolute mt-4 ms-4">
-                                <span>
-                                  8 折
-                                </span>
-                              </div>
-                            </a>
+                          <div class="text-end">
+                            <h6 class="fs-7 text-primary fw-semibold">NT$ 2,480</h6>
+                            <del class="fs-9 text-gray-light">NT$ 3,200</del>
                           </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        網頁後端
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        網站架設
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        資訊安全
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        程式語言
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        遊戲開發
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        資訊科學
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center" href="#">
-                        人工智慧
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item f-between-center rounded-1" href="#">
-                        量化分析
-                        <span class="material-symbols-outlined fs-5">
-                          chevron_right
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  程式
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  藝術
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  人文
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  行銷
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  投資理財
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  心靈成長
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center" href="#">
-                  職場技能
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item f-between-center rounded-1" href="#">
-                  生活品味
-                  <span class="material-symbols-outlined fs-5">
-                    chevron_right
-                  </span>
-                </a>
-              </li>
-            </ul>
-
+                        </div>
+                        <div class="border-top f-between-center py-2 mt-2">
+                          <div>
+                            <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                            <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                            <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-alert-tag tag-mobile position-absolute mt-1 ms-1">
+                        <span>8 折</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="border-top pt-4 pb-6">
+                    <a href="#" class="mobile-course-card card border-0 d-flex flex-row position-relative">
+                      <div class="course-card-img flex-shrink-0">
+                        <img
+                          src="/week8-learningSite/assets/course-5-18abd620.png"
+                          class="card-img rounded-0"
+                          alt="course-image">
+                      </div>
+                      <div class="card-body card-column flex-grow-1 ms-2 p-0">
+                        <h6 class="card-title fs-7">
+                          小白也會！從零開始學習 Python 程式設計
+                        </h6>
+                        <div class="f-between-center mt-4">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="data:image/png;base64,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"
+                                alt="user-image"
+                                class="rounded-circle me-2"
+                                style="width: 44px; height: 44px;">
+                            </div>
+                            <div class="flex-grow-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="fs-7 text-neutral-60 fw-semibold">已購買</h6>
+                            <del class="fs-9 text-gray-light">NT$ 3,200</del>
+                          </div>
+                        </div>
+                        <div class="border-top f-between-center py-2 mt-2">
+                          <div>
+                            <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                            <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                            <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-alert-tag tag-mobile position-absolute mt-1 ms-1">
+                        <span>8 折</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="border-top pt-4 pb-6">
+                    <a href="#" class="mobile-course-card card border-0 d-flex flex-row position-relative">
+                      <div class="course-card-img flex-shrink-0">
+                        <img
+                          src="/week8-learningSite/assets/course-5-18abd620.png"
+                          class="card-img rounded-0"
+                          alt="course-image">
+                      </div>
+                      <div class="card-body card-column flex-grow-1 ms-2 p-0">
+                        <h6 class="card-title fs-7">
+                          小白也會！從零開始學習 Python 程式設計
+                        </h6>
+                        <div class="f-between-center mt-4">
+                          <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="data:image/png;base64,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"
+                                alt="user-image"
+                                class="rounded-circle me-2"
+                                style="width: 44px; height: 44px;">
+                            </div>
+                            <div class="flex-grow-1">
+                              <p class="text-neutral-80">Kelly Hsu</p>
+                            </div>
+                          </div>
+                          <div class="text-end">
+                            <h6 class="fs-7 text-primary fw-semibold">NT$ 2,480</h6>
+                            <del class="fs-9 text-gray-light">NT$ 3,200</del>
+                          </div>
+                        </div>
+                        <div class="border-top f-between-center py-2 mt-2">
+                          <div>
+                            <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                            <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                            <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-alert-tag tag-mobile position-absolute mt-1 ms-1">
+                        <span>8 折</span>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>  
+          
           </li>
-          <li>
+          <li class="d-none d-xl-block">
             <div class="input-group position-relative d-flex align-items-center">
               <input
                 type="text"
@@ -338,9 +571,10 @@
       </div>
     </div>
 
-    <!-- notifications-icon-btn -->
+    <!-- nav右側按鈕列表 -->
     <div class="d-flex align-items-center">
       <div class="dropdown">
+        <!-- 通知icon按鈕 -->
         <a
           class="nav-icon-link dropdown-toggle d-flex align-items-center"
           href="#"
@@ -373,7 +607,7 @@
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQBSURBVHgBzZk/bBNXHMd/v3d3Tk07WFSoldrBHbokaRurEupQqcnaDqVD5zgrCzDASrLCwgIryQpIwABrjMSAQMghOCDBwA0wIASyEGCSu3s/fr8z5/jOZ987O475DLFz79297/3+vD8/I4xI493OHFhqDghLhFCSa0jQ1Ba5ytPu7DeFDRgBhJzUiUpOS1fBVv8C0RxfKmXehFiDIFjzwKtVikUXcmAssN6ismPBMRZVNRLVd0Rc9YKPK6ZCMwWKxQo+HCNNx0cSlhxY4fKMgyuZ/QY1itUKitYJoAxjgAd3d/T2wiBrqn4ND1vevKOoPi5xgjzbUVP1zW3/SL8+qQIbPi2istZhD106gJICdVXGTGvscXGdpw3Hseuw/zTB8xeS01LMgmHMOfZVmAwl5LHrrVa5+2JMoKPg9DhjLoswJq2pi93XOgIbLb/KXaowaQjmJUGjfzsxuLWtn03Set3I9DMzpX6S76EFxXrjFvfB41HfklFf0RJZse1iy1qEMbL1BuDkbQ1n71Mo1AS0rNPyqSRzeX2dhz1CxHRzwyVYuaPhVQvg0AGE9z6YwbEoy6ztQDA/YEExRixz6SnBTRZ06e/d57360P78p4ywOJ1v8+R8DI7YhDiXe8+VQKx05QmlWqfKog5/DzB9cIhRWJuNSv3GLs7sKxZaf9EbQ1uvAR696b2/9px99GNb1FDiQoHqLxs1lMng/vObBPdepr/IoWLbUpIEEWuPCQ5/h3DAgaFB4Bgk5CQxIBL3/8/xtxEBCz9EQnYFvmdL3325a8XLT+Mvl3xOGjLd2JATkwdHSOZGDCNQyC0wOZC4t58rpS2voCQ2Erombp4+KMnQK1C4XKQeASJu5lscSaAseYrFNU06n/xdwdFfMTaQfBch4soLm70u7LbgMHDyskCiWyadv2YXSsAnBZ5faAtPiomSQ+iX/ZloeqCQ1EgH60jM8h8qJipCQkKmn7TQyIRoQ3lfwTXYA8SCYkmxaBoi8BRvGKKlzwQ56KsKYpOjsQY5ENf2C/qkq6XfmT/bISBzo3GpgDXJcTTsLnuvz6e4sRHNicaJo/XSbNFe7bxPg3fU8IXsqBl3tntHLZAOluBLQetOSSQWEY0dvS4bRZgkXFyaLWDHWLGU84KwwYXJ4Urlq/tCv8rCfpU9YnieX6kMqiwI0kFrfQL2GR5zqZJSje07K0nFiYs6csoftyWbnKD//VJ0ammNmfVBLsGJu8swHlxv2PqgUCliOB9xdTWzEpqTpjzTK2AlqxScq0ZtgV5WCkc55Dd597Tm0865PatRJwndLmdpSy0azpmy1m+AT9e9oloN1/4cjHokDqcly1FlFWC5+3cS/tP0Ar1RGfF3kk8fYKvlEVyJAQAAAABJRU5ErkJggg=="
                     alt="icon-blue-campaign"
-                    class="rounded-circle object-fit-cover me-4"
+                    class="rounded-circle me-4"
                     style="width: 40px; height: 40px;">
                 </div>
                 <div class="flex-grow-1">
@@ -392,7 +626,7 @@
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO/SURBVHgB1Vk9bNNAFP7OKaKCpQxIZaHORhASiWBhoelGJ1qxVUJpmRBL+dlQRVuExIZgASbaCokNKqayNbAUCVCCQA1McTckkOhSVCSS4z2fr0ncOD7jpAmf5J59fu/u63d373wvAjEhy5/TVNBlDdDTgKoVm/THAaqOSJ4oIgYEIkKWC0Ri/ySEOE/u6RqplshDVpaARF4kUw4iwJigLJdsWGIaEpOGpIJ6XEQV86ZEQwm6iln9RExcjUVsd89zYig1H26GVuRINYFVurXRGTg0IiOt1LSCXsjypyzNswI6Rw5u29SHLK+PBRk0JSg3SjmIvtW2DmkgqA8hluXG11yzt7uG2A0bIlHAnoNCk/wz4g9LDQqqOZdYRlfASiaWXQ51aBxiC7Po7JwLAy/KhfqKHYI0tJMqxhng+6a6/HhTUJepfXNkScWsfujbqRaJWSN37ujOE3V/9wpwoL9G7nHd7DibUeWv7Zr9zCXgsMG6Uyom+dZV0FXPZGg1OS5TyVo9k3C+1Z7XnUY/ttW+bBsOW6uohlgkciZeeL6qOjpOHV4eV+qtrAHT94BXazU7VpPruGQbtk3ZyvfRC6OuSEV3RIW3W5RDHbhx7pTx4LoaKibMF4NJHx0EDhKhkkMqek1eGFEX+998CGyRgjNTyj4McvsQzcFKlr4ywo21Qjy3mBx3qMldHAVGzzTas7JPV5QNq8eE2Jfr338xI4h9YzTEVhomKHmKDHuTX5NjdfzkGFyn61feqvLUMVX652ggrLRF28xJI1sdJoYGVfmhpEq9WpvhnEdQ/3P2EVX++AkjCGuYw4xtZKw702Fly1uNrcKGfqdXLvuy4saQA+YEIzXctnZsCz2O/4Kgg96FY3lHxF4FEZTV1+hVSPmRVnG1aLSTaOgAHfQc5hdpFYuicI+Vot8wchImbiEWnt02t5VI9olkZlM6pTw9Zo2c2hUPw+FmIdQHq8Q8fdFkjdyCCPqHOu4/IrHEhUuQmOZJRQdxziP8eeU2QTidQkxQ0im1yDe1T36JKS+L8G+4MQG8K6l9dziDWOAR9dBwLiYVmWAW3QQllyhnM6UfG7c6VrG7O4vDma/6ioDMwl6lPfydVzItMwsM10DKa9hr0Og1y8YGpt/cjJOwFjqvJOdk5DhHkqZvW7n2dH6QwY7CplO3RGgmNBpYNWpTbmfCUsHRctSQc3TIMjvkBxKr0g4h7rctR+2Hlx6j7CtyMIqZ/L0peeG9BH4v8t6PCIhM0A/1O4llw52n9b+T8FUpxv2d5C9L514G5edaQAAAAABJRU5ErkJggg=="
                     alt="icon-red-alert"
-                    class="rounded-circle object-fit-cover me-4"
+                    class="rounded-circle me-4"
                     style="width: 40px; height: 40px;">
                 </div>
                 <div class="flex-grow-1">
@@ -411,7 +645,7 @@
                   <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO/SURBVHgB1Vk9bNNAFP7OKaKCpQxIZaHORhASiWBhoelGJ1qxVUJpmRBL+dlQRVuExIZgASbaCokNKqayNbAUCVCCQA1McTckkOhSVCSS4z2fr0ncOD7jpAmf5J59fu/u63d373wvAjEhy5/TVNBlDdDTgKoVm/THAaqOSJ4oIgYEIkKWC0Ri/ySEOE/u6RqplshDVpaARF4kUw4iwJigLJdsWGIaEpOGpIJ6XEQV86ZEQwm6iln9RExcjUVsd89zYig1H26GVuRINYFVurXRGTg0IiOt1LSCXsjypyzNswI6Rw5u29SHLK+PBRk0JSg3SjmIvtW2DmkgqA8hluXG11yzt7uG2A0bIlHAnoNCk/wz4g9LDQqqOZdYRlfASiaWXQ51aBxiC7Po7JwLAy/KhfqKHYI0tJMqxhng+6a6/HhTUJepfXNkScWsfujbqRaJWSN37ujOE3V/9wpwoL9G7nHd7DibUeWv7Zr9zCXgsMG6Uyom+dZV0FXPZGg1OS5TyVo9k3C+1Z7XnUY/ttW+bBsOW6uohlgkciZeeL6qOjpOHV4eV+qtrAHT94BXazU7VpPruGQbtk3ZyvfRC6OuSEV3RIW3W5RDHbhx7pTx4LoaKibMF4NJHx0EDhKhkkMqek1eGFEX+998CGyRgjNTyj4McvsQzcFKlr4ywo21Qjy3mBx3qMldHAVGzzTas7JPV5QNq8eE2Jfr338xI4h9YzTEVhomKHmKDHuTX5NjdfzkGFyn61feqvLUMVX652ggrLRF28xJI1sdJoYGVfmhpEq9WpvhnEdQ/3P2EVX++AkjCGuYw4xtZKw702Fly1uNrcKGfqdXLvuy4saQA+YEIzXctnZsCz2O/4Kgg96FY3lHxF4FEZTV1+hVSPmRVnG1aLSTaOgAHfQc5hdpFYuicI+Vot8wchImbiEWnt02t5VI9olkZlM6pTw9Zo2c2hUPw+FmIdQHq8Q8fdFkjdyCCPqHOu4/IrHEhUuQmOZJRQdxziP8eeU2QTidQkxQ0im1yDe1T36JKS+L8G+4MQG8K6l9dziDWOAR9dBwLiYVmWAW3QQllyhnM6UfG7c6VrG7O4vDma/6ioDMwl6lPfydVzItMwsM10DKa9hr0Og1y8YGpt/cjJOwFjqvJOdk5DhHkqZvW7n2dH6QwY7CplO3RGgmNBpYNWpTbmfCUsHRctSQc3TIMjvkBxKr0g4h7rctR+2Hlx6j7CtyMIqZ/L0peeG9BH4v8t6PCIhM0A/1O4llw52n9b+T8FUpxv2d5C9L514G5edaQAAAAABJRU5ErkJggg=="
                     alt="icon-red-alert"
-                    class="rounded-circle object-fit-cover me-4"
+                    class="rounded-circle me-4"
                     style="width: 40px; height: 40px;">
                 </div>
                 <div class="flex-grow-1">
@@ -426,7 +660,7 @@
         </ul>
       </div>
 
-      <!-- shopping_cart-icon-btn -->
+      <!-- 購物車icon按鈕 -->
       <a href="#" class="nav-icon-link d-flex align-items-center ms-xl-4">
         <span class="material-symbols-outlined text-neutral-80 position-relative">
           shopping_cart
@@ -437,7 +671,7 @@
         </span>
       </a>
 
-      <!-- navbar-toggler-btn -->
+      <!-- 漢堡icon按鈕 -->
       <button
         class="navbar-toggler border-0 nav-icon-link"
         type="button"
@@ -448,7 +682,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- user-icon-btn -->
+      <!-- 會員按鈕 -->
       <div class="dropdown ms-4 d-none d-xl-block">
         <a
           class="nav-icon-link dropdown-toggle d-flex align-items-center"
@@ -462,7 +696,7 @@
               <img
                 src="/week8-learningSite/assets/avatar-1-cf59f6fa.png"
                 alt="user-image"
-                class="rounded-circle object-fit-cover me-4"
+                class="rounded-circle me-4"
                 style="width: 44px; height: 44px;">
             </div>
             <div class="flex-grow-1">
@@ -480,7 +714,7 @@
                 <img
                   src="/week8-learningSite/assets/avatar-1-cf59f6fa.png"
                   alt="user-image"
-                  class="rounded-circle object-fit-cover me-4"
+                  class="rounded-circle me-4"
                   style="width: 44px; height: 44px;">
               </div>
               <div class="flex-grow-1">
@@ -795,7 +1029,7 @@
                       <img
                         src="data:image/png;base64,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"
                         alt="user-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -825,7 +1059,7 @@
                     </div>
                     <div class="d-flex mt-2">
                       <h6>NT$ 2,480</h6>
-                      <del class="fs-8 ms-2" style="color: #808080;">
+                      <del class="fs-8 text-gray-light ms-2">
                         NT$ 3,200
                       </del>
                     </div>
@@ -853,7 +1087,7 @@
                       <img
                         src="/week8-learningSite/assets/avatar-6-482585cd.png"
                         alt="avatar-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -883,7 +1117,7 @@
                     </div>
                     <div class="d-flex mt-2">
                       <h6>NT$ 1,680</h6>
-                      <del class="fs-8 ms-2" style="color: #808080;">
+                      <del class="fs-8 text-gray-light ms-2">
                         NT$ 2,980
                       </del>
                     </div>
@@ -911,7 +1145,7 @@
                       <img
                         src="/week8-learningSite/assets/avatar-7-f463095c.png"
                         alt="avatar-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -941,7 +1175,7 @@
                     </div>
                     <div class="d-flex mt-2">
                       <h6>NT$ 2,680</h6>
-                      <del class="fs-8 ms-2" style="color: #808080;">
+                      <del class="fs-8 text-gray-light ms-2">
                         NT$ 3,200
                       </del>
                     </div>
@@ -969,7 +1203,7 @@
                       <img
                         src="/week8-learningSite/assets/avatar-5-a0e44254.png"
                         alt="avatar-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -999,7 +1233,7 @@
                     </div>
                     <div class="d-flex mt-2">
                       <h6>NT$ 1,980</h6>
-                      <del class="fs-8 ms-2" style="color: #808080;">
+                      <del class="fs-8 text-gray-light ms-2">
                         NT$ 3,200
                       </del>
                     </div>
@@ -1031,7 +1265,7 @@
                         <img
                           src="data:image/png;base64,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"
                           alt="user-image"
-                          class="rounded-circle object-fit-cover me-2"
+                          class="rounded-circle me-2"
                           style="width: 44px; height: 44px;">
                       </div>
                       <div class="flex-grow-1">
@@ -1061,7 +1295,7 @@
                       </div>
                       <div class="d-flex mt-2">
                         <h6>NT$ 2,480</h6>
-                        <del class="fs-8 ms-2" style="color: #808080;">
+                        <del class="fs-8 text-gray-light ms-2">
                           NT$ 3,200
                         </del>
                       </div>
@@ -1089,7 +1323,7 @@
                         <img
                           src="/week8-learningSite/assets/avatar-6-482585cd.png"
                           alt="avatar-image"
-                          class="rounded-circle object-fit-cover me-2"
+                          class="rounded-circle me-2"
                           style="width: 44px; height: 44px;">
                       </div>
                       <div class="flex-grow-1">
@@ -1119,7 +1353,7 @@
                       </div>
                       <div class="d-flex mt-2">
                         <h6>NT$ 1,680</h6>
-                        <del class="fs-8 ms-2" style="color: #808080;">
+                        <del class="fs-8 text-gray-light ms-2">
                           NT$ 2,980
                         </del>
                       </div>
@@ -1147,7 +1381,7 @@
                         <img
                           src="/week8-learningSite/assets/avatar-7-f463095c.png"
                           alt="avatar-image"
-                          class="rounded-circle object-fit-cover me-2"
+                          class="rounded-circle me-2"
                           style="width: 44px; height: 44px;">
                       </div>
                       <div class="flex-grow-1">
@@ -1177,7 +1411,7 @@
                       </div>
                       <div class="d-flex mt-2">
                         <h6>NT$ 2,680</h6>
-                        <del class="fs-8 ms-2" style="color: #808080;">
+                        <del class="fs-8 text-gray-light ms-2">
                           NT$ 3,200
                         </del>
                       </div>
@@ -1205,7 +1439,7 @@
                         <img
                           src="/week8-learningSite/assets/avatar-5-a0e44254.png"
                           alt="avatar-image"
-                          class="rounded-circle object-fit-cover me-2"
+                          class="rounded-circle me-2"
                           style="width: 44px; height: 44px;">
                       </div>
                       <div class="flex-grow-1">
@@ -1235,7 +1469,7 @@
                       </div>
                       <div class="d-flex mt-2">
                         <h6>NT$ 1,980</h6>
-                        <del class="fs-8 ms-2" style="color: #808080;">
+                        <del class="fs-8 text-gray-light ms-2">
                           NT$ 3,200
                         </del>
                       </div>
@@ -1268,16 +1502,14 @@
           <div class="swiper-wrapper mx-auto">
             <a href="#" class="swiper-slide course-card card border-0 shadow position-relative">
               <div class="course-card-img h-100">
-                <picture>
-                  <img
-                    src="/week8-learningSite/assets/course-4-e273136f.png"
-                    class="card-img"
-                    alt="course-image">
-                </picture>
+                <img
+                  src="/week8-learningSite/assets/course-4-e273136f.png"
+                  class="card-img rounded-0 h-100"
+                  alt="course-image">
                 </div>
                 <div class="card-body card-column py-4">
                   <h6 class="card-title pb-4">
-                    創意寫作工坊：：從靈感到出版的全過程
+                    創意寫作工坊：從靈感到出版的全過程
                   </h6>
                   <div class="f-between-center mt-auto">
                     <div class="d-flex align-items-center">
@@ -1285,7 +1517,7 @@
                         <img
                           src="data:image/png;base64,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"
                           alt="user-image"
-                          class="rounded-circle object-fit-cover me-2"
+                          class="rounded-circle me-2"
                           style="width: 44px; height: 44px;">
                       </div>
                       <div class="flex-grow-1">
@@ -1294,7 +1526,7 @@
                     </div>
                     <div class="text-end">
                       <h6 class="text-primary fw-bold">NT$ 2,480</h6>
-                      <del class="fs-8" style="color: #808080;">
+                      <del class="fs-8 text-gray-light">
                         NT$ 3,200
                       </del>
                     </div>
@@ -1308,8 +1540,8 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-                    <p class="fs-8 fw-medium ms-1" style="color: #180000;">4.0</p>
-                    <p class="fs-8 fw-medium ms-1" style="color: #808080;">(333)</p>
+                    <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                    <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
                   </div>
                 </div>
               </div>
@@ -1336,7 +1568,7 @@
                       <img
                         src="data:image/png;base64,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"
                         alt="user-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -1345,7 +1577,7 @@
                   </div>
                   <div class="text-end">
                     <h6 class="text-primary fw-bold">NT$ 2,480</h6>
-                    <del class="fs-8" style="color: #808080;">
+                    <del class="fs-8 text-gray-light">
                       NT$ 3,200
                     </del>
                   </div>
@@ -1359,8 +1591,8 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-                    <p class="fs-8 fw-medium ms-1" style="color: #180000;">4.0</p>
-                    <p class="fs-8 fw-medium ms-1" style="color: #808080;">(333)</p>
+                    <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                    <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
                   </div>
                 </div>
               </div>
@@ -1387,7 +1619,7 @@
                       <img
                         src="data:image/png;base64,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"
                         alt="user-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -1396,7 +1628,7 @@
                   </div>
                   <div class="text-end">
                     <h6 class="text-primary fw-bold">NT$ 2,480</h6>
-                    <del class="fs-8" style="color: #808080;">
+                    <del class="fs-8 text-gray-light">
                       NT$ 3,200
                     </del>
                   </div>
@@ -1410,8 +1642,8 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-                    <p class="fs-8 fw-medium ms-1" style="color: #180000;">4.0</p>
-                    <p class="fs-8 fw-medium ms-1" style="color: #808080;">(333)</p>
+                    <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                    <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
                   </div>
                 </div>
               </div>
@@ -1438,7 +1670,7 @@
                       <img
                         src="data:image/png;base64,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"
                         alt="user-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -1447,7 +1679,7 @@
                   </div>
                   <div class="text-end">
                     <h6 class="text-primary fw-bold">NT$ 2,480</h6>
-                    <del class="fs-8" style="color: #808080;">
+                    <del class="fs-8 text-gray-light">
                       NT$ 3,200
                     </del>
                   </div>
@@ -1461,8 +1693,8 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-                    <p class="fs-8 fw-medium ms-1" style="color: #180000;">4.0</p>
-                    <p class="fs-8 fw-medium ms-1" style="color: #808080;">(333)</p>
+                    <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                    <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
                   </div>
                 </div>
               </div>
@@ -1484,7 +1716,7 @@
                       <img
                         src="data:image/png;base64,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"
                         alt="user-image"
-                        class="rounded-circle object-fit-cover me-2"
+                        class="rounded-circle me-2"
                         style="width: 44px; height: 44px;">
                     </div>
                     <div class="flex-grow-1">
@@ -1493,7 +1725,7 @@
                   </div>
                   <div class="text-end">
                     <h6 class="text-primary fw-bold">NT$ 2,480</h6>
-                    <del class="fs-8" style="color: #808080;">
+                    <del class="fs-8 text-gray-light">
                       NT$ 3,200
                     </del>
                   </div>
@@ -1507,8 +1739,8 @@
                   </div>
                   <div class="d-flex align-items-center">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-                    <p class="fs-8 fw-medium ms-1" style="color: #180000;">4.0</p>
-                    <p class="fs-8 fw-medium ms-1" style="color: #808080;">(333)</p>
+                    <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                    <p class="fs-8 text-gray-light w-medium ms-1">(333)</p>
                   </div>
                 </div>
               </div>
@@ -1629,12 +1861,163 @@
           </h1>
           <p class="fs-6 mt-2">超真實學員評價，這些講師你絕對不能錯過！</p>
         </div>
-        <div class="row g-6">
-          <div class="col-4">
-
+        <div class="row g-6 mt-6 d-none d-lg-flex mt-lg-10">
+          <div class="col-lg-4">
+            <div class="teacher-card card card-column border-0">
+              <img src="/week8-learningSite/assets/teacher-3-28b5c93a.png" class="card-img-top" alt="teacher-image">
+              <div class="card-body bg-white rounded-1 shadow card-column p-6">
+                <h6 class="card-title">
+                  Mr. Robert 
+                </h6>
+                <div class="mt-6 pb-6">
+                  <div class="d-flex">  
+                    <span class="bg-gray-tag tag">
+                      音樂創作
+                    </span>
+                    <div class="d-flex align-items-center ms-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                      <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                      <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                    </div>
+                  </div>
+                  <p class="text-neutral-80 mt-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
+                </div>
+                <a href="#" class="btn btn-primary w-100 d-block mt-auto">
+                  探索 Mr. Robert 的教學課程
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
+          <div class="col-lg-4">
+            <div class="teacher-card card card-column border-0">
+              <img src="/week8-learningSite/assets/teacher-1-7be33f19.png" class="card-img-top" alt="teacher-image">
+              <div class="card-body bg-white rounded-1 shadow card-column p-6">
+                <h6 class="card-title">
+                  Kelly Beck
+                </h6>
+                <div class="mt-6 pb-6">
+                  <div class="d-flex">  
+                    <span class="bg-gray-tag tag">
+                      英文寫作
+                    </span>
+                    <div class="d-flex align-items-center ms-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                      <p class="fs-8 text-black-light fw-medium ms-1">4.8</p>
+                      <p class="fs-8 text-gray-light fw-medium ms-1">(281)</p>
+                    </div>
+                  </div>
+                  <p class="text-neutral-80 mt-2">Kelly 的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。</p>
+                </div>
+                <a href="#" class="btn btn-primary w-100 d-block mt-auto">
+                  探索 Kelly Beck 的教學課程
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="teacher-card card card-column border-0">
+              <img src="/week8-learningSite/assets/teacher-2-8d68dd20.png" class="card-img-top" alt="teacher-image">
+              <div class="card-body bg-white rounded-1 shadow card-column p-6">
+                <h6 class="card-title">
+                  K. Lee
+                </h6>
+                <div class="mt-6 pb-6">
+                  <div class="d-flex">  
+                    <span class="bg-gray-tag tag">
+                      音樂創作
+                    </span>
+                    <div class="d-flex align-items-center ms-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                      <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                      <p class="fs-8 text-gray-light fw-medium ms-1">(1,245)</p>
+                    </div>
+                  </div>
+                  <p class="text-neutral-80 mt-2">K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！</p>
+                </div>
+                  <a href="#" class="btn btn-primary w-100 d-block mt-auto">
+                    探索 K. Lee 的教學課程
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- media-teacher-card-wrap-->
+        <div class="swiper teacher-Swiper d-lg-none mt-6 mt-lg-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide teacher-card card card-column border-0">
+              <img src="/week8-learningSite/assets/teacher-3-28b5c93a.png" class="card-img-top" alt="teacher-image">
+              <div class="card-body bg-white rounded-1 shadow card-column p-6">
+                <h6 class="card-title">
+                  Mr. Robert 
+                </h6>
+                <div class="mt-6 pb-6">
+                  <div class="d-flex">  
+                    <span class="bg-gray-tag tag">
+                      音樂創作
+                    </span>
+                    <div class="d-flex align-items-center ms-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                      <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                      <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                    </div>
+                  </div>
+                  <p class="text-neutral-80 mt-2">Robert 的線上課程深受學生喜愛。他的教學方法生動有趣，能夠深入淺出地講解複雜的音樂理論，並結合實際演奏技巧，使學生能夠快速進步。</p>
+                </div>
+                <a href="#" class="btn btn-primary w-100 d-block mt-auto">
+                  探索 Mr. Robert 的教學課程
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide teacher-card card card-column border-0">
+              <img src="/week8-learningSite/assets/teacher-1-7be33f19.png" class="card-img-top" alt="teacher-image">
+              <div class="card-body bg-white rounded-1 shadow card-column p-6">
+                <h6 class="card-title">
+                  Kelly Beck
+                </h6>
+                <div class="mt-6 pb-6">
+                  <div class="d-flex">  
+                    <span class="bg-gray-tag tag">
+                      英文寫作
+                    </span>
+                    <div class="d-flex align-items-center ms-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                      <p class="fs-8 text-black-light fw-medium ms-1">4.8</p>
+                      <p class="fs-8 text-gray-light fw-medium ms-1">(281)</p>
+                    </div>
+                  </div>
+                  <p class="text-neutral-80 mt-2">Kelly 的教學方式靈活且富有創意，能夠有效提升學生的寫作技巧和自信心。Kelly 注重實用性，針對學生的需求量身打造教學內容，並提供具體的反饋和建議。</p>
+                </div>
+                <a href="#" class="btn btn-primary w-100 d-block mt-auto">
+                  探索 Kelly Beck 的教學課程
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide teacher-card card card-column border-0">
+              <img src="/week8-learningSite/assets/teacher-2-8d68dd20.png" class="card-img-top" alt="teacher-image">
+              <div class="card-body bg-white rounded-1 shadow card-column p-6">
+                <h6 class="card-title">
+                  K. Lee
+                </h6>
+                <div class="mt-6 pb-6">
+                  <div class="d-flex">  
+                    <span class="bg-gray-tag tag">
+                      音樂創作
+                    </span>
+                    <div class="d-flex align-items-center ms-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                      <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                      <p class="fs-8 text-gray-light fw-medium ms-1">(1,245)</p>
+                    </div>
+                  </div>
+                  <p class="text-neutral-80 mt-2">K. Lee 的教學風格親切且耐心，能夠循序漸進地引導學生進入樂團的世界。學生們紛紛表示，K. Lee 的課程讓他們對音樂產生了濃厚的興趣！</p>
+                </div>
+                  <a href="#" class="btn btn-primary w-100 d-block mt-auto">
+                    探索 K. Lee 的教學課程
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -1743,6 +2126,19 @@
         slidesPerView: 'auto',
         spaceBetween: 24,
         loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".teacher-Swiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        clickable: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
