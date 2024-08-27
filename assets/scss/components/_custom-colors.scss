@@ -16,7 +16,9 @@ $custom-colors: (
   "neutral-10":    $neutral-10,
   "neutral-40":    $neutral-40,
   "neutral-60":    $neutral-60,
-  "neutral-80":    $neutral-80
+  "neutral-80":    $neutral-80,
+  "gray-light":    $gray-light,
+  "black-light":   $black-light
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

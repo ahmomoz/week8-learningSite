@@ -1,10 +1,4 @@
-.nav-tabs {
-  gap: 32px;
-  
-  .nav-link {
-    padding: 16px 0;
-  }
-}
+/* common */
 .nav-link.active {
   font-weight: 600;
   position: relative;
@@ -18,5 +12,52 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+/* courses-most-section */
+.courses-most-section {
+  .nav-tabs {
+    gap: 32px;
+    
+    .nav-link {
+      padding: 16px 0;
+    }
+  }
+}
+
+.mobile-nav-menu {
+  .list-group-item {
+    padding: 0;
+  }
+  
+  .list-group-item > a {
+    display: flex;
+    width: 100%;
+    color: $neutral-80;
+    font-weight: 400;
+    border-radius: 12px;
+    padding: 12px 12px 12px 24px;
+
+    &:hover {
+      color: $white;
+      background-color: $primary-100;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  &-sec {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 }

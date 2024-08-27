@@ -48,40 +48,46 @@
   }
 }
 
-/* search-dropdown-menu */
-.search-dropdown-menu {
-  font-weight: 600;
-  background: $neutral-10;
-  border-right: 1px solid $neutral-40;
-  border-radius: 12px;
-  padding: 12px;
+/* desktop-nav-dropdowm-menu */
+.desktop-nav-dropdowm-menu {
   width: 863px;
-  height: 600px;
+  border-radius: 12px;
+  background-color: $white;
 
-  li {
-    width: 208px;
+  &[data-bs-popper] {
+    left: -20%;
   }
-
-  .dropdown-item {
-    border-radius: 12px;
-    padding: 12px 12px 12px 24px;
+  
+  .dropdown-menu {
+    &-fir,
+    &-sec {
+      font-weight: 600;
+      border-right: 1px solid $neutral-40;
+      width: 232px;
+        
+      .dropdown-item {
+        border-radius: 12px;
+        padding: 12px 12px 12px 24px;
+      }
+    }
+  
+    &-fir,
+    &-sec,
+    &-thr {
+      height: calc(100vh - 360px);
+      overflow-y: scroll;
+    }
+  
+    &-fir {
+      background: $neutral-10;
+      padding: 12px;
+    }
+    
+    &-thr {
+      width: 48%;
+      padding: 12px 24px 4px;
+    }
   }
 }
 
-.search-dropdown-sec-menu {
-  border: 0;
-  border-right: 1px solid $neutral-40;
-}
 
-.search-dropdown-th-menu {
-  padding: 12px 24px;
-
-  li {
-    width: 100%;
-  }
-
-  .course-card-img {
-    width: 100px;
-    height: 100px;
-  }
-}

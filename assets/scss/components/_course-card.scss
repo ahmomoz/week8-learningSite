@@ -7,3 +7,18 @@
   transform: scale(1.1);
   transition: transform .3s ease;
 }
+
+/* mobile-course-card */
+.mobile-course-card {
+  .course-card-img {
+    border-radius: 12px;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      height: 100px;
+      object-position: center;
+    }
+  }
+}
