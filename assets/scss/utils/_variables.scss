@@ -1360,9 +1360,9 @@ $pagination-padding-x-lg:           1.5rem !default;
 
 $pagination-font-size:              $font-size-base !default;
 
-$pagination-color:                  var(--#{$prefix}link-color) !default;
-$pagination-bg:                     var(--#{$prefix}body-bg) !default;
-$pagination-border-radius:          var(--#{$prefix}border-radius) !default;
+$pagination-color:                  $neutral-80; // var(--#{$prefix}link-color) !default; custom
+$pagination-bg:                     $white; // var(--#{$prefix}body-bg) !default; custom
+$pagination-border-radius:          .5rem; // var(--#{$prefix}border-radius) !default; custom
 $pagination-border-width:           var(--#{$prefix}border-width) !default;
 $pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color:           var(--#{$prefix}border-color) !default;
@@ -1372,16 +1372,15 @@ $pagination-focus-bg:               var(--#{$prefix}secondary-bg) !default;
 $pagination-focus-box-shadow:       $focus-ring-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+$pagination-hover-color:            $white; // var(--#{$prefix}link-hover-color) !default; custom
+$pagination-hover-bg:               $primary-100; // var(--#{$prefix}tertiary-bg) !default; custom
+$pagination-hover-border-color:     $primary-100; // var(--#{$prefix}border-color) !default; // Todo in v6: remove this? custom
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
-$pagination-active-border-color:    $component-active-bg !default;
-
-$pagination-disabled-color:         var(--#{$prefix}secondary-color) !default;
-$pagination-disabled-bg:            var(--#{$prefix}secondary-bg) !default;
+$pagination-active-color:           $white; // $component-active-color !default; custom
+$pagination-active-bg:              $primary-100; // $component-active-bg !default; custom
+$pagination-active-border-color:    $primary-100; // $component-active-bg !default; custom
+$pagination-disabled-color:         $neutral-60; // var(--#{$prefix}secondary-color) !default; custom
+$pagination-disabled-bg:            $neutral-40; // var(--#{$prefix}secondary-bg) !default; custom
 $pagination-disabled-border-color:  var(--#{$prefix}border-color) !default;
 
 $pagination-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;

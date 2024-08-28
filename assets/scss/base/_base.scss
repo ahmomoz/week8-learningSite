@@ -66,6 +66,14 @@ input[type="search"]::-moz-search-clear-button {
   justify-content: space-between;
   align-items: center;
 }
+
+@media (min-width: 1200px) {
+  .f-between-lg-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .f-between-end {
   display: flex;
   justify-content: space-between;
