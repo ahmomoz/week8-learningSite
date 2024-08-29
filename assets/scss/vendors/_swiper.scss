@@ -122,30 +122,15 @@
 /* course-swiper */
 .course-swiper {
   .swiper-wrapper {
-    width: 1296px;
     padding-bottom: 120px;
 
     @include pad {
       padding-bottom: 80px;
     }
   }
-  .swiper-slide {
-    width: 306px;
-    flex-shrink: 0;
-  }
-
   .swiper-btn-sm:nth-child(3),
   .swiper-btn-sm:nth-child(2) {
-    top: 50%;
-    transform: translateY(-100%);
-  }
-  .swiper-btn-sm:nth-child(3) {
-    margin-left: 324px;
-  }
-  .swiper-btn-sm:nth-child(2) {
-    margin-right: 324px;
-    color: $white; 
-    background-color: $primary-100;
+    margin-top: -80px;
   }
 }
 
@@ -159,16 +144,17 @@
   }
 }
 
-/* courses-hot-swiper */
+/* course-swipe & courses-hot-swiper */
+.course-swiper,
 .courses-hot-swiper {
   .swiper-slide {
     width: 306px;
   }
   .swiper-btn-sm:nth-child(3) {
-    margin-left: -40px;
+    margin-left: -10px;
   }
   .swiper-btn-sm:nth-child(2) {
-    margin-right: -40px;
+    margin-right: -10px;
     color: $white; 
     background-color: $primary-100;
   }
@@ -189,4 +175,3 @@
     width: 196px;
   }
 }
-

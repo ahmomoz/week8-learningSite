@@ -95,12 +95,11 @@
     width: 416px; 
   }
 }
+
 /* index-course-section */
 .index-course-section {
   background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
   position: relative;
-  overflow: visible;
-
 
   &::before {
     content: '';
@@ -113,6 +112,24 @@
 
     @include pad {
       display: none;
+    }
+  }
+
+  .container-fluid {
+    width: 1380px;
+
+    @include xl {
+      width: 100%;
+    }
+  }
+  
+  .course-swiper {
+    padding-left: 30px;
+    padding-right: 44px;
+
+    @include lg-pc {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }

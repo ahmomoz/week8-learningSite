@@ -1,3 +1,8 @@
+@mixin xl {
+  @media(max-width: 1400px){
+    @content;
+  }
+}
 @mixin lg-pc {
   @media(max-width: 1200px){
     @content;

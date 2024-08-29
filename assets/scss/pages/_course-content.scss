@@ -1,0 +1,22 @@
+/* course-content-header-section */
+.course-content-header-section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E7F5FF 100%);
+
+  h1 {
+    @include pad {
+      font-size: 32px;
+    }
+  }
+}
+.course-content-header-img {
+  @include pad {
+    height: 419px;
+  }
+  
+  img {
+    @include pad {
+      height: 100%;
+      object-position: center;
+    }
+  }
+}

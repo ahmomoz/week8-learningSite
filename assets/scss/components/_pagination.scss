@@ -1,5 +1,24 @@
 .pagination-primary {
-  .material-symbols-outlined {
-    font-size: 12px;
+  .pagination {
+    gap: 8px;
+  }
+
+  .page-link {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include pad {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  span {
+    font-size: 24px;
   }
 }
