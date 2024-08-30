@@ -1424,34 +1424,33 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
-$accordion-color:                         var(--#{$prefix}body-color) !default;
-$accordion-bg:                            var(--#{$prefix}body-bg) !default;
+$accordion-padding-y:                     1.5rem; // 1rem !default; custom
+$accordion-padding-x:                     1.5rem; // 1.25rem !default; custom
+$accordion-color:                         $neutral-80; // var(--#{$prefix}body-color) !default; custom
+$accordion-bg:                            $white; // var(--#{$prefix}body-bg) !default; custom
 $accordion-border-width:                  var(--#{$prefix}border-width) !default;
-$accordion-border-color:                  var(--#{$prefix}border-color) !default;
-$accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
+$accordion-border-color:                  none; // var(--#{$prefix}border-color) !default; custom
+$accordion-border-radius:                 .5rem; // var(--#{$prefix}border-radius) !default; custom
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
 
-$accordion-body-padding-y:                $accordion-padding-y !default;
-$accordion-body-padding-x:                $accordion-padding-x !default;
-
+$accordion-body-padding-y:                1rem; // $accordion-padding-y !default; custom
+$accordion-body-padding-x:                1.5rem; // $accordion-padding-x !default; custom
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
-$accordion-button-color:                  var(--#{$prefix}body-color) !default;
-$accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
+$accordion-button-color:                  $black; // var(--#{$prefix}body-color) !default;
+$accordion-button-bg:                     $neutral-40; // var(--#{$prefix}accordion-bg) !default; custom
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
-$accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
+$accordion-button-active-bg:              $neutral-40; // var(--#{$prefix}primary-bg-subtle) !default; custom
+$accordion-button-active-color:           $black; // var(--#{$prefix}primary-text-emphasis) !default; custom
 
 // fusv-disable
-$accordion-button-focus-border-color:     $input-focus-border-color !default; // Deprecated in v5.3.3
+$accordion-button-focus-border-color:     $neutral-80; // $input-focus-border-color !default; // Deprecated in v5.3.3 custom
 // fusv-enable
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-focus-box-shadow:       none; //$btn-focus-box-shadow !default; custom
 
 $accordion-icon-width:                    1.25rem !default;
-$accordion-icon-color:                    $body-color !default;
-$accordion-icon-active-color:             $primary-text-emphasis !default;
+$accordion-icon-color:                    $black; // $body-color !default; custom
+$accordion-icon-active-color:             $black; // $primary-text-emphasis !default; custom
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 

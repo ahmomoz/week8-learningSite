@@ -43,8 +43,8 @@
     z-index: 2;
   }
   /* big-flower-deco */
-  .courses-header-section::before,
-  .courses-header-section::after {
+  &::before,
+  &::after {
     content: '';
     position: absolute;
     width: 560px;
@@ -52,7 +52,7 @@
     background-image: url(/assets/images/deco/flower-2.png);
     z-index: 0;
   }
-  .courses-header-section::before {
+  &::before {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -61,7 +61,7 @@
       display: none;
     }
   }
-  .courses-header-section::after {
+  &::after {
     right: 0; bottom: -280px;
 
     @include lg-pc {

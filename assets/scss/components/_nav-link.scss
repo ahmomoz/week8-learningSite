@@ -1,6 +1,7 @@
 /* common */
 .nav-link.active {
   font-weight: 600;
+  color: $primary-100;
   position: relative;
 
   &::before {
@@ -14,11 +15,14 @@
     transform: translateX(-50%);
   }
 }
-
-/* courses-most-section */
-.courses-most-section {
-  .nav-tabs {
+.courses-most-section,
+.course-content-nav-section {
+  .nav-tabs, .nav {
     gap: 32px;
+
+    @include pad {
+      gap: 24px;
+    }
     
     .nav-link {
       padding: 16px 0;
@@ -26,6 +30,7 @@
   }
 }
 
+/* courses-most-section */
 .mobile-nav-menu {
   .list-group-item {
     padding: 0;

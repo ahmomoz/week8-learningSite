@@ -1,6 +1,28 @@
 /* course-content-header-section */
 .course-content-header-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E7F5FF 100%);
+  position: relative;
+  padding-bottom: 160px;
+
+  @include lg-pc {
+    padding-bottom: 40px;
+  }
+
+  /* background */
+  &::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E7F5FF 100%);
+    border-radius: 0 0 240px 240px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    @include lg-pc {
+      border-radius: 0;
+    }
+  }
 
   h1 {
     @include pad {
@@ -18,5 +40,127 @@
       height: 100%;
       object-position: center;
     }
+  }
+}
+/* course-content-feature-section */
+.course-content-feature-section {
+  margin-top: -68px;
+  padding-bottom: 72px;
+
+  @include xl {
+    margin-top: 0;
+    padding-bottom: 24px;
+    padding-top: 16px;
+  }
+
+  h6 {
+    line-height: 1.5;
+
+    @include pad {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    @include pad {
+      font-size: 14px;
+    }
+  }
+}
+.feature {
+  &-wrap {
+    background: $white;
+    border-radius: 20px;
+    border: 1px solid $neutral-40;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    padding: 24px;
+
+    @include lg-pc {
+      flex-direction: column;
+      padding: 16px;
+    }
+  }
+
+  &-item {
+    width: 25%;
+    padding: 8px 24px;
+
+    @include lg-pc {
+      width: 100%;
+      padding: 24px;
+    }
+  }
+
+  &-item:not(:first-child) {
+    border-left: 1px solid $neutral-40;
+
+    @include lg-pc {
+      border: none;
+    }
+  }
+}
+
+/* course-content-info-section */
+.course-content-info-section {
+  h5 {
+    @include pad {
+      font-size: 20px;
+    }
+  }
+  .deco-flower {
+    width: 24px; height: 24px;
+
+    @include pad {
+      width: 16px; height: 16px;
+    }
+  }
+
+  .course-info-content {
+    border-radius: 20px;
+    background-color: $white;
+    padding: 32px 32px 80px;
+    position: relative;
+
+    @include pad {
+      border-radius: 0;
+      padding: 16px 16px 72px;
+      margin: 0 -12px;
+    }
+  }
+  
+  .course-info-content >
+  .content-mask-white {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.5%);
+    padding-top: 200px;
+    width: 100%;
+    position: absolute;
+    left: 0; right: 0; bottom: 24px;
+
+    @include pad {
+      padding-top: 100px;
+      bottom: 16px;
+    }
+
+    .btn {
+      padding: 16px 100px;
+    }
+  }
+
+  .to-buy-btn {
+    width: 81.25%;
+  }
+  
+  .price-card {
+    top: 106px;
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .accordion-body:hover {
+    background-color: $primary-10;
   }
 }
