@@ -598,7 +598,7 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $neutral-40; // $gray-300 !default; custom
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -1448,7 +1448,7 @@ $accordion-button-focus-border-color:     $neutral-80; // $input-focus-border-co
 // fusv-enable
 $accordion-button-focus-box-shadow:       none; //$btn-focus-box-shadow !default; custom
 
-$accordion-icon-width:                    1.25rem !default;
+$accordion-icon-width:                    .75rem; // 1.25rem !default; custom
 $accordion-icon-color:                    $black; // $body-color !default; custom
 $accordion-icon-active-color:             $black; // $primary-text-emphasis !default; custom
 $accordion-icon-transition:               transform .2s ease-in-out !default;

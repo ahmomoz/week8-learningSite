@@ -102,48 +102,30 @@
 }
 
 /* course-content-info-section */
+/* common */
 .course-content-info-section {
+  padding-bottom: 160px;
+
+  @include pad {
+    padding-bottom: 120px;
+  }
+  
   h5 {
     @include pad {
       font-size: 20px;
     }
   }
+  h6 {
+    @include pad {
+      font-size: 16px;
+    }
+  }
+
   .deco-flower {
     width: 24px; height: 24px;
 
     @include pad {
       width: 16px; height: 16px;
-    }
-  }
-
-  .course-info-content {
-    border-radius: 20px;
-    background-color: $white;
-    padding: 32px 32px 80px;
-    position: relative;
-
-    @include pad {
-      border-radius: 0;
-      padding: 16px 16px 72px;
-      margin: 0 -12px;
-    }
-  }
-  
-  .course-info-content >
-  .content-mask-white {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.5%);
-    padding-top: 200px;
-    width: 100%;
-    position: absolute;
-    left: 0; right: 0; bottom: 24px;
-
-    @include pad {
-      padding-top: 100px;
-      bottom: 16px;
-    }
-
-    .btn {
-      padding: 16px 100px;
     }
   }
 
@@ -154,13 +136,118 @@
   .price-card {
     top: 106px;
   }
+}
+/* course-info */
+.course-info {
+  &-content {
+    border-radius: 20px;
+    background-color: $white;
+    padding: 32px 32px 80px;
+    position: relative;
+  
+    @include pad {
+      border-radius: 0;
+      padding: 16px 16px 72px;
+      margin: 0 -12px;
+    }
 
+    .content-mask-white {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.5%);
+      padding-top: 200px;
+      width: 100%;
+      position: absolute;
+      left: 0; right: 0; bottom: 24px;
+    
+      @include pad {
+        padding-top: 100px;
+        bottom: 16px;
+      }
+    
+      .btn {
+        padding: 16px 100px;
+      }
+    }
+  }
+}
+/* course-chapter */
+.course-chapter {
   .accordion {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
+
+  .accordion-button {
+    border-radius: 8px 8px 0 0;
+
+    @include pad {
+      border-radius: 12px 12px 0 0;
+    }
+
+    &.collapsed {
+      border-radius: 8px;
+
+      @include pad {
+        border-radius: 12px;
+      }
+    }
+  }
+
   .accordion-body:hover {
     background-color: $primary-10;
+  }
+}
+/* course-teacher */
+.course-teacher {
+  &-img {
+    width: 80px; height: 80px;
+
+    @include pad {
+      width: 60px; height: 60px;
+    }
+  }
+
+  &-stats {
+    gap: 16px;
+
+    @include pad {
+      gap: 12px;
+    }
+
+    p:not(:last-child) {
+      padding-right: 16px;
+      border-right: 1px solid $neutral-40;
+
+      @include pad {
+        padding-right: 12px;
+      }
+    }
+  }
+}
+/* course-QA */
+.course-QA {
+  &-img {
+    width: 60px; height: 60px;
+
+    @include pad {
+      width: 32px; height: 32px;
+    }
+  }
+  &-img-lg {
+    @include pad {
+      width: 44px; height: 44px;
+    }
+  }
+
+  &-form-control {
+    color: $neutral-60;
+    padding: 16px;
+    border-radius: 20px;
+
+    @include pad {
+      font-size: 14px;
+      padding: 8px;
+      border-radius: 16px;
+    }
   }
 }

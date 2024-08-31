@@ -72,11 +72,11 @@
               </p>
             </div>
             <div class="d-flex mt-6">
-              <a href="#" class="text-primary-tag tag-lg d-flex align-items-center">
+              <a href="#" class="link-primary-tag tag-lg d-flex align-items-center">
                 <i class="bi bi-bookmark-fill fs-6 me-2"></i>
                 收藏課程
               </a>
-              <a href="#" class="text-gray-tag tag-lg d-flex align-items-center ms-2">
+              <a href="#" class="link-gray-tag tag-lg d-flex align-items-center ms-2">
                 <i class="bi bi-share-fill fs-6 me-2"></i>
                 分享課程
               </a>
@@ -96,24 +96,24 @@
                 style="width: 24px; height: 24px;">
               <h6 class="ms-1">六角學院</h6>
             </div>
-            <p class="text-neutral-80 mt-2">高雄最大線上程式開發學習單位</p>
+            <p class="mt-2">高雄最大線上程式開發學習單位</p>
           </div>
           <div class="feature-item">
             <div class="d-flex align-items-center">
               <img src="/assets/images/icons/ic_star.png" alt="icon-star">
               <h6 class="ms-1">4.9</h6>
             </div>
-            <p class="text-neutral-80 mt-2">13,208 條評論</p>
+            <p class="mt-2">13,208 條評論</p>
           </div>
           <div class="feature-item">
             <h6>3 時 25 分</h6>
-            <p class="text-neutral-80 mt-2">16 個單元，4 個課後學習作業</p>
+            <p class="mt-2">16 個單元，4 個課後學習作業</p>
           </div>
           <div class="feature-item">
             <div class="bg-primary-tag tag d-inline">
               前端開發類別排名第一名 🔥
             </div>
-            <p class="text-neutral-80 mt-2">16,390 人已註冊</p>
+            <p class="mt-2">16,390 人已註冊</p>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
               <a class="nav-link" href="#course-chapter">預計單元</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#course-teacher-info">關於講師</a>
+              <a class="nav-link" href="#course-teacher">關於講師</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#course-QA">購課前問答</a>
@@ -140,9 +140,10 @@
     </nav>
     <main class="course-content-info-section wrap-sm">
       <div class="container">
-        <div class="row g-11">
+        <div class="row">
           <div class="col-lg-8">
-            <div data-bs-spy="scroll" data-bs-target="#course-content" data-bs-offset="0" class="course-content-scrollspy" tabindex="0">
+            <div data-bs-spy="scroll" data-bs-target="#course-content" data-bs-offset="0" class="course-content-scrollspy me-lg-6" tabindex="0">
+              <!-- 課程介紹 -->
               <div id="course-info">
                 <div class="d-flex align-items-center">
                   <img
@@ -199,7 +200,8 @@
                   </div>
                 </div>
               </div>
-              <div id="course-chapter" class="mt-lg-11">
+              <!-- 預計單元 -->
+              <div id="course-chapter" class="mt-11">
                 <div class="f-between-center">
                   <div>
                     <div class="d-flex align-items-center">
@@ -209,15 +211,18 @@
                         class="deco-flower">
                       <h5 class="ms-2">預計單元</h5>
                     </div>
-                    <p class="text-neutral-80 mt-2">
+                    <p class="media-fz-8 mt-2">
                       18 章 142 單元｜總時長 928 分鐘
                     </p>
                   </div>
-                  <a href="#" class="text-primary fw-semibold link-hover">
+                  <a 
+                    href="#"
+                    id="toggle-accordion"
+                    class="text-primary fw-semibold link-hover">
                     全部展開
                   </a>
                 </div>
-                <div class="accordion mt-4 mt-lg-6" id="accordionExample">
+                <div class="accordion mt-4 mt-lg-6" id="chapter-accordion">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button
@@ -228,65 +233,69 @@
                         aria-expanded="true" 
                         aria-controls="collapseOne">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-1.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-1.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             課前說明
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">4 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>4 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">少於 1 分鐘</p>
+                          <p>少於 1 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show py-4" aria-labelledby="headingOne" data-bs-parent="#accordionExamp le">
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
                       <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center">
+                        <div class="accordion-body f-between-center mt-4">
                           <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5"></i>
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
                             <div class="ms-3">課程說明</div>
                           </div>
                           <div class="d-flex align-items-center">
                             <div class="tag-more-sm text-white bg-primary">
                               試看單元
                             </div>
-                            <p class="text-neutral-80 ms-4">00:10</p>
+                            <p class="media-fz-8 ms-4">00:10</p>
                           </div>
                         </div>
                       </a>
                       <a href="#" class="link-neutral-80">
                         <div class="accordion-body f-between-center">
                           <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5"></i>
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
                             <div class="ms-3">課程最終任務說明</div>
                           </div>
-                          <p class="text-neutral-80 ms-4">00:10</p>
+                          <p class="media-fz-8 ms-4">00:10</p>
                         </div>
                         <div class="accordion-body f-between-center">
                           <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5"></i>
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
                             <div class="ms-3">課程最終任務說明</div>
                           </div>
-                          <p class="text-neutral-80 ms-4">00:10</p>
+                          <p class="media-fz-8 ms-4">00:10</p>
                         </div>
                       </a>
                       <a href="#" class="link-neutral-80">
                         <div class="accordion-body f-between-center">
                           <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5"></i>
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
                             <div class="ms-3">Hahow 學生如何在六角平台檢視問題</div>
                           </div>
-                          <p class="text-neutral-80 ms-4">00:10</p>
+                          <p class="media-fz-8 ms-4">00:10</p>
                         </div>
                       </a>
                       <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center">
+                        <div class="accordion-body f-between-center mb-4">
                           <div class="d-flex align-items-center">
                             <i class="bi bi-book fs-5"></i>
                             <div class="ms-3">課業作業</div>
                           </div>
-                          <p class="text-neutral-80 ms-4">00:10</p>
+                          <p class="media-fz-8 ms-4">00:10</p>
                         </div>
                       </a>
                     </div>
@@ -295,164 +304,585 @@
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-2.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-2.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             2020 VS Code 網頁編輯器、HTML 基礎教學
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">15 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>15 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">25 分鐘</p>
+                          <p>25 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> 
-                      </div>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-3.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-3.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             2020 CSS 常用語法
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">9 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>9 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">37 分鐘</p>
+                          <p>37 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong>
-                      </div>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-4.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-4.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             2020 使用 CSS 變更 HTML 標籤特性
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">13 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>13 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">52 分鐘</p>
+                          <p>52 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong>
-                      </div>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-5.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-5.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             Flex 網頁排版技巧
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">13 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>13 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">26 分鐘</p>
+                          <p>26 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong>
-                      </div>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSix">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-6.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-6.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             Flex 精神時光屋
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">8 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>8 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">1 小時 15 分鐘</p>
+                          <p>1 小時 15 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong>
-                      </div>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSeven">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-7.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-7.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             章節說明
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">1 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>1 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">少於 1 分鐘</p>
+                          <p>少於 1 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong>
-                      </div>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingEight">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                         <div class="d-flex align-items-center">
-                          <img src="/assets/images/icons/number-8.png" alt="number-1" style="width: 24px;height: 24px;">
+                          <img
+                            src="/assets/images/icons/number-8.png"
+                            alt="number-1"
+                            style="width: 24px; height: 24px;"
+                            class="align-self-start">
                           <p class="text-black fw-semibold ms-2">
                             網頁排版技巧 Part II
                           </p>
                         </div>
-                        <div class="d-flex align-items-center position-absolute end-0 me-12">
-                          <p class="text-neutral-80">7 個單元</p>
+                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
+                          <p>7 個單元</p>
                           <i class="bi bi-dot text-neutral-60"></i>
-                          <p class="text-neutral-80">24 分鐘</p>
+                          <p>24 分鐘</p>
                         </div>
                       </button>
                     </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong>
-                      </div>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+                      <a href="#" class="link-neutral-80">
+                        <div class="accordion-body f-between-center my-4">
+                          <div class="d-flex align-items-center">
+                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
+                            <div class="ms-3">課程說明</div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="tag-more-sm text-white bg-primary">
+                              試看單元
+                            </div>
+                            <p class="media-fz-8 ms-4">00:10</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- 關於講師 -->
+              <div id="course-teacher" class="mt-11">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/assets/images/deco/flower-5.png"
+                    alt="deco-flower"
+                    class="deco-flower">
+                  <h5 class="ms-2">關於講師</h5>
+                </div>
+                <div class="course-teacher-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
+                  <div>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="/assets/images/icons/ic_ hexschool-lg.png"
+                        alt="icon-teacher-image"
+                        class="course-teacher-img">
+                      <div class="ms-2 ms-lg-4">
+                        <h6>六角學院</h6>
+                        <p class="media-fz-8 mt-2">
+                          打破線上課程售後不理，我們在線上等你！帶你學到會的線上課程。
+                        </p>
+                        <!-- 電腦版stats -->
+                        <div class="course-teacher-stats d-none d-lg-flex mt-lg-4">
+                          <p class="media-fz-8">
+                            2 堂課程
+                          </p>
+                          <p class="media-fz-8">
+                            1,567 個學生
+                          </p>
+                          <p class="media-fz-8">
+                            1,034 則評論
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 行動版stats -->
+                    <div class="course-teacher-stats d-flex d-lg-none mt-4">
+                      <p class="media-fz-8">
+                        2 堂課程
+                      </p>
+                      <p class="media-fz-8">
+                        1,567 個學生
+                      </p>
+                      <p class="media-fz-8">
+                        1,034 則評論
+                      </p>
+                    </div>
+                  </div>
+                  <div class="border-top py-6 py-lg-10 mt-6 mt-lg-10">
+                    <p class="media-fz-8">
+                      六角學院是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+                    </p>
+                    <p class="media-fz-8 mt-4">
+                      我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。
+                    </p>
+                  </div>
+                  <div class="text-end">
+                    <a href="#" class="fs-7 link-hover d-inline-flex align-items-center">
+                      了解更多講師履歷
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </a>
+                  </div>
+                </div> 
+              </div>
+              <!-- 購課前問答 -->
+              <div id="course-QA" class="mt-11">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="/assets/images/deco/flower-5.png"
+                    alt="deco-flower"
+                    class="deco-flower">
+                  <h5 class="ms-2">購課前問答</h5>
+                </div>
+                <div class="course-QA-user-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
+                  <div class="d-flex align-items-center mt-2">
+                    <div class="flex-shrink-0 align-self-start">
+                      <img
+                        src="/assets/images/avatar-3.png"
+                        alt="user-image"
+                        class="course-QA-img rounded-circle d-none d-lg-block">
+                    </div>
+                    <div class="flex-grow-1 ms-0 ms-lg-6">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="/assets/images/avatar-3.png"
+                          alt="user-image"
+                          class="course-QA-img rounded-circle d-lg-none me-2">
+                        <p class="text-black fw-semibold">Jessica</p>
+                      </div>
+                      <div class="mt-4">
+                        <textarea
+                          class="course-QA-form-control form-control media-fz-8" 
+                          id="course-QA-FormControlTextarea"
+                          rows="3"
+                          placeholder="上課前有什麼疑問嗎？ 在這裡盡情詢問講師！"
+                          style="resize:none;"></textarea>
+                      </div>
+                      <div class="media-f-between-lg-center mt-4">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/deco/flower-5.png"
+                            alt="deco-flower"
+                            class="deco-flower"
+                            style="width: 16px; height: 16px;">
+                          <p class="media-fz-8 ms-2">
+                            提問之前也別忘了看看其他同學有沒有跟你有相同的問題哦
+                          </p>
+                        </div>
+                        <a
+                          href="#"
+                          class="tag-lg bg-neutral-40-tag text-center d-block d-xl-inline mt-2 mt-lg-0">
+                          送出
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 訪客版-->
+                <div class="course-QA-unLogIn-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6 d-none">
+                  <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="/assets/images/deco/flower-5.png"
+                        alt="deco-flower"
+                        class="deco-flower"
+                        style="width: 16px; height: 16px;">
+                      <p class="media-fz-8 ms-2">
+                        登入講師才會知道你是誰哦，立即登入詢問
+                      </p>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-primary tag-lg text-center d-block d-xl-inline mt-2 mt-lg-0 ms-lg-6">
+                      登入
+                    </a>
+                  </div>
+                </div>
+                <ul>
+                  <li class="course-QA-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="flex-shrink-0 align-self-start">
+                        <img
+                          src="/assets/images/avatar-4.png"
+                          alt="user-image"
+                          class="course-QA-img rounded-circle d-none d-lg-block">
+                      </div>
+                      <div class="flex-grow-1 ms-0 ms-lg-6">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/avatar-4.png"
+                            alt="user-image"
+                            class="course-QA-img-lg rounded-circle d-lg-none me-2">
+                          <div>
+                            <p class="media-fz-8 text-black fw-semibold">Brian</p>
+                            <time><p class="media-fz-8 text-neutral-60 fz-8 mt-lg-1">2024-01-30</p></time>
+                          </div>
+                        </div>
+                        <div class="mt-6 mt-lg-4">
+                          <p class="media-fz-8">
+                            老師您好，想問您:</br>
+                            1. 課程是用MAC作業系統，只使用Windows作業系統的同學會有學習上的問題嗎~</br>
+                            2. 此課程在Udemy、好好學校、六角學院購買會有什麼不一樣嗎~
+                          </p>
+                        </div>
+                        <div class="bg-neutral-10 rounded-3 p-4 p-lg-6 mt-4">
+                          <div class="d-flex align-items-center">
+                            <p class="text-black fw-semibold">六角學院</p>
+                            <div class="tag-more-sm text-primary-tag ms-2">授課老師</div>
+                          </div>
+                          <time><p class="media-fz-8 text-neutral-60 fz-8 mt-1">2024-01-31</p></time>
+                          <div class="mt-6">
+                            <p class="media-fz-8">
+                              嗨嗨 Brian我是六角學院助教 Bingbingboom</br></br>
+                              關於同學的問題：</br>
+                              1. 使用 Windows 系統是可以的，沒有問題哩</br>
+                              2. 課程內容都是相同的哦 ～</br></br>
+                              若有問題歡迎再次發問 :D
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="course-QA-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="flex-shrink-0 align-self-start">
+                        <img
+                          src="/assets/images/avatar-8.png"
+                          alt="user-image"
+                          class="course-QA-img rounded-circle d-none d-lg-block">
+                      </div>
+                      <div class="flex-grow-1 ms-0 ms-lg-6">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/avatar-8.png"
+                            alt="user-image"
+                            class="course-QA-img-lg rounded-circle d-lg-none me-2">
+                          <div>
+                            <p class="media-fz-8 text-black fw-semibold">Sandy</p>
+                            <time><p class="media-fz-8 text-neutral-60 fz-8 mt-lg-1">2023-12-29</p></time>
+                          </div>
+                        </div>
+                        <div class="mt-6 mt-lg-4">
+                          <p class="media-fz-8">
+                            您好，這個課程跟六角網站上的課程是一樣的嗎?
+                          </p>
+                        </div>
+                        <div class="bg-neutral-10 rounded-3 p-4 p-lg-6 mt-4">
+                          <div class="d-flex align-items-center">
+                            <p class="text-black fw-semibold">六角學院</p>
+                            <div class="tag-more-sm text-primary-tag ms-2">授課老師</div>
+                          </div>
+                          <time><p class="media-fz-8 text-neutral-60 fz-8 mt-1">2024-01-31</p></time>
+                          <div class="mt-6">
+                            <p class="media-fz-8">
+                              嗨嗨 Brian我是六角學院助教 Bingbingboom</br></br>
+                              對的，這部分因為字幕問題還沒有更新</br>
+                              後續等字幕用好了就會更新哩！</br></br>
+                              若有問題歡迎再次發問 :D
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="course-QA-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="flex-shrink-0 align-self-start">
+                        <img
+                          src="/assets/images/avatar-9.png"
+                          alt="user-image"
+                          class="course-QA-img rounded-circle d-none d-lg-block">
+                      </div>
+                      <div class="flex-grow-1 ms-0 ms-lg-6">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="/assets/images/avatar-9.png"
+                            alt="user-image"
+                            class="course-QA-img-lg rounded-circle d-lg-none me-2">
+                          <div>
+                            <p class="media-fz-8 text-black fw-semibold">Tim</p>
+                            <time><p class="media-fz-8 text-neutral-60 fz-8 mt-lg-1">2024-01-30</p></time>
+                          </div>
+                        </div>
+                        <div class="mt-6 mt-lg-4">
+                          <p class="media-fz-8">
+                            助教你好，我本身是一位插畫家，想轉往數位的方向發展。目前想做兩種網站，一個是類似這種的簡易landing page，用來介紹我的插畫品牌以及作品或故事等等：https://glory.taipei/#articleSection1</br>
+                            另一個是數位繪本的形式，像是這個網站，可以利用滑鼠的點擊、拖曳、hold等功能跟網頁做互動：</br>
+                            https://2019.makemepulse.com/</br>
+                            請問這堂課學完試可以製作這兩種網頁的嗎？
+                          </p>
+                        </div>
+                        <div class="bg-neutral-10 rounded-3 p-4 p-lg-6 mt-4">
+                          <div class="d-flex align-items-center">
+                            <p class="text-black fw-semibold">六角學院</p>
+                            <div class="tag-more-sm text-primary-tag ms-2">授課老師</div>
+                          </div>
+                          <time><p class="media-fz-8 text-neutral-60 fz-8 mt-1">2024-01-31</p></time>
+                          <div class="mt-6">
+                            <p class="media-fz-8">
+                              嗨嗨 Brian我是六角學院助教 Bingbingboom</br></br>
+                              若是第一種單純呈現圖片、文字、靜態的樣式排版學習完 HTML/CSS 課程是可以成功製作出來的</br>
+                              若是想要製作互動功能、滾動視差、動畫效果會建議再深入學習 jQuery、Javascript 相關的課程，瞭解如何使用程式讓使用者與網頁中的元素做互動哦</br></br>
+                              若有問題歡迎再次發問 :D
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>        
+                <!-- 頁碼 -->
+                <nav class="pagination-primary Page navigation mt-10">
+                  <ul class="pagination justify-content-center justify-content-lg-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                        <span class="material-symbols-outlined">
+                        chevron_left
+                        </span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link active" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link d-md-flex" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">...</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">10</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <span class="material-symbols-outlined">
+                        chevron_right
+                        </span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
+            <!-- 電腦版價格卡片 -->
             <div class="price-card card border-0 shadow sticky-top d-none d-lg-block">
               <div class="card-body">
-                <p class="text-neutral-80 fw-semibold border-bottom pb-4">
+                <p class="fw-semibold border-bottom pb-4">
                   購買本堂課
                 </p>
                 <div class="bg-alert-tag tag d-inline-block mt-6">
@@ -467,7 +897,7 @@
                   </del>
                 </div>
                 <div class="mt-2">
-                  <p class="text-neutral-80">
+                  <p>
                     16,390 人已註冊
                   </p>
                 </div>
@@ -493,5 +923,28 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+    $(document).ready(function() {
+      var allExpanded = false; 
+
+      $('#toggle-accordion').on('click', function(e) {
+        e.preventDefault();
+
+        if (!allExpanded) {
+          $('.accordion-collapse').each(function() {
+            if (!$(this).hasClass('show')) {
+              $(this).collapse('show');
+            }
+          });
+          $(this).text('全部收起');
+        } else {
+          $('.accordion-collapse').collapse('hide');
+          $(this).text('全部展開');
+        }
+
+        allExpanded = !allExpanded;
+      });
+    });
+    </script>
   </body>
 </html>
