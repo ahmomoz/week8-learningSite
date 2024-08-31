@@ -1,0 +1,106 @@
+/* teacher-header-section */
+.teacher-header-section {
+  @include lg-pc {
+    padding-top: 70px;
+  }
+}
+
+/* teacher-content-section */
+.teacher-content {
+  h1 {
+    @include pad {
+      font-size: 32px;
+    }
+  }
+
+  &-section{
+    margin-top: -80px;
+
+    @include pad {
+      margin-top: -40px;
+    }
+  }
+
+  &-img {
+    width: 240px; height: 240px;
+
+    @include pad {
+      width: 60px; height: 60px;
+    }
+  }
+
+  &-info {
+    margin-left: 80px;
+    padding-top: 160px;
+
+    @include lg-pc {
+      margin-left: 0;
+      padding-top: 24px;
+    }
+  }
+
+  &-stats {
+    gap: 24px;
+
+    @include pad {
+      gap: 12px;
+    }
+
+    h6 {
+      color: $primary-100;
+
+      @include pad {
+        font-size: 16px;
+      }
+    }
+
+    .stats-item:not(:last-child) {
+      display: flex;
+      align-items: center;
+      padding-right: 24px;
+      border-right: 1px solid $neutral-60;
+
+      @include pad {
+        padding-right: 12px;
+      }
+    }
+  }
+}
+
+/* teacher-courses-section */
+.teacher-courses-section {
+  padding-top: 100px;
+
+  @include pad {
+    padding-top: 48px;
+  }
+
+  h5 {
+    @include pad {
+      font-size: 20px;
+    }
+  }
+
+  .deco-flower {
+    width: 24px; height: 24px;
+    
+    @include pad {
+      width: 16px; height: 16px;
+    }
+  }
+}
+.teacher-courses {
+  &-card-wrap {
+    padding-bottom: 200px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin: 0 -36px;
+    
+    @include xl {
+      padding-bottom: 120px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+    }
+  }
+}

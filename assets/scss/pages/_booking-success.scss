@@ -1,0 +1,85 @@
+/* booking-success-header-section */
+.booking-success-header {
+  &-section {
+    padding-top: 80px;
+
+    @include pad {
+      padding-top: 70px;
+    }
+  }
+
+  &-wrap {
+    background-color: $white;
+    padding: 80px 0;
+    border-radius: 20px;
+
+    @include pad {
+      padding: 40px 24px;
+      border-radius: 0;
+    }
+
+    h1 {
+      margin-left: 40px;
+    
+      @include pad {
+        font-size: 32px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  &-img {
+    width: 56px; height: 56px;
+
+    @include pad {
+      width: 32px; height: 32px;
+    }
+  }
+
+  &-btn {
+    padding: 16px 80px;
+
+    @include pad {
+      width: 100%;
+      display: inline;
+    }
+  }
+}
+
+/* booking-success-courses-section */
+.booking-success-courses-section {
+  padding-top: 100px;
+
+  @include pad {
+    padding-top: 48px;
+  }
+
+  h5 {
+    @include pad {
+      font-size: 20px;
+    }
+  }
+
+  .deco-flower {
+    width: 24px; height: 24px;
+    
+    @include pad {
+      width: 16px; height: 16px;
+    }
+  }
+}
+.booking-success-courses {
+  &-card-wrap {
+    padding-bottom: 200px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin: 0 -36px;
+    
+    @include xl {
+      padding-bottom: 120px;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+    }
+  }
+}

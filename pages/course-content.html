@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,7 +63,7 @@
                   <a href="#">網頁設計</a>
                 </li>
               </ul>
-              <h1 class="mt-4 mt-lg-6">使用 HTML、CSS 開發一個網站</h1>
+              <h1 class="text-black mt-4 mt-lg-6">使用 HTML、CSS 開發一個網站</h1>
               <p class="mt-2 mt-lg-4">
                 為你打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助你成就更好的自己！
               </p>
@@ -94,7 +94,9 @@
                 src="/assets/images/icons/ic_ hexschool.png"
                 alt="icon-hexschool"
                 style="width: 24px; height: 24px;">
-              <h6 class="ms-1">六角學院</h6>
+              <a href="teacher.html" class="link-dark link-hover">
+                <h6 class="ms-1">六角學院</h6>
+              </a>
             </div>
             <p class="mt-2">高雄最大線上程式開發學習單位</p>
           </div>
@@ -118,7 +120,7 @@
         </div>
       </div>
     </section>
-    <nav class="course-content-nav-section border-bottom sticky-top bg-neutral-10">
+    <nav id="infoNavbar" class="course-content-nav-section sticky-top border-bottom bg-neutral-10 sticky-top">
       <div class="container">
         <nav id="course-content" class="navbar p-0">
           <ul class="nav">
@@ -144,13 +146,13 @@
           <div class="col-lg-8">
             <div data-bs-spy="scroll" data-bs-target="#course-content" data-bs-offset="0" class="course-content-scrollspy me-lg-6" tabindex="0">
               <!-- 課程介紹 -->
-              <div id="course-info">
+              <div id="course-info" class="course-info">
                 <div class="d-flex align-items-center">
                   <img
                     src="/assets/images/deco/flower-5.png"
                     alt="deco-flower"
                     class="deco-flower">
-                  <h5 class="ms-2">課程介紹</h5>
+                  <h5 class="text-black ms-2">課程介紹</h5>
                 </div>
                 <div class="course-info-content mt-4 mt-lg-6">
                   <picture>
@@ -201,7 +203,7 @@
                 </div>
               </div>
               <!-- 預計單元 -->
-              <div id="course-chapter" class="mt-11">
+              <div id="course-chapter" class="course-chapter mt-11">
                 <div class="f-between-center">
                   <div>
                     <div class="d-flex align-items-center">
@@ -209,7 +211,7 @@
                         src="/assets/images/deco/flower-5.png"
                         alt="deco-flower"
                         class="deco-flower">
-                      <h5 class="ms-2">預計單元</h5>
+                      <h5 class="text-black ms-2">預計單元</h5>
                     </div>
                     <p class="media-fz-8 mt-2">
                       18 章 142 單元｜總時長 928 分鐘
@@ -562,23 +564,27 @@
                 </div>
               </div>
               <!-- 關於講師 -->
-              <div id="course-teacher" class="mt-11">
+              <div id="course-teacher" class="course-teacher mt-11">
                 <div class="d-flex align-items-center">
                   <img
                     src="/assets/images/deco/flower-5.png"
                     alt="deco-flower"
                     class="deco-flower">
-                  <h5 class="ms-2">關於講師</h5>
+                  <h5 class="text-black ms-2">關於講師</h5>
                 </div>
                 <div class="course-teacher-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
                   <div>
                     <div class="d-flex align-items-center">
-                      <img
-                        src="/assets/images/icons/ic_ hexschool-lg.png"
-                        alt="icon-teacher-image"
-                        class="course-teacher-img">
+                      <a href="teacher.html">
+                        <img
+                          src="/assets/images/icons/ic_ hexschool-lg.png"
+                          alt="icon-teacher-image"
+                          class="course-teacher-img">
+                      </a>
                       <div class="ms-2 ms-lg-4">
-                        <h6>六角學院</h6>
+                        <a href="teacher.html" class="link-dark link-hover d-inline-block">
+                          <h6>六角學院</h6>
+                        </a>
                         <p class="media-fz-8 mt-2">
                           打破線上課程售後不理，我們在線上等你！帶你學到會的線上課程。
                         </p>
@@ -618,7 +624,7 @@
                     </p>
                   </div>
                   <div class="text-end">
-                    <a href="#" class="fs-7 link-hover d-inline-flex align-items-center">
+                    <a href="teacher.html" class="fs-7 link-hover d-inline-flex align-items-center">
                       了解更多講師履歷
                       <span class="material-symbols-outlined">
                         chevron_right
@@ -628,13 +634,13 @@
                 </div> 
               </div>
               <!-- 購課前問答 -->
-              <div id="course-QA" class="mt-11">
+              <div id="course-QA" class="course-QA mt-11">
                 <div class="d-flex align-items-center">
                   <img
                     src="/assets/images/deco/flower-5.png"
                     alt="deco-flower"
                     class="deco-flower">
-                  <h5 class="ms-2">購課前問答</h5>
+                  <h5 class="text-black ms-2">購課前問答</h5>
                 </div>
                 <div class="course-QA-user-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
                   <div class="d-flex align-items-center mt-2">
@@ -673,7 +679,7 @@
                         </div>
                         <a
                           href="#"
-                          class="tag-lg bg-neutral-40-tag text-center d-block d-xl-inline mt-2 mt-lg-0">
+                          class="tag-lg link-neutral-40-tag text-center d-block d-xl-inline mt-2 mt-lg-0">
                           送出
                         </a>
                       </div>
@@ -914,6 +920,25 @@
               </div>
             </div>
           </div>
+          <!-- 手機版價格卡片 -->
+          <div class="media-price-card fixed-bottom bg-white border-top d-lg-none px-4 py-3">
+            <div class="f-between-center">
+              <div>
+                <h6 class="fs-6">NT$ 3,375</h6>
+                <small class="fs-9 mt-1">16,390 人已註冊</small>
+              </div>
+              <div class="d-flex">
+                <a href="#" class="btn btn-outline-primary d-flex align-items-center p-4 ms-4">
+                  <span class="material-symbols-outlined">
+                    shopping_cart
+                  </span>
+                </a>
+                <a href="#" class="btn btn-primary px-8 py-4 ms-2">
+                  立即購買
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -944,6 +969,27 @@
 
         allExpanded = !allExpanded;
       });
+    });
+
+    let lastScrollTop = 0;
+    const mainNavbar = document.getElementById('navbar');
+    const infoNavbar = document.getElementById('infoNavbar');
+
+    window.addEventListener('scroll', function() {
+      if (window.innerWidth < 1200) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          mainNavbar.classList.add('hidden-navbar');
+          infoNavbar.style.top = '0px';
+        } else {
+          mainNavbar.classList.remove('hidden-navbar');
+          const mainNavbarHeight = mainNavbar.offsetHeight;
+          infoNavbar.style.top = `${mainNavbarHeight}px`;
+        }
+
+        lastScrollTop = scrollTop;
+      }
     });
     </script>
   </body>

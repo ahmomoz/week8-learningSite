@@ -1,9 +1,10 @@
 /* course-content-header-section */
 .course-content-header-section {
-  position: relative;
+  position:  relative;
   padding-bottom: 160px;
 
   @include lg-pc {
+    padding-top: 94px;
     padding-bottom: 40px;
   }
 
@@ -100,6 +101,8 @@
     }
   }
 }
+/* course-content-nav-section */
+
 
 /* course-content-info-section */
 /* common */

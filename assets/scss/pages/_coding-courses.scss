@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
 
+  @include lg-pc {
+    padding-top: 94px;
+  }
+
   .category-btn-wrap {
     display: flex;
     position: relative;

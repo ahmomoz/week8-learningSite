@@ -1,11 +1,20 @@
+.hidden-navbar {
+  top: -100px;
+}
+
 .layout-nav-wrap {
+  transition: top 0.3s;
+  z-index: 10000;
+
   @include lg-pc {
+    position: fixed;
     padding: 0;
   }
   
   .navbar {
     box-shadow: 0px 2px 40px 0px #0066ff1b;
     border-radius: 100px;
+    background-color: $white;
 
     @include lg-pc {
       padding: 12px;
