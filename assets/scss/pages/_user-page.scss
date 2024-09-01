@@ -1,0 +1,70 @@
+/* user-page-header-section */
+.user-page-header-section {
+  @include pad {
+    padding-top: 120px;
+  }
+
+  h1 {
+    @include pad {
+      font-size: 32px;
+    }
+  }
+
+  img {
+    width: 100px; height: 100px;
+
+    @include pad {
+      width: 80px; height: 80px;
+    }
+  }
+  
+  .btn {
+    border: none;
+
+    @include pad {
+      padding: 8px 12px;
+    }
+  }
+
+  span {
+    @include pad {
+      font-size: 20px;
+    }
+  }
+
+  .states {
+    gap: 40px;
+
+    @include lg-pc {
+      width: 100%;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    li {
+      @include lg-pc {
+        width: 33.333%;
+      }
+    }
+  }
+}
+
+/* user-page-courses-section */
+.user-page-courses-section {
+  padding-top: 40px;
+
+  @include pad {
+    padding-top: 24px;
+  }
+}
+.user-page-allCourses {
+  &-card-wrap {
+    padding: 0 36px 160px;
+    margin: 0 -36px;
+    
+    @include xl {
+      padding: 0 0 120px;
+      margin: 0;
+    }
+  }
+}

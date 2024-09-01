@@ -16,19 +16,25 @@
   }
 }
 .courses-most-section,
-.course-content-nav-section {
+.course-content-nav-section,
+.user-page-courses-section {
   .nav-tabs, .nav {
     gap: 32px;
-
-    @include pad {
-      gap: 24px;
-    }
     
     .nav-link {
       padding: 16px 0;
     }
   }
 }
+.courses-most-section,
+.course-content-nav-section {
+  .nav-tabs, .nav {
+    @include pad {
+      gap: 24px;
+    }
+  }
+}
+
 
 /* courses-most-section */
 .mobile-nav-menu {
@@ -64,5 +70,16 @@
     width: 100%;
     height: 100%;
     border: none;
+  }
+}
+
+/* user-page-courses-section */
+.user-page-courses-section {
+  .nav-tabs, .nav {
+    @include pad {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
   }
 }

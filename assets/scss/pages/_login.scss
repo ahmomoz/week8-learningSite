@@ -1,0 +1,37 @@
+/* login-banner-section */
+.login-banner-section {
+	padding: 40px 0 40px 40px;
+}
+
+/* login-section */
+.login {
+	&-section {
+		height: 1080px;
+
+		@include pad {
+			height: 100%;
+		}
+	}
+	
+	&-wrap {
+		height: 778px;
+
+		@include lg-pc {
+			width: 100%;
+			padding: 0 96px;
+		}
+
+		@include pad {
+			height: 100%;
+			padding: 60px 24px;
+		}
+
+		img {
+			left: 16px;
+		}
+
+		.to-signUp-btn {
+			text-decoration: underline;
+		}
+	}
+}

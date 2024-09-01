@@ -1,0 +1,25 @@
+/* media-totalPrice-card-modal */
+.media-totalPrice-card-modal {
+  .modal-dialog {
+    position: fixed;
+    bottom: 0; left: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .modal-content {
+    border-radius: 12px 0;
+  }
+  
+  .btn-close {
+    width: 24px; height: 24px;
+  }
+}
+.modal.fade .modal-dialog {
+  transition: transform .3s ease-out;
+  transform: translate(0, 50px);
+}
+.modal.show .modal-dialog {
+  transform: none;
+}

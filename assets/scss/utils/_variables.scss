@@ -717,7 +717,7 @@ $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        600; // 500 !default; custom
 $headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-color:              $black; // inherit !default; custom
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -998,7 +998,7 @@ $form-color-width:                      3rem !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-$form-check-input-width:                  1em !default;
+$form-check-input-width:                  1.5em; // 1em !default; custom
 $form-check-min-height:                   $font-size-base * $line-height-base !default;
 $form-check-padding-start:                $form-check-input-width + .5em !default;
 $form-check-margin-bottom:                .125rem !default;
@@ -1406,7 +1406,7 @@ $card-title-spacer-y:               0; // $spacer * .5 !default; custom
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
 $card-border-width:                 var(--#{$prefix}border-width) !default;
-$card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
+$card-border-color:                 $neutral-40; // var(--#{$prefix}border-color-translucent) !default; custom
 $card-border-radius:                1.25rem; // var(--#{$prefix}border-radius) !default; custom
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;

@@ -70,15 +70,11 @@
 }
 .booking-success-courses {
   &-card-wrap {
-    padding-bottom: 200px;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding: 0 36px 200px;
     margin: 0 -36px;
     
     @include xl {
-      padding-bottom: 120px;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0 0 120px;
       margin: 0;
     }
   }
