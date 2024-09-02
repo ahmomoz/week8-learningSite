@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Learning - 登入</title>
+    <script type="module" crossorigin src="/week8-learningSite/assets/bootstrap.min-758a6017.js"></script>
+    <link rel="stylesheet" href="/week8-learningSite/assets/bootstrap-418a1082.css">
+  </head>
+  <body>
+    <div class="d-flex">
+      <section class="login-banner-section d-none d-xxl-block">
+        <img
+          src="/week8-learningSite/assets/login-ad5387e3.png"
+          alt="login-banner-image"
+          style="width: 728px; height: 1000px;">
+      </section>
+      <main class="login-section w-100">
+        <div class="f-column-center justify-content-center h-100">
+          <div class="login-wrap w-lg-50">
+            <h1>歡迎回來！</h1>
+            <button type="button" class="btn btn-white border w-100 d-flex justify-content-center mt-6 mt-lg-10 position-relative">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARdSURBVHgB7ZnPbxtFFMe/s94kOOWHC+JHw4HtpVKE0rQICaEKsuGCEK1w4MgBR71wIu6BShxQ7QMHyqGOkBASEsofgIiDcm43FAlucZo7WakIV22lumndX/Hu9M3WSVPv7O7sehO3qj/SyKvx7Ox7b96beTMD9OnzdMOQEtyECQeH6HGCivjNtYugQV+ywakwrECDxSxYSIGuFCChc3AxQ4IV8VBYVWwqFjIokzI2EpJIgbbgp9qCp8FcUkViK8Df9yxeQnyLR2FTKbPzpEwMYilAwp9J0epyGErsT5TVmyvguYyDeXo0sRtkMEXuVFVpqqk0wl7qbreE514sKAkviFTAc5urfBy7gRD+Ly++lAlVgL+HQkyfbwghqEySG+yngGSi0PNer45hFgiYaRIILwiMAfJ7g/z+HD0aiEYsUtMkgKXQ9oFhQNPwZt8JhRcEK/CxNod19wtESkNW1WnmsMj6MWhPDBWxOicVXiBVgJ97xoDG13C2BZx1gt/uwnJpIY8BzS15vx/owGe6mIX8bcjyvRZeEBDEbGLr8XAGOD4ACsntDWzhNngM8ClA7mOiM3BzJPzxQRqRzGZNOa7P7xS6v8o1A2NbuNSBjM0+vzeHxwS/Aho7FPrGCFtADPadvMCRDjZnsC59f3B6e6UsBt5AKI7yMp8yBuP+dEaiADcQyrM19A5fCi9RgIXm+Wyy0cvgVVHgyULmQqEW9lbp3uGTTeZCES7SMtAzmN1ZI3OhFYSimegRnPtHwL8OuJQSa/hE1sFlN4sfm2MzwPkSFKmfPqi876Y1Yw1h6TtzlzqrZC4knSZXWy/im/V3UNt4KXdsPl9Ayrz29YUCovYermt1VsnT6aXBa9un0z/uGvilOfrwf1oVm5TmWVPVVKbUXHEtlx28sYxwBWwazf2dlfJp1NXE1g9NPoDvbr71iPAC0tp4DrRXTons4HoFEdYXaYSsPmAduFP513keX10/gn/uvSrvECgcnc+fQpeMnFylPlj0zo850rOiwAArLHxYuepmZxDVL1C5Qel1XHfKz+dzq6tfnrl1c6QQ1ZasP9eZxG0SuBI33GwJiM75aSSKe4DlOIF97Ld8foPeGR37ufDKvr9D2zLvZNsph/wfzLeLR4rLGy8r+7oIbsoYF2izXtV11KrtUSFrG60W+bjuHb37TrL//28S9YuTQb2eqJ8eryCJAoKjv+cr1CrSlbrlcv1dXLQ/erSSs9n6D2Oh51KRydzip9XiC5m7FnYY4Uqj4z9haGjLa1du72mVot5TykabztDU63pzx/cBw8OXcODNX6EP3LJuDztmo3Q4MgZjHa/vijvRcY0YddXmsfYDomPSeJoj+ZVQCI23B66ciCO8INEVk5hVHLqlofk5egFSgayu08VGNUFq0tUl36YiLsMEUzsE3o4QdpbS4Uq1i5wqtWtWSitMSsVNOkofJ4saeKDQ1jUruV2DMdQop1+ij9YWp6oW+vTp0zX3AUlCZA2g5KQhAAAAAElFTkSuQmCC"
+                alt="google-image"
+                class="icon-img position-absolute"
+                style="width: 24px; height: 24px;">
+              使用 Google 帳號登入
+            </button>
+            <button type="button" class="btn btn-white border w-100 d-flex justify-content-center mt-4 position-relative">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIJSURBVHgB7ZrNSwJBFMCfZhqmYGRgXfSgRYegyFOQeQq9heGpgvZSEIF46w8Qunq0k968Bh08FknnvAXmwS4lKST4UX7NtrOhGLq62bbjxP5gkZkdZH7OzHtvWQEoR9XdcB9GTVBv2EDdMsG4oplK3cSYYrvZEXDtRwIsgjDQAIuCyfgJP1deAP/yrXrtDShiQqubwSuh5lvNj1WgjQq31TnUQClN3dc5pVagDfUCGiCIw2oGu3UWLGZDp69crXFXg7vqcP/wDOVKbeB3EBHwe1bA41rkBQYRCF3xEoOQVcA4rYNQcBvWlhdAKmQ9A2dHbkknj5FNwMttmU2nDaRGNgHG54S/QJYzgA+rZc44cMxLvgS5QulbH45Ew5BFoDtM9kNMtBFCli2EY70Qidv0yJPHEM/EmacC/AbiAsMy7TCUYo40SjXajYOLNqcHGz3982bhHOD3coXd1lLfezi8DkNSAYNe9+Naxy5QkYpJYpix3UKPWXHhdWwFyu+Ur0CG9hXI5Uuixo2vQKEsapykUQgXZa69i55+xrcOzG7/54HzyDUkkmkYFSUTk0YRII0iQBpFgDSKAGkUAdL8D4E6migCpfACWu1kFihDo5lK4U9eAL/xRqwqCJSAWBRs/1+i80BzFz8Ou3eisaZB+rf2Klb43muhAqyaBTEghIraqj6bvGSo3fI9fAIcwJca2vX6AAAAAABJRU5ErkJggg=="
+                alt="facebook-image"
+                class="icon-img position-absolute"
+                style="width: 24px; height: 24px;">
+              使用 Facebook 帳號登入
+            </button>
+            <button type="button" class="btn btn-white border w-100 d-flex justify-content-center mt-4 position-relative">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH0SURBVHgB7ZrPTcMwFMZ/wIVjN8AbABOQK7eOkA0KE7QbABOUDYAJAhO0R24JExQmCHlKqpaSfyZOXizxkz6pqmz1ey9+tmMX/tHlCB0mmWaZguLzJR4hxjeZ0kIxniCZjtgZ3yrCE8rMi+7xgDnl5kWGkWOoNr/EAxaUm5fiNXjAit/mZRa6wBPKMu+NeWE/6wvy6dQZXVfiCTtDn4UOCTIlhfYx/KyBdUV/54hhmRbLxrZ8F1JdnAH5vL+hvLCb+ndmVvPjh3oqzEypDrhKcdHXGVXbgL41xxFrGNx8qyCOaeYu0zl6fNEBg17mnSx2j4BWAFM6YgAt80scEAKpkgwOeAY0zC+xoG4WOkOHN5vGdQEYdEhsGtcF4HTXaEFi07jNQjY0xqZxXQCDbG1LMDaNxxjAFY7QmkZlC9G6/uqeQIIOYv4GB4ToPIGtOm/kJoBmADEO1qIISBUl9RDSgQWQjkAr/oj2MGoMoGkllrXgFX0e6ECAbvZjHBABqZJCHGAADfNxk7ET2iG1IOeoAcNyS34m5YyI4bLfy92Zof3ZaNeh09sLVQC9mze0pG0N7JNk+qD54EnayZb8hfxFXerolPrMSpvrTO8MgCHP1n72ZHjJsXpQ0y+k+sLbYImL/0oExQ8n2N2yyJPYbpkHu50ZHd8CMMjgAn6PxAAAAABJRU5ErkJggg=="
+                alt="apple-image"
+                class="icon-img position-absolute"
+                style="width: 24px; height: 24px;">
+              使用 Apple 帳號登入
+            </button>
+            <p class="text-black fw-semibold mt-6 mt-lg-10">或使用 Learning 帳號登入</p>
+            <form class="mt-4">
+              <div>
+                <label for="userMail" class="form-label mb-0">
+                  <p>電子信箱<span class="text-danger ms-1">*</span></p>
+                </label>
+                <input
+                  type="email"
+                  class="form-control rounded-1 p-4 mt-2"
+                  id="userMail"
+                  placeholder="請輸入電子信箱">
+              </div>
+              <div class="mt-4 position-relative">
+                <label for="userPassword" class="form-label mb-0">
+                  <p>密碼<span class="text-danger ms-1">*</span></p>
+                </label>
+                <input
+                  type="password"
+                  class="form-control rounded-1 p-4 mt-2"
+                  id="userPassword"
+                  placeholder="請輸入密碼">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFXSURBVHgB7ZaBbYMwEEV/qw7ACDdCRkg36AbxCNkARugG6QjtBM0GzQbJBmSDFgujUHPAmUBRpf+kryTE/zjjbwuAEEIIIYQQQm7sKpWVzuH72iT34wd+t7THeuyiXkqLqYxMXjn+nlzp42wxOsXo9VlJsDwS7qX14KxFXE+BZjUE85OF2iXubL4hR/8k/FIeMM9EBMONe70ikc1AMS1afqNvjbWzMDZHf1Q0bbRiD8o1QTfv1yDBOKfW+GtUV4w1Gl/Wunap9Bw+B/lCd/bNUerQPWbnlI9RERp30Fd7lNhUKGMc0pbfGsMsuk+hjB3lDfbNswXuarw329Z+nhSDq/SOOodHDPMS/f7ALQIS/XcJOuD3hvc1TujHJfSTTLxfnMGzx4RcL4GgGwcx+LKJPpVHzMcRhiMOC0VhKgXqJ+ijJAk+v3HPqI/NNd92CSGEEEIIIf+YH6UM3xNif2p2AAAAAElFTkSuQmCC"
+                    alt="google-image"
+                    class="password-icon-img position-absolute d-none"
+                    style="width: 20px; height: 20px;">
+              </div>
+              <div class="f-between-center mt-2">
+                <div class="form-check">
+                  <input 
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    記住帳號
+                  </label>
+                </div>
+                <a href="#" class="link-neutral-80 link-hover">忘記密碼？</a>
+              </div>
+              <button
+                id="loginBtn"
+                type="button"
+                class="btn btn-neutral-40 link-neutral-60 w-100 d-flex align-items-center justify-content-center mt-6 mt-lg-10" disabled>
+                立即登入
+              </button>
+              <div class="d-flex mt-4 mt-lg-10">
+                <p>沒有 Learning 帳號嗎？</p>
+                <a href="sign-up.html" class="to-signUp-btn ms-2">立即註冊</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      (function () {
+        'use strict'
+        
+        let form = document.querySelector('.needs-validation');
+        let emailInput = document.getElementById('userMail');
+        let passwordInput = document.getElementById('userPassword');
+        let loginButton = document.getElementById('loginBtn');
+        let passwordIcon = document.querySelector('.password-icon-img');
+
+        function checkFormValidity() {
+          if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
+            loginButton.classList.remove('btn-neutral-40');
+            loginButton.classList.remove('link-neutral-60');
+            loginButton.classList.add('btn-primary');
+            loginButton.disabled = false;
+          } else {
+            loginButton.classList.remove('btn-primary');
+            loginButton.classList.add('btn-neutral-40');
+            loginButton.classList.add('link-neutral-60');
+            loginButton.disabled = true;
+          }
+
+          if (passwordInput.value.trim() !== '') {
+            passwordIcon.classList.remove('d-none');
+          } else {
+            passwordIcon.classList.add('d-none');
+          }
+        }
+
+        emailInput.addEventListener('input', checkFormValidity);
+        passwordInput.addEventListener('input', checkFormValidity);
+      })();
+    </script>
+  </body>
+</html>

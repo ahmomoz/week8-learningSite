@@ -14,11 +14,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Learning - 使用 HTML、CSS 開發一個網站</title>
+    <title>Learning - 我的頁面</title>
     <script type="module" crossorigin src="/week8-learningSite/assets/bootstrap.min-758a6017.js"></script>
     <link rel="stylesheet" href="/week8-learningSite/assets/bootstrap-418a1082.css">
   </head>
-  <body class="bg-neutral-10">
+  <body>
     <nav id="navbar" class="layout-nav-wrap container-xl pt-0 pb-0 pt-xl-10 pb-xl-4">
   <div class="navbar navbar-expand-xl navbar-light d-flex">
     <a
@@ -785,923 +785,329 @@
       </div>
     </div>
   </div>
-</nav>    <header class="course-content-header-section wrap-sm">
+</nav>    <header class="user-page-header-section wrap-sm bg-neutral-10">
       <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a
-                href="#"
-                class="text-neutral-80 link-hover">
-                所有課程
-              </a>
-            </li>
-            <li class="breadcrumb-item">
-              <a
-                href="#"
-                class="text-neutral-80 link-hover">
-                程式
-              </a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              網頁前端
-            </li>
-          </ol>
-        </nav>
-        <div class="row g-6 mt-6 mt-lg-11">
-          <div class="col-lg-7">
-            <div class="course-content-header-img">
+        <div class="f-between-center media-f-column-center">
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0 align-self-start">
               <img
-                src="/week8-learningSite/assets/hero-4-af576b65.png"
-                class="card-img rounded-4"
-                alt="banner-image">
+                src="/week8-learningSite/assets/avatar-1-cf59f6fa.png"
+                alt="user-image"
+                class="user-page-header-img rounded-circle d-none d-lg-block">
+            </div>
+            <div class="flex-grow-1 ms-0 ms-lg-6">
+              <div class="d-flex align-items-center">
+                <img
+                  src="/week8-learningSite/assets/avatar-1-cf59f6fa.png"
+                  alt="user-image"
+                  class="user-page-header-img rounded-circle d-lg-none me-2">
+                  <h1>Jessica</h1>
+              </div>
+              <div class="mt-6 mt-lg-4">
+                <a
+                  href="#"
+                  class="btn btn-primary-10 link-primary media-fz-8 d-inline-flex align-items-center">
+                  <span class="material-symbols-outlined icon-fill me-2">
+                    folder
+                  </span>
+                  我的課程
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-neutral-10 link-neutral-60 media-fz-8 d-inline-flex align-items-center ms-2 ms-lg-4">
+                  <span class="material-symbols-outlined icon-fill me-2">
+                    bookmark
+                  </span>
+                  我的收藏
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-neutral-10 link-neutral-60 media-fz-8 d-inline-flex align-items-center ms-2 ms-lg-4">
+                  <span class="material-symbols-outlined icon-fill me-2">
+                    edit
+                  </span>
+                  作品成果
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 f-column justify-content-lg-between">
-            <div>
-              <ul class="d-flex">
-                <li class="bg-primary-tag tag">
-                  <a href="#">程式開發</a>
-                </li>
-                <li class="bg-primary-tag tag ms-2">
-                  <a href="#">小白友善</a>
-                </li>
-                <li class="bg-primary-tag tag ms-2">
-                  <a href="#">網頁設計</a>
-                </li>
-              </ul>
-              <h1 class="mt-4 mt-lg-6">使用 HTML、CSS 開發一個網站</h1>
-              <p class="mt-2 mt-lg-4">
-                為你打造就算沒有程式基礎，也能夠逐步學習獲得網頁排版技巧的紮實觀念，六角學院的講師將協助你成就更好的自己！
-              </p>
-              <p class="mt-2 mt-lg-4">
-                <span class="fw-semibold me-1">16,390 人</span>已註冊
-              </p>
-            </div>
-            <div class="d-flex mt-6">
-              <a href="#" class="link-primary-tag tag-lg d-flex align-items-center">
-                <i class="bi bi-bookmark-fill fs-6 me-2"></i>
-                收藏課程
-              </a>
-              <a href="#" class="link-gray-tag tag-lg d-flex align-items-center ms-2">
-                <i class="bi bi-share-fill fs-6 me-2"></i>
-                分享課程
-              </a>
-            </div>
-          </div>
+          <ul class="states d-flex">
+            <li class="text-center">
+              <p class="media-fz-8">我的課程</p>
+              <h2 class="title-font mt-1">4</h2>
+            </li>
+            <li class="text-center">
+              <p class="media-fz-8">我的收藏</p>
+              <h2 class="title-font mt-1">2</h2>
+            </li>
+            <li class="text-center">
+              <p class="media-fz-8">作品成果</p>
+              <h2 class="title-font mt-1">5</h2>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-    <section class="course-content-feature-section">
-      <div class="container">
-        <div class="feature-wrap">
-          <div class="feature-item">
-            <div class="d-flex align-items-center">
-              <img 
-                src="data:image/png;base64,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"
-                alt="icon-hexschool"
-                style="width: 24px; height: 24px;">
-              <a href="teacher.html" class="link-dark link-hover">
-                <h6 class="ms-1">六角學院</h6>
-              </a>
-            </div>
-            <p class="mt-2">高雄最大線上程式開發學習單位</p>
-          </div>
-          <div class="feature-item">
-            <div class="d-flex align-items-center">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
-              <h6 class="ms-1">4.9</h6>
-            </div>
-            <p class="mt-2">13,208 條評論</p>
-          </div>
-          <div class="feature-item">
-            <h6>3 時 25 分</h6>
-            <p class="mt-2">16 個單元，4 個課後學習作業</p>
-          </div>
-          <div class="feature-item">
-            <div class="bg-primary-tag tag d-inline">
-              前端開發類別排名第一名 🔥
-            </div>
-            <p class="mt-2">16,390 人已註冊</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <nav id="infoNavbar" class="course-content-nav-section sticky-top border-bottom bg-neutral-10 sticky-top">
-      <div class="container">
-        <nav id="course-content" class="navbar p-0">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#course-info">課程介紹</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#course-chapter">預計單元</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#course-teacher">關於講師</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#course-QA">購課前問答</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </nav>
-    <main class="course-content-info-section wrap-sm">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div data-bs-spy="scroll" data-bs-target="#course-content" data-bs-offset="0" class="course-content-scrollspy me-lg-6" tabindex="0">
-              <!-- 課程介紹 -->
-              <div id="course-info" class="course-info">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
-                    alt="deco-flower"
-                    class="deco-flower">
-                  <h5 class="ms-2">課程介紹</h5>
-                </div>
-                <div class="course-info-content mt-4 mt-lg-6">
-                  <picture>
-                    <source
-                      srcset="/week8-learningSite/assets/course-sm-detail-1-30e9327d.png "
-                      media="(max-width: 576px)">
+    <main class="user-page-courses-section">
+      <div class="container-md">
+        <ul
+          class="nav nav-tabs border-bottom"
+          id="userCourseTab"
+          role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="all-courses-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all-courses"
+              type="button"
+              role="tab"
+              aria-controls="all-courses"
+              aria-selected="true">
+              所有課程 (4)
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="now-courses-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#now-courses"
+              type="button"
+              role="tab"
+              aria-controls="now-courses"
+              aria-selected="false">
+              正在上課中
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="await-courses-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#await-courses"
+              type="button"
+              role="tab"
+              aria-controls="await-courses"
+              aria-selected="false">
+              等待開課
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="finish-courses-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#finish-courses"
+              type="button"
+              role="tab"
+              aria-controls="finish-courses"
+              aria-selected="false">
+              已完課
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="userCourseTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="all-courses"
+            role="tabpanel"
+            aria-labelledby="all-courses-tab">
+            <div class="user-page-allCourses-card-wrap swiper user-page-allCourses-swiper mt-10">
+              <div class="swiper-wrapper mx-auto">
+                <a href="course-content.html" class="swiper-slide course-card card border-0 shadow">
+                  <div class="course-card-img h-100">
                     <img
-                      src="/week8-learningSite/assets/course-detail-1-659360c9.png"
-                      alt="course-detail-image"
-                      class="w-100">
-                  </picture>
-                  <div class="d-flex mt-5 mt-lg-8">
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAQCAYAAAAxtt7zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABLSURBVHgB1Y9LDYAwEETfrgIk4IwrHHEADnBIJVRBt7tJ0yZ10JdMMp/TCJcdFD6E7HqE035gJ/BSewiMTZlYqTB/OUjqD+8wbXgrrhkP/UnEBDoAAAAASUVORK5CYII="
-                      alt="title-deco">
-                      <p class="fw-semibold ms-2">
-                        入門前端網頁設計從這裡開始，跨出你的第一步！
-                      </p>
+                      src="/week8-learningSite/assets/course-5-18abd620.png"
+                      class="card-img rounded-0 h-100"
+                      alt="course-image">
                   </div>
-                  <p class="mt-2 mt-lg-4">
-                    如果你也想要踏入前端的世界，歡迎你來到 Hahow 與六角學院合作的「前端網頁設計」課程組合，透過一系列前端語言的基礎課程，循序漸進的帶你進入網頁開發的世界。而這裡——就是你的第一步！
-                  </p>
-                  <picture class="mt-6 mt-lg-8">
-                    <source
-                      srcset="/week8-learningSite/assets/course-sm-detail-2-e88e1783.png "
-                      media="(max-width: 576px)">
-                    <img
-                      src="/week8-learningSite/assets/course-detail-2-a701762c.png"
-                      alt="course-detail-image"
-                      class="w-100">
-                  </picture>
-                  <div class="d-flex mt-5 mt-lg-8">
-                    <img
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAQCAYAAAAxtt7zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABLSURBVHgB1Y9LDYAwEETfrgIk4IwrHHEADnBIJVRBt7tJ0yZ10JdMMp/TCJcdFD6E7HqE035gJ/BSewiMTZlYqTB/OUjqD+8wbXgrrhkP/UnEBDoAAAAASUVORK5CYII="
-                      alt="title-deco">
-                      <p class="fw-semibold ms-2">
-                        網頁前端的入門磚，讓我們先從學習 HTML & CSS 開始！
-                      </p>
-                  </div>
-                  <p class="mt-2 mt-lg-4">
-                    如果你還沒有程式基礎背景，HTML、CSS 便是作為網頁開發的起始點。從 HTML、 CSS 入門學習會是個好主意，這裡的學習曲線不會那麼的陡峭，網頁開發的基礎知識正式從這裡開始！
-                  </p>
-                  <div class="content-mask-white text-center">
-                    <a href="#" class="btn btn-primary">
-                      展開更多
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- 預計單元 -->
-              <div id="course-chapter" class="course-chapter mt-11">
-                <div class="f-between-center">
-                  <div>
-                    <div class="d-flex align-items-center">
-                      <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
-                        alt="deco-flower"
-                        class="deco-flower">
-                      <h5 class="ms-2">預計單元</h5>
-                    </div>
-                    <p class="media-fz-8 mt-2">
-                      18 章 142 單元｜總時長 928 分鐘
-                    </p>
-                  </div>
-                  <a 
-                    href="#"
-                    id="toggle-accordion"
-                    class="text-primary fw-semibold link-hover">
-                    全部展開
-                  </a>
-                </div>
-                <div class="accordion mt-4 mt-lg-6" id="chapter-accordion">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button position-relative"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true" 
-                        aria-controls="collapseOne">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVHgB7ZY9DoJAEIXfLnsAjuAFSPAWJDRewXABPQWlR/AKbEdDYkmnJyC2UFHQwrqTGAqrUZlG+ZJNpth5b38ymVHwJEmyCYLg7MPYrxBf4pwrpmk6lmV5V0/x6xLCL/TjOG61MeYkIE6E9CraX2cHOWINWUJpAxjuxjzP59hai7quWXlsgyiK5riqKm4a2E+UZRn71B8ZtG2LYRjwLuKfvBr8gQG70Aiqg67r0DQNO0elaeogyG98cg9ByOAGIXy3tNo35j1kbtH7yeKgabSg7q+UKrAMdNgLaZL2AxdjT1VNB6PyAAAAAElFTkSuQmCC"
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            課前說明
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>4 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>少於 1 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center mt-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程最終任務說明</div>
-                          </div>
-                          <p class="media-fz-8 ms-4">00:10</p>
-                        </div>
-                        <div class="accordion-body f-between-center">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程最終任務說明</div>
-                          </div>
-                          <p class="media-fz-8 ms-4">00:10</p>
-                        </div>
-                      </a>
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">Hahow 學生如何在六角平台檢視問題</div>
-                          </div>
-                          <p class="media-fz-8 ms-4">00:10</p>
-                        </div>
-                      </a>
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center mb-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-book fs-5"></i>
-                            <div class="ms-3">課業作業</div>
-                          </div>
-                          <p class="media-fz-8 ms-4">00:10</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFiSURBVHgBvVYhb4NAFH5QXCuqqpf6Jp2sR5AgmMaNBEs2SYJH8gNImAPbOeQkbgt4mAWFQQK7d1kXtix5NO31Sy4cd/e+7+67B3cSMGiadrdYLF5Ydc/KGi7EOI7HYRie0zT9lL7J369B/Adt3/f3sqIogQByxBpdkdlyHkAc9jKIxVq0AChzBm02GzAMAw6HA3/P8xySJIG6rslYSdf1kRoURREXKcsSVqsVrzdNA5ZlUaFAWrTb7ThhlmXgOA4nLYqCt223WyqctqjrOojjmJNO2xDL5ZIKpwXQFiwnTGeONlE4O4tM0+QiuKo5m3yWgG3boKoqXxEKzMGsNEWvp+Su68JckAJoh+d53HckD8Pw1x5QNpECmKYnQnz6vv/ThzZRVpECmJ5BEPzbV1UVFT7vS74Ewn92NxFoQSBQ4AMEgZ2WrzI7mB9BzCpadrN4kvFqgae/JElHuA5wsm/IidxfGKeR5tBHARUAAAAASUVORK5CYII="
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            2020 VS Code 網頁編輯器、HTML 基礎教學
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>15 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>25 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFxSURBVHgBvZaxb4JAFMY/kM3FSdfGXWM33R1MNLGbiVtNXA38FbrV8A90g9VuDJB0g61N2ElXmBhgBHrvUh2aJndpuf6SC+SO+767916408BYLBZ3nU7nmb1OWOvhjzRNc6nr2vI870P7En9rQ/gbeVVV97phGE8KxIkeRUVn23mAOiY61NJTbQBD5qN+vw/LsjAYDNDtdhGGIVzXRZqmwrnCHZD46XTCaDRCURQoyxLz+RzH4xEyCA2GwyE38X0fh8MBu90OSZLwPhoTIQxRFEVYrVY/jsmESCoHBMV+v99jPB7z1TuOw8PVqsFsNuPPLMtkp0G6TEl0s9nwHFCyt9utVA6EBtPpFKZp8iq6GlFeiFaSTCGhsiSx8/l8K1OilSQHQYD1es0NbNu+9cdxzJsIbblcNpCAQkUmtCMSvoapNYPfovxn9y8GORRCBu9QBDstX3R2MD9CzS5ydrMwdbpa0OmvadoF7UCLfSVN0v4E6cGPHahiNM8AAAAASUVORK5CYII="
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            2020 CSS 常用語法
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>9 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>37 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFBSURBVHgBvZatboRAFIUPPw6DQpcHINk6HgBBgqAa1xB8eQtc8Yg69JIgkHXINuEFakEhQAKdS7pmkwKT3dkvIZDMzDn3zsxlRgLDdd0nRVE+2OeJPTpuZFmW8zzPcVVVP9Kf+Nc9hK/op2l6llVVfRcgTug0KzJL5wXiOMkQiy7aACo48X0fpmliHEdkWbbbnysDwzAQRREcx4Ft24fGcBkkSbJGzsNhgyAI1gzyPAcPhwwsy1oNmqZBURTgYdeAoo7jGF3XIU1T8LJrcJmauq7XN2Vzgb41TdscL3met2x1KMtyqxlhGKJt23/bd+vgelEpYqoF2k20HsMwbI7nNqBpIgMSPrKjuCuZIifho/Wwuwa3Ivxn9xCDHgIhg28Igp2WhcwO5leIyaJnN4s3ma4WdPpLknTGfaBgP0mTtH8BSfl59QXpGb4AAAAASUVORK5CYII="
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            2020 使用 CSS 變更 HTML 標籤特性
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>13 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>52 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFQSURBVHgBvZahb4QwFMYfHA4ECuyCJ7k58AgSBNO4CSTJkHg8/Adz6JtDICZxW4Ins6AwSGB9ze5ClmUlx/V+SUNJ2/e995XQCkBwXffhcDi8ku6RNBV2sizLaZ7nuCzLL+En+MctAv9imKbpUZQkKeMQHFHRFZGU8wT8OIrAF5W3AEisCYZhQBiGf47leQ5d18EuAVmWwTRNuBamwJmiKGjjJoBgJWgZ2lLX9aY1mwUcx4EgCC7vfd9DFEUwjuO/6zZ/RbgXaZpCkiQ0e03TwPd95jpmBW3b0qCYKfYRtMiyLGoXC2YFmDlmu0ZRlMsYC2YFuq5DHMfU8yzL6PO8F1VVsZaD4HnewpqEAdcbjKyt2y2AoE22bVNbmqahbQubBa6F+8/uLgIDcAQFPoET5LR8E8nB/Ax8qhjIzeJFxKsFnv6CIJzgNmCy7xgTY38D5XaCcNSqaCcAAAAASUVORK5CYII="
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            Flex 網頁排版技巧
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>13 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>26 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFiSURBVHgBvZahb4NAFMYfFFdT1dqlvkknq1vRpKLTuAksGX8FcmgQc+iCQiAmcVuCJ7OgECCB3XcZzbJkucvo7ZdcOHH3fffeveNOI8bxeLybzWYvrLtlbUETGYbh0ve9kyTJh/Yl/nYL4R/UXdfd64ZhPCsQBwtkRWfhPJA6tjqpZaHagAyZQfP5nEzTpN1ux/tFUZDneVSWpXCuVASWZdH5fOaCEN9sNuS6LjcTIYxguVzS4XCgNE35qkdDRLNerynP82kGEAFZlvEVr1YriuOYgiAgGaQNEIXjONe0RFEkZSJdRcj7KFpVFd+T/X4vnCc0aNuWf8Mw5A0mvu9fTScbNE3zq6kMwj3A5kIQKUGJIj04E0BUQUA7nU6DaBDEUZrfgZlt26KpcgZgPA+jOCKTQdrgryj/2f2LQU0KgcE7KYLdlpHOLuZHUhNFzV4WTzqeFrj9NU270G3AYl+hCe1PysqYR3du6wMAAAAASUVORK5CYII="
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            Flex 精神時光屋
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>8 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>1 小時 15 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeven">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEqSURBVHgBvZYxboQwEEXHho6GijoXAG06eiiQaFJDlRskp6DMEVIh2k1HAVJukAg4QFqouAAQj7VIq9VK2ILZJ1lGsvl/ZmywGQiiKHoyDONTPJ5Es2Eny7Kc53l+L8vyj13Ef44QvmGcpumZm6b5QSCO2FgVLtJ5ATpOHGixqQ3A3Jrgui4EQXB3rK5raNsWdhk4jgNhGN4d67puvwFGie2aLMtkZlviiPYaoDC2qqqg7/vN+doG63rcZnWIwboewzAolUfbIEkS2ed5rvyOsoFlWeB5noxetTxaBr7vyxI1TQM6KBukaSr7oihAh83vAMHI122psjWvYXEcL0AI+c/uIQYjEIIGv0CEOC2/uDiYX4Emi1HcLN44Xi3w9GeMneEYMNhv1ETtf0HucQgxhCfhAAAAAElFTkSuQmCC"
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            章節說明
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>1 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>少於 1 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEight">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFySURBVHgBvZahb4NAFMYfFFdTVb3UN+lcq1vRpIJp3Ejwm+SvmOAPmANbUAjEJG4LeDILCgES2H2X3cSycCT09ksIl3fwfXfv3XFoxDifz3eLxeKVNXfsWtFMhmG49n3/HMfxp/Yt/n4L4V/UXdfd64ZhvCgQBytkRWfTeSB17HRSy0q1ARlTHtpsNmRZFr+DLMsoCAIqy1L6rna5XIaxB9brNXmeR8vlkvI857Htdktt25Jt2/w+hjRFh8OBiydJQq7r8gttxNAnQ2rQNA2//zVS0TeGtAZpmlJRFGSaJh81jE6nE4+hb7YBBCGGAkNYgNgUpAbH45ELh2FIvu9zQ8dx+IyqquKxMaQ1wIoBSIeog0iNWLazDITofr//iYn2lH0gTRFSg+WIlIgaoNhITxRFstflGw1gs8EEIxdFh7Fsk002mIPyj92/GNSkEBh8kCLYaRnq7GB+JDWzqNmfxZOOXwuc/pqmXek2YLBv0IT2F1bAq/dL9bKzAAAAAElFTkSuQmCC"
-                            alt="number-1"
-                            style="width: 24px; height: 24px;"
-                            class="align-self-start">
-                          <p class="text-black fw-semibold ms-2">
-                            網頁排版技巧 Part II
-                          </p>
-                        </div>
-                        <div class="d-none d-lg-flex align-items-center position-absolute end-0 me-12">
-                          <p>7 個單元</p>
-                          <i class="bi bi-dot text-neutral-60"></i>
-                          <p>24 分鐘</p>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
-                      <a href="#" class="link-neutral-80">
-                        <div class="accordion-body f-between-center my-4">
-                          <div class="d-flex align-items-center">
-                            <i class="bi bi-camera-video fs-5 align-self-start"></i>
-                            <div class="ms-3">課程說明</div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="tag-more-sm text-white bg-primary">
-                              試看單元
-                            </div>
-                            <p class="media-fz-8 ms-4">00:10</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- 關於講師 -->
-              <div id="course-teacher" class="course-teacher mt-11">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
-                    alt="deco-flower"
-                    class="deco-flower">
-                  <h5 class="ms-2">關於講師</h5>
-                </div>
-                <div class="course-teacher-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
-                  <div>
-                    <div class="d-flex align-items-center">
-                      <a href="teacher.html">
-                        <img
-                          src="/week8-learningSite/assets/ic_ hexschool-lg-52472e7b.png"
-                          alt="icon-teacher-image"
-                          class="course-teacher-img">
-                      </a>
-                      <div class="ms-2 ms-lg-4">
-                        <a href="teacher.html" class="link-dark link-hover d-inline-block">
-                          <h6>六角學院</h6>
-                        </a>
-                        <p class="media-fz-8 mt-2">
-                          打破線上課程售後不理，我們在線上等你！帶你學到會的線上課程。
-                        </p>
-                        <!-- 電腦版stats -->
-                        <div class="course-teacher-stats d-none d-lg-flex mt-lg-4">
-                          <p class="media-fz-8">
-                            2 堂課程
-                          </p>
-                          <p class="media-fz-8">
-                            1,567 個學生
-                          </p>
-                          <p class="media-fz-8">
-                            1,034 則評論
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- 行動版stats -->
-                    <div class="course-teacher-stats d-flex d-lg-none mt-4">
-                      <p class="media-fz-8">
-                        2 堂課程
-                      </p>
-                      <p class="media-fz-8">
-                        1,567 個學生
-                      </p>
-                      <p class="media-fz-8">
-                        1,034 則評論
-                      </p>
-                    </div>
-                  </div>
-                  <div class="border-top py-6 py-lg-10 mt-6 mt-lg-10">
-                    <p class="media-fz-8">
-                      六角學院是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
-                    </p>
-                    <p class="media-fz-8 mt-4">
-                      我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。
-                    </p>
-                  </div>
-                  <div class="text-end">
-                    <a href="teacher.html" class="fs-7 link-hover d-inline-flex align-items-center">
-                      了解更多講師履歷
-                      <span class="material-symbols-outlined">
-                        chevron_right
-                      </span>
-                    </a>
-                  </div>
-                </div> 
-              </div>
-              <!-- 購課前問答 -->
-              <div id="course-QA" class="course-QA mt-11">
-                <div class="d-flex align-items-center">
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
-                    alt="deco-flower"
-                    class="deco-flower">
-                  <h5 class="ms-2">購課前問答</h5>
-                </div>
-                <div class="course-QA-user-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
-                  <div class="d-flex align-items-center mt-2">
-                    <div class="flex-shrink-0 align-self-start">
-                      <img
-                        src="/week8-learningSite/assets/avatar-3-af2de766.png"
-                        alt="user-image"
-                        class="course-QA-img rounded-circle d-none d-lg-block">
-                    </div>
-                    <div class="flex-grow-1 ms-0 ms-lg-6">
+                  <div class="card-body card-column py-4">
+                    <h6 class="card-title pb-4">
+                      小白也會！從零開始學習 Python 程式設計
+                    </h6>
+                    <div class="f-between-center mt-auto">
                       <div class="d-flex align-items-center">
-                        <img
-                          src="/week8-learningSite/assets/avatar-3-af2de766.png"
-                          alt="user-image"
-                          class="course-QA-img rounded-circle d-lg-none me-2">
-                        <p class="text-black fw-semibold">Jessica</p>
-                      </div>
-                      <div class="mt-4">
-                        <textarea
-                          class="course-QA-form-control form-control media-fz-8" 
-                          id="course-QA-FormControlTextarea"
-                          rows="3"
-                          placeholder="上課前有什麼疑問嗎？ 在這裡盡情詢問講師！"
-                          style="resize:none;"></textarea>
-                      </div>
-                      <div class="f-between-lg-center mt-4">
-                        <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
                           <img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
-                            alt="deco-flower"
-                            class="deco-flower"
-                            style="width: 16px; height: 16px;">
-                          <p class="media-fz-8 ms-2">
-                            提問之前也別忘了看看其他同學有沒有跟你有相同的問題哦
-                          </p>
+                            src="data:image/png;base64,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"
+                            alt="user-image"
+                            class="rounded-circle me-2"
+                            style="width: 44px; height: 44px;">
                         </div>
-                        <a
-                          href="#"
-                          class="tag-lg link-neutral-40-tag text-center d-block d-xl-inline mt-2 mt-lg-0">
-                          送出
-                        </a>
+                        <div class="flex-grow-1">
+                          <p class="text-neutral-80">Kelly Hsu</p>
+                        </div>
+                      </div>
+                      <div class="text-end">
+                        <h6 class="text-primary fw-bold">NT$ 2,480</h6>
+                        <del class="fs-8 text-gray-light">
+                          NT$ 3,200
+                        </del>
+                      </div>
+                    </div>
+                    <div class="border-top f-between-center pt-4 mt-4">
+                      <div>
+                        <span class="text-neutral-80-tag tag-sm">
+                          程式開發
+                        </span>
+                        <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                        <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                        <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- 訪客版-->
-                <div class="course-QA-unLogIn-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6 d-none">
-                  <div class="d-flex flex-column flex-lg-row">
-                    <div class="d-flex align-items-center">
-                      <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC"
-                        alt="deco-flower"
-                        class="deco-flower"
-                        style="width: 16px; height: 16px;">
-                      <p class="media-fz-8 ms-2">
-                        登入講師才會知道你是誰哦，立即登入詢問
-                      </p>
-                    </div>
-                    <a
-                      href="#"
-                      class="btn btn-primary tag-lg text-center d-block d-xl-inline mt-2 mt-lg-0 ms-lg-6">
-                      登入
-                    </a>
-                  </div>
-                </div>
-                <ul>
-                  <li class="course-QA-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
-                    <div class="d-flex align-items-center mt-2">
-                      <div class="flex-shrink-0 align-self-start">
-                        <img
-                          src="/week8-learningSite/assets/avatar-4-fac02bdb.png"
-                          alt="user-image"
-                          class="course-QA-img rounded-circle d-none d-lg-block">
-                      </div>
-                      <div class="flex-grow-1 ms-0 ms-lg-6">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="/week8-learningSite/assets/avatar-4-fac02bdb.png"
-                            alt="user-image"
-                            class="course-QA-img-lg rounded-circle d-lg-none me-2">
-                          <div>
-                            <p class="media-fz-8 text-black fw-semibold">Brian</p>
-                            <time><p class="media-fz-8 text-neutral-60 fz-8 mt-lg-1">2024-01-30</p></time>
-                          </div>
-                        </div>
-                        <div class="mt-6 mt-lg-4">
-                          <p class="media-fz-8">
-                            老師您好，想問您:</br>
-                            1. 課程是用MAC作業系統，只使用Windows作業系統的同學會有學習上的問題嗎~</br>
-                            2. 此課程在Udemy、好好學校、六角學院購買會有什麼不一樣嗎~
-                          </p>
-                        </div>
-                        <div class="bg-neutral-10 rounded-3 p-4 p-lg-6 mt-4">
-                          <div class="d-flex align-items-center">
-                            <p class="text-black fw-semibold">六角學院</p>
-                            <div class="tag-more-sm text-primary-tag ms-2">授課老師</div>
-                          </div>
-                          <time><p class="media-fz-8 text-neutral-60 fz-8 mt-1">2024-01-31</p></time>
-                          <div class="mt-6">
-                            <p class="media-fz-8">
-                              嗨嗨 Brian我是六角學院助教 Bingbingboom</br></br>
-                              關於同學的問題：</br>
-                              1. 使用 Windows 系統是可以的，沒有問題哩</br>
-                              2. 課程內容都是相同的哦 ～</br></br>
-                              若有問題歡迎再次發問 :D
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="course-QA-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
-                    <div class="d-flex align-items-center mt-2">
-                      <div class="flex-shrink-0 align-self-start">
-                        <img
-                          src="/week8-learningSite/assets/avatar-8-8c6a7dab.png"
-                          alt="user-image"
-                          class="course-QA-img rounded-circle d-none d-lg-block">
-                      </div>
-                      <div class="flex-grow-1 ms-0 ms-lg-6">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="/week8-learningSite/assets/avatar-8-8c6a7dab.png"
-                            alt="user-image"
-                            class="course-QA-img-lg rounded-circle d-lg-none me-2">
-                          <div>
-                            <p class="media-fz-8 text-black fw-semibold">Sandy</p>
-                            <time><p class="media-fz-8 text-neutral-60 fz-8 mt-lg-1">2023-12-29</p></time>
-                          </div>
-                        </div>
-                        <div class="mt-6 mt-lg-4">
-                          <p class="media-fz-8">
-                            您好，這個課程跟六角網站上的課程是一樣的嗎?
-                          </p>
-                        </div>
-                        <div class="bg-neutral-10 rounded-3 p-4 p-lg-6 mt-4">
-                          <div class="d-flex align-items-center">
-                            <p class="text-black fw-semibold">六角學院</p>
-                            <div class="tag-more-sm text-primary-tag ms-2">授課老師</div>
-                          </div>
-                          <time><p class="media-fz-8 text-neutral-60 fz-8 mt-1">2024-01-31</p></time>
-                          <div class="mt-6">
-                            <p class="media-fz-8">
-                              嗨嗨 Brian我是六角學院助教 Bingbingboom</br></br>
-                              對的，這部分因為字幕問題還沒有更新</br>
-                              後續等字幕用好了就會更新哩！</br></br>
-                              若有問題歡迎再次發問 :D
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="course-QA-content bg-white rounded-4 p-4 p-md-8 mt-4 mt-lg-6">
-                    <div class="d-flex align-items-center mt-2">
-                      <div class="flex-shrink-0 align-self-start">
-                        <img
-                          src="/week8-learningSite/assets/avatar-9-bf10a639.png"
-                          alt="user-image"
-                          class="course-QA-img rounded-circle d-none d-lg-block">
-                      </div>
-                      <div class="flex-grow-1 ms-0 ms-lg-6">
-                        <div class="d-flex align-items-center">
-                          <img
-                            src="/week8-learningSite/assets/avatar-9-bf10a639.png"
-                            alt="user-image"
-                            class="course-QA-img-lg rounded-circle d-lg-none me-2">
-                          <div>
-                            <p class="media-fz-8 text-black fw-semibold">Tim</p>
-                            <time><p class="media-fz-8 text-neutral-60 fz-8 mt-lg-1">2024-01-30</p></time>
-                          </div>
-                        </div>
-                        <div class="mt-6 mt-lg-4">
-                          <p class="media-fz-8">
-                            助教你好，我本身是一位插畫家，想轉往數位的方向發展。目前想做兩種網站，一個是類似這種的簡易landing page，用來介紹我的插畫品牌以及作品或故事等等：https://glory.taipei/#articleSection1</br>
-                            另一個是數位繪本的形式，像是這個網站，可以利用滑鼠的點擊、拖曳、hold等功能跟網頁做互動：</br>
-                            https://2019.makemepulse.com/</br>
-                            請問這堂課學完試可以製作這兩種網頁的嗎？
-                          </p>
-                        </div>
-                        <div class="bg-neutral-10 rounded-3 p-4 p-lg-6 mt-4">
-                          <div class="d-flex align-items-center">
-                            <p class="text-black fw-semibold">六角學院</p>
-                            <div class="tag-more-sm text-primary-tag ms-2">授課老師</div>
-                          </div>
-                          <time><p class="media-fz-8 text-neutral-60 fz-8 mt-1">2024-01-31</p></time>
-                          <div class="mt-6">
-                            <p class="media-fz-8">
-                              嗨嗨 Brian我是六角學院助教 Bingbingboom</br></br>
-                              若是第一種單純呈現圖片、文字、靜態的樣式排版學習完 HTML/CSS 課程是可以成功製作出來的</br>
-                              若是想要製作互動功能、滾動視差、動畫效果會建議再深入學習 jQuery、Javascript 相關的課程，瞭解如何使用程式讓使用者與網頁中的元素做互動哦</br></br>
-                              若有問題歡迎再次發問 :D
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>        
-                <!-- 頁碼 -->
-                <nav class="pagination-primary Page navigation mt-10">
-                  <ul class="pagination justify-content-center justify-content-lg-end">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                        <span class="material-symbols-outlined">
-                        chevron_left
-                        </span>
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link active" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link d-md-flex" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">...</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">10</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
-                        <span class="material-symbols-outlined">
-                        chevron_right
-                        </span>
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <!-- 電腦版價格卡片 -->
-            <div class="price-card card border-0 shadow sticky-top d-none d-lg-block">
-              <div class="card-body">
-                <p class="fw-semibold border-bottom pb-4">
-                  購買本堂課
-                </p>
-                <div class="bg-alert-tag tag d-inline-block mt-6">
-                  <span>
-                    限定優惠 75 折
-                  </span>
-                </div>
-                <div class="d-flex align-items-center mt-6">
-                  <h3>NT$ 3,375</h3>
-                  <del class="text-neutral-60 ms-2">
-                    NT$ 4,500
-                  </del>
-                </div>
-                <div class="mt-2">
-                  <p>
-                    16,390 人已註冊
-                  </p>
-                </div>
-                <div class="d-flex align-items-center mt-6">
-                  <a href="#" class="to-buy-btn btn btn-primary">
-                    立即購買
-                  </a>
-                  <a href="#" class="btn btn-outline-primary d-flex align-items-center p-4 ms-4">
-                    <span class="material-symbols-outlined">
-                      shopping_cart
+                  <div class="bg-alert-tag tag position-absolute mt-4 ms-4">
+                    <span>
+                      限時 8 折 🔥
                     </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 手機版價格卡片 -->
-          <div class="media-price-card fixed-bottom bg-white border-top d-lg-none px-4 py-3">
-            <div class="f-between-center">
-              <div>
-                <h6 class="fs-6">NT$ 3,375</h6>
-                <small class="fs-9 mt-1">16,390 人已註冊</small>
-              </div>
-              <div class="d-flex">
-                <a href="#" class="btn btn-outline-primary d-flex align-items-center p-4 ms-4">
-                  <span class="material-symbols-outlined">
-                    shopping_cart
-                  </span>
+                  </div>
                 </a>
-                <a href="#" class="btn btn-primary px-8 py-4 ms-2">
-                  立即購買
+                <a href="course-content.html" class="swiper-slide course-card card border-0 shadow position-relative">
+                  <div class="course-card-img h-100">
+                    <img
+                      src="/week8-learningSite/assets/course-6-cb21fd70.png"
+                      class="card-img rounded-0 h-100"
+                      alt="course-image">
+                  </div>
+                  <div class="card-body card-column py-4">
+                    <h6 class="card-title pb-4">
+                      全面掌握 JavaScript 開發技術
+                    </h6>
+                    <div class="f-between-center mt-auto">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAo/SURBVHgBlVdZbFzlFf7uOndWT+LdCfYkgUIIBVMIBVoJVxVqhSpAbaW+UNWoG1WLYlQe0oc29kNVpCIRWvGAVJWASou6EdpKBbE0YSnElBKHxIEE25M4nrE99sx49rv3+/8hKSFhybWu79yZ//7nO+c75zvnKrjAI3zyrgwQDAdakEGopn/17CxiV99evuEz27MX9fUcXNe/KXsB20H/JIvCJ0fTUPUdIZTRUAkzUBQooQao3EBVYTs2EnGTK32sLb6bDYCnEGq7PwmYjwQQ/mE0E0S08VDVviWMQlERKvIX2E0bJ5ZqiBhRxIwQqhJCUzXxW0YNwx1Qgh1rSzN7gkCd+Cggyoca//PojkBVxxVVTYeaRvta23gY4J/7p/H7V06hBgsX9XXiyq0ZDF9zLXo3b0PMisKulhgdFWY8hUiyu1zKzUxs2n7L7vPZ0c7v+R27AlW5D6pmKRqDpKl0nvFWFTz8x1fw0NPHUbBVWKaOIAzRsl0cffttLJ6cQUKxUc7P48TU6/C9Fjr6hqyZqde+fMetN+Oxvc/u/1gA4WPfeCDQ1J2g1+IUhhVeQ4J49qUjuP/JKRQaAUxdRSxiYuvGPgwPbcBgdzcipopoVIdFWgLXRqpngAAG4Xke99FGvjScSf/puQPPvN/eWTlgP/zVXb4fjCnG/xkKlTZLdr2BX//lDZSaAVNNga4puG37Vbjhiq3o3DCIWCKKlZUcDkwfwfpEHFGZEwqBOFidPYpSYRl2ozZ2Yur58tBVX5w4bUE9/aH6wFdGAt8bR8jtGVaZHSLvlPaHf02+i7liEy03QNTUsKWvB5nuXnqcYoFEoVkd6BsYhBaqmF3IQ+yjimdDD77TgNOqnE7U8aMv/X3kHAAe3Ef8wGOOsYjo43sBaEfAc/H8G7NwPMGRgrhlYLC3By2fT/kudwmxvFpAbrWCwY2DmFtYhNOsMQ9JHZO2WSmgXinynnQaJo5M//eRswDkfzEy6ntexudmoe/zJAgRhTCQZ7Nl49BcCT7BxSIauTZQa7bwTj6HQ8ePMxE9TE2+IkKM/g1DKNVasmo1w2hvIwJKMLoZkde1hp357jdvGT0DIAjCXR698aVxUkBDijAuszJEbqmEfNmm6GgEoMN2fRw9VcBcoYJsbonPeDh47CRyy0UkOjqQSiTaDDLkIZ1SxB+fVZnIAe9th3ZCaotIwrmf3zjMMGbEje+FBOO/j4ZQngtLa9ILy1RkTnzts9tx2UUDmM6ehFuvIRVLYuzbo9DpsRHvQDIWhWlYUjvEelWPwOCp8T6wbQkklkqP/GjsOyO6Y3u36+RQoOT3smQMglADoueVq7G61oIVEXwqUhMsgtm4vguvvnUYMV1Dq1aH4tnQuvoRNBpg/LD5pluR6BuC3yhhy/B18DXSoehw3Ca2f/4L2HatS8D6iB74wU2u8Fog5f4uAVhMOsaKNECCKFea7/GoSLmttmqoNioo0fsNm4ck94ZpYnlmGhb1oN6owyLACHUi1LtgJtbJ/PFJlceNRKUkSTVtDev8lxHh9kWDoUVT10mFC80jKN2TklptOhB5aRkKN9WxSgP/mZlBudxEWl8Pt8HSe+c4+jaksFooMIou19MhK9FOaN+BQoNqKHJLlZWhMMJ6EFylOp6bcZhUDj23+aDjuqw6lqPnyFpWiLpUs5kJVD9Dk/K7Uqmz/q12cvkhPN5fsfVSbLx0K5458CZiXFNj2Qn+w1AkdigjEKoGhLQbpoUIwfHMqA6R2TTueAEcJ6DQuAwNH+J3ov5Znlgo1mlelcKik/NT5QqmZk9g+PLNGBhIIr2pF7HBfpkTL7w6SaAKGqVlBNxH5LHTqsOuleE6TVlYjuPAblGc7CZ0m8omUPpqIJXZpPciEcXDOsO3Ul7DsVy1nc3MAcvQMV+vYiZfQGc8AU03Jcj9kwdw329/h3UxE3XqxvLbBzAwuAVgX3jn0GsoLC2hs7sHW64ZwT/+/RJm50+hkwmttlwvK+RV1LYtaRB0+ATgyvp+9a0FVFqerOtAlqLO4cNCg5FiQ4Qd8bFczeGJ516WwHs7U6iQspYtEpfEMcIOHbH98IzwrtVqqFQZFcfNqi3Hm2rzH7SpEItFHvCzy6Hjqcl5PiwVWKqbZahSik2qmkkwQo6fev0Y6r7G5qkhnYpCpVLO5lY4tFThMPSLhyaxfHxaDjQe9y4xGo1SiboQEoAXHLRd9nQRgfci4ZAGm8L/4pE8pvN1idrl95qYiPg5ZlmyURyey+OhvS9i0Y1wMtLQtS6FeDyKzKZLEO25mKF/Q1aUEYm2NYTPeExui0NLR7oD5bXmfp3R3ccRahfbOwGGTMAAJ9ZCTC5U8Phr86hREviVHDzcMJQqadGYAFtdLiHW1Yd4Ko3y8kl0sCXXmqQh6aBOjSg0u6CcmEf/lZ9DH40nUymKj0kHDNQTSTQq9b36nU+c2vebr/ftI8IRUfb5qofHD69htVJDsWpL7j3hNkG4fnhmhvNIFUcDRHgNmRzJZAdWcqt0oglft5Ffy0E5XkRv3wZ0dnUj3dmL3oEuXN7toyMZQVWNZO//6S8PyoGEzjzKGI3YtPRi1sZiJaSa2dJzoYanDYvytJlUgkvDiODioU/h+ptuhs/px65YqHms/6KDnh4DPsWmvLICsbxareJSDjl+9zoUijX+psCMRifOdMMf/HVxjxuE2UItwOEC9YC81dmxNME4S0+0JV+EnzB8L5DyTNBIpdPtTOfA4esJJl9CVtE8qREJaocWHBisGAVVmz2FgMprNXSu35j92fd+vOfsgST078xXAzR80ZDaXgqDovYViUOVI5aQ0Qg3r9oOYkm+LsiJOWC0OA9S8w0rhgW2Zd+poyuhszKofOySLDmWno1GvYVtl2+785yJ6O69K/uOlYIJV8wEipgRAll3mpiGZZ+AlGIBKBEx0Go1kUh1SAMqxajF/iBkX9GijEwnCiWOb2xavQn2FwKokAbR6Iql6sSnt27fdw4Acfzt0Mo4VfTB07IriDdYHiZr39DEICoZkUA0eh2LJ+W6AAJQg6XqIcp3ATOa5Gmhc+ASOEoUcaXKJpVn5MwH7/7h98ffb/MsAOI4dLI41mh5E7rSnoZ0yqWocVUXVzGKc+jgjylOvhb1QLTpSl14W2c0uIY13mg5rIoU+voHOAPGcXRuCdXV/MTOnfeOfdDeOQDEkSvWxsn3PQx/WafLJqfgCDdPcdJJJWPkVEdv93qphmKUK64WpdAYbOU2Z0UzEkP/wEakO8QrpVE+NjN7z9MvvDx+PlvnBSCO2ZXm7ng8cjXl9dEIYx+NUkBiFpNOZ1Q0pCgqEQJwmIy1ulDLgI1Jk0OLySiYVpzG9T39vf1XZ7PZ3R9m5yNfTg9my1leRq+/LD1uqsYYQ35bqCoZl0OFxzNgRSwuLUvuxbhlkCpdj2djsdij8YS3+yc77y3jYw4FF3iM3zWSmV9oDC86icx1N96cnpp6UwAo85UsG1NjB/c8sSd7Ifv9D7TVVyASe6xXAAAAAElFTkSuQmCC"
+                            alt="user-image"
+                            class="rounded-circle me-2"
+                            style="width: 44px; height: 44px;">
+                        </div>
+                        <div class="flex-grow-1">
+                          <p class="text-neutral-80">Kelly Hsu</p>
+                        </div>
+                      </div>
+                      <div class="text-end">
+                        <h6 class="text-primary fw-bold">NT$ 2,480</h6>
+                        <del class="fs-8 text-gray-light">
+                          NT$ 3,200
+                        </del>
+                      </div>
+                    </div>
+                    <div class="border-top f-between-center pt-4 mt-4">
+                      <div>
+                        <span class="text-neutral-80-tag tag-sm">
+                          程式開發
+                        </span>
+                        <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                        <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                        <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-alert-tag tag position-absolute mt-4 ms-4">
+                    <span>
+                      限時 8 折 🔥
+                    </span>
+                  </div>
+                </a>
+                <a href="course-content.html" class="swiper-slide course-card card border-0 shadow position-relative">
+                  <div class="course-card-img h-100">
+                    <img
+                      src="/week8-learningSite/assets/course-7-9e3876e4.png"
+                      class="card-img rounded-0 h-100"
+                      alt="course-image">
+                  </div>
+                  <div class="card-body card-column py-4">
+                    <h6 class="card-title pb-4">
+                      HTML & CSS 網頁設計基礎教程
+                    </h6>
+                    <div class="f-between-center mt-auto">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAo/SURBVHgBlVdZbFzlFf7uOndWT+LdCfYkgUIIBVMIBVoJVxVqhSpAbaW+UNWoG1WLYlQe0oc29kNVpCIRWvGAVJWASou6EdpKBbE0YSnElBKHxIEE25M4nrE99sx49rv3+/8hKSFhybWu79yZ//7nO+c75zvnKrjAI3zyrgwQDAdakEGopn/17CxiV99evuEz27MX9fUcXNe/KXsB20H/JIvCJ0fTUPUdIZTRUAkzUBQooQao3EBVYTs2EnGTK32sLb6bDYCnEGq7PwmYjwQQ/mE0E0S08VDVviWMQlERKvIX2E0bJ5ZqiBhRxIwQqhJCUzXxW0YNwx1Qgh1rSzN7gkCd+Cggyoca//PojkBVxxVVTYeaRvta23gY4J/7p/H7V06hBgsX9XXiyq0ZDF9zLXo3b0PMisKulhgdFWY8hUiyu1zKzUxs2n7L7vPZ0c7v+R27AlW5D6pmKRqDpKl0nvFWFTz8x1fw0NPHUbBVWKaOIAzRsl0cffttLJ6cQUKxUc7P48TU6/C9Fjr6hqyZqde+fMetN+Oxvc/u/1gA4WPfeCDQ1J2g1+IUhhVeQ4J49qUjuP/JKRQaAUxdRSxiYuvGPgwPbcBgdzcipopoVIdFWgLXRqpngAAG4Xke99FGvjScSf/puQPPvN/eWTlgP/zVXb4fjCnG/xkKlTZLdr2BX//lDZSaAVNNga4puG37Vbjhiq3o3DCIWCKKlZUcDkwfwfpEHFGZEwqBOFidPYpSYRl2ozZ2Yur58tBVX5w4bUE9/aH6wFdGAt8bR8jtGVaZHSLvlPaHf02+i7liEy03QNTUsKWvB5nuXnqcYoFEoVkd6BsYhBaqmF3IQ+yjimdDD77TgNOqnE7U8aMv/X3kHAAe3Ef8wGOOsYjo43sBaEfAc/H8G7NwPMGRgrhlYLC3By2fT/kudwmxvFpAbrWCwY2DmFtYhNOsMQ9JHZO2WSmgXinynnQaJo5M//eRswDkfzEy6ntexudmoe/zJAgRhTCQZ7Nl49BcCT7BxSIauTZQa7bwTj6HQ8ePMxE9TE2+IkKM/g1DKNVasmo1w2hvIwJKMLoZkde1hp357jdvGT0DIAjCXR698aVxUkBDijAuszJEbqmEfNmm6GgEoMN2fRw9VcBcoYJsbonPeDh47CRyy0UkOjqQSiTaDDLkIZ1SxB+fVZnIAe9th3ZCaotIwrmf3zjMMGbEje+FBOO/j4ZQngtLa9ILy1RkTnzts9tx2UUDmM6ehFuvIRVLYuzbo9DpsRHvQDIWhWlYUjvEelWPwOCp8T6wbQkklkqP/GjsOyO6Y3u36+RQoOT3smQMglADoueVq7G61oIVEXwqUhMsgtm4vguvvnUYMV1Dq1aH4tnQuvoRNBpg/LD5pluR6BuC3yhhy/B18DXSoehw3Ca2f/4L2HatS8D6iB74wU2u8Fog5f4uAVhMOsaKNECCKFea7/GoSLmttmqoNioo0fsNm4ck94ZpYnlmGhb1oN6owyLACHUi1LtgJtbJ/PFJlceNRKUkSTVtDev8lxHh9kWDoUVT10mFC80jKN2TklptOhB5aRkKN9WxSgP/mZlBudxEWl8Pt8HSe+c4+jaksFooMIou19MhK9FOaN+BQoNqKHJLlZWhMMJ6EFylOp6bcZhUDj23+aDjuqw6lqPnyFpWiLpUs5kJVD9Dk/K7Uqmz/q12cvkhPN5fsfVSbLx0K5458CZiXFNj2Qn+w1AkdigjEKoGhLQbpoUIwfHMqA6R2TTueAEcJ6DQuAwNH+J3ov5Znlgo1mlelcKik/NT5QqmZk9g+PLNGBhIIr2pF7HBfpkTL7w6SaAKGqVlBNxH5LHTqsOuleE6TVlYjuPAblGc7CZ0m8omUPpqIJXZpPciEcXDOsO3Ul7DsVy1nc3MAcvQMV+vYiZfQGc8AU03Jcj9kwdw329/h3UxE3XqxvLbBzAwuAVgX3jn0GsoLC2hs7sHW64ZwT/+/RJm50+hkwmttlwvK+RV1LYtaRB0+ATgyvp+9a0FVFqerOtAlqLO4cNCg5FiQ4Qd8bFczeGJ516WwHs7U6iQspYtEpfEMcIOHbH98IzwrtVqqFQZFcfNqi3Hm2rzH7SpEItFHvCzy6Hjqcl5PiwVWKqbZahSik2qmkkwQo6fev0Y6r7G5qkhnYpCpVLO5lY4tFThMPSLhyaxfHxaDjQe9y4xGo1SiboQEoAXHLRd9nQRgfci4ZAGm8L/4pE8pvN1idrl95qYiPg5ZlmyURyey+OhvS9i0Y1wMtLQtS6FeDyKzKZLEO25mKF/Q1aUEYm2NYTPeExui0NLR7oD5bXmfp3R3ccRahfbOwGGTMAAJ9ZCTC5U8Phr86hREviVHDzcMJQqadGYAFtdLiHW1Yd4Ko3y8kl0sCXXmqQh6aBOjSg0u6CcmEf/lZ9DH40nUymKj0kHDNQTSTQq9b36nU+c2vebr/ftI8IRUfb5qofHD69htVJDsWpL7j3hNkG4fnhmhvNIFUcDRHgNmRzJZAdWcqt0oglft5Ffy0E5XkRv3wZ0dnUj3dmL3oEuXN7toyMZQVWNZO//6S8PyoGEzjzKGI3YtPRi1sZiJaSa2dJzoYanDYvytJlUgkvDiODioU/h+ptuhs/px65YqHms/6KDnh4DPsWmvLICsbxareJSDjl+9zoUijX+psCMRifOdMMf/HVxjxuE2UItwOEC9YC81dmxNME4S0+0JV+EnzB8L5DyTNBIpdPtTOfA4esJJl9CVtE8qREJaocWHBisGAVVmz2FgMprNXSu35j92fd+vOfsgST078xXAzR80ZDaXgqDovYViUOVI5aQ0Qg3r9oOYkm+LsiJOWC0OA9S8w0rhgW2Zd+poyuhszKofOySLDmWno1GvYVtl2+785yJ6O69K/uOlYIJV8wEipgRAll3mpiGZZ+AlGIBKBEx0Go1kUh1SAMqxajF/iBkX9GijEwnCiWOb2xavQn2FwKokAbR6Iql6sSnt27fdw4Acfzt0Mo4VfTB07IriDdYHiZr39DEICoZkUA0eh2LJ+W6AAJQg6XqIcp3ATOa5Gmhc+ASOEoUcaXKJpVn5MwH7/7h98ffb/MsAOI4dLI41mh5E7rSnoZ0yqWocVUXVzGKc+jgjylOvhb1QLTpSl14W2c0uIY13mg5rIoU+voHOAPGcXRuCdXV/MTOnfeOfdDeOQDEkSvWxsn3PQx/WafLJqfgCDdPcdJJJWPkVEdv93qphmKUK64WpdAYbOU2Z0UzEkP/wEakO8QrpVE+NjN7z9MvvDx+PlvnBSCO2ZXm7ng8cjXl9dEIYx+NUkBiFpNOZ1Q0pCgqEQJwmIy1ulDLgI1Jk0OLySiYVpzG9T39vf1XZ7PZ3R9m5yNfTg9my1leRq+/LD1uqsYYQ35bqCoZl0OFxzNgRSwuLUvuxbhlkCpdj2djsdij8YS3+yc77y3jYw4FF3iM3zWSmV9oDC86icx1N96cnpp6UwAo85UsG1NjB/c8sSd7Ifv9D7TVVyASe6xXAAAAAElFTkSuQmCC"
+                            alt="user-image"
+                            class="rounded-circle me-2"
+                            style="width: 44px; height: 44px;">
+                        </div>
+                        <div class="flex-grow-1">
+                          <p class="text-neutral-80">Kelly Hsu</p>
+                        </div>
+                      </div>
+                      <div class="text-end">
+                        <h6 class="text-primary fw-bold">NT$ 2,480</h6>
+                        <del class="fs-8 text-gray-light">
+                          NT$ 3,200
+                        </del>
+                      </div>
+                    </div>
+                    <div class="border-top f-between-center pt-4 mt-4">
+                      <div>
+                        <span class="text-neutral-80-tag tag-sm">
+                          程式開發
+                        </span>
+                        <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                        <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                        <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="course-content.html" class="swiper-slide course-card card border-0 shadow position-relative">
+                  <div class="course-card-img h-100">
+                    <img
+                      src="/week8-learningSite/assets/course-8-651d7ef2.png"
+                      class="card-img rounded-0 h-100"
+                      alt="course-image">
+                  </div>
+                  <div class="card-body card-column py-4">
+                    <h6 class="card-title pb-4">
+                      更進一步！深入學習 Node.js 與後端開發
+                    </h6>
+                    <div class="f-between-center mt-auto">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img
+                            src="data:image/png;base64,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"
+                            alt="user-image"
+                            class="rounded-circle me-2"
+                            style="width: 44px; height: 44px;">
+                        </div>
+                        <div class="flex-grow-1">
+                          <p class="text-neutral-80">Kelly Hsu</p>
+                        </div>
+                      </div>
+                      <div class="text-end">
+                        <h6 class="text-primary fw-bold">NT$ 2,480</h6>
+                        <del class="fs-8 text-gray-light">
+                          NT$ 3,200
+                        </del>
+                      </div>
+                    </div>
+                    <div class="border-top f-between-center pt-4 mt-4">
+                      <div>
+                        <span class="text-neutral-80-tag tag-sm">
+                          程式開發
+                        </span>
+                        <p class="fs-8 mt-1">已有 420 位同學加入</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADeSURBVHgBpVFLDoIwEJ22svGT6Alk6W+hN5AY3XsDOYnxBB5BbuBeQuQILtQ1N5AEdAN0ZAgQgzWa+JJOpm9ep31TAAXCw2Ac2L2pqlZTkaLGtmmk1K3WeJUI7NEUEbKluoVRuO31ttbQdBDamANbp5SeV08o5QZl7EX3yOssPZ9RR8HxCD8gkczgrfnZlYDmN7FM0CQtK4jQGazS5+w+iZuLq1V6KPBwhqjQ+/XZpVNsyinR7EGNNjr97tsByYWeJQgumct9eUQFCJNCV36cgDidgjDI2Et3i7wJ+ANPCqhSdrKP7zkAAAAASUVORK5CYII=" alt="icon-star">
+                        <p class="fs-8 text-black-light fw-medium ms-1">4.0</p>
+                        <p class="fs-8 text-gray-light fw-medium ms-1">(333)</p>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>
@@ -1774,48 +1180,29 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-    $(document).ready(function() {
-      let allExpanded = false; 
-
-      $('#toggle-accordion').on('click', function(e) {
-        e.preventDefault();
-
-        if (!allExpanded) {
-          $('.accordion-collapse').each(function() {
-            if (!$(this).hasClass('show')) {
-              $(this).collapse('show');
-            }
-          });
-          $(this).text('全部收起');
-        } else {
-          $('.accordion-collapse').collapse('hide');
-          $(this).text('全部展開');
-        }
-
-        allExpanded = !allExpanded;
+      var swiper = new Swiper(".user-page-allCourses-swiper", {
+        slidesPerView: 4,
+        spaceBetween: 24,
+        loop: false,
+        breakpoints: {
+          768: {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+          },
+          0: {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
-    });
-
-    let lastScrollTop = 0;
-    const mainNavbar = document.getElementById('navbar');
-    const infoNavbar = document.getElementById('infoNavbar');
-
-    window.addEventListener('scroll', function() {
-      if (window.innerWidth < 1200) {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-          mainNavbar.classList.add('hidden-navbar');
-          infoNavbar.style.top = '0px';
-        } else {
-          mainNavbar.classList.remove('hidden-navbar');
-          const mainNavbarHeight = mainNavbar.offsetHeight;
-          infoNavbar.style.top = `${mainNavbarHeight}px`;
-        }
-
-        lastScrollTop = scrollTop;
-      }
-    });
     </script>
   </body>
 </html>
