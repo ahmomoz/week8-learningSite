@@ -35,3 +35,10 @@ i {
     font-size: 14px;
   }
 }
+.media-fz-9 {
+  font-size: 14px;
+  
+  @include pad {
+    font-size: 12px;
+  }
+}

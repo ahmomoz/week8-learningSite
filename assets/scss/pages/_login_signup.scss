@@ -1,0 +1,68 @@
+/* login-banner-section, signUp-banner-section */
+.login-banner-section,
+.signUp-banner-section {
+	padding: 40px 0 40px 40px;
+}
+
+/* login,signUp */
+.login,
+.signUp {
+	&-section {
+		height: 1080px;
+
+		@include pad {
+			height: 100%;
+		}
+	}
+	
+	&-wrap {
+		.icon-img {
+			left: 16px;
+		}
+
+    .password-icon-img,
+    .passwordAgain-icon-img {
+      right: 16px;
+      bottom: 18px;
+    }
+
+		.to-signUp-btn,
+    .regulations-btn {
+			text-decoration: underline;
+		}
+	}
+}
+
+/* login-section */
+.login {
+  &-wrap {
+		height: 778px;
+
+		@include lg-pc {
+			width: 100%;
+			padding: 0 96px;
+		}
+
+		@include pad {
+			height: 100%;
+			padding: 60px 24px;
+		}
+  }
+}
+
+/* signUp-section */
+.signUp {
+  &-wrap {
+		height: 871px;
+
+		@include lg-pc {
+			width: 100%;
+			padding: 0 96px;
+		}
+
+		@include pad {
+			height: 100%;
+			padding: 60px 24px;
+		}
+  }
+}

@@ -1,7 +1,7 @@
-@import "bootstrap/scss/functions";
-@import "./utils/variables";
+@import 'bootstrap/scss/functions';
+@import './utils/variables';
 @import './components/custom-colors.scss';
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 @import './base/base.scss';
 @import './base/font.scss';
@@ -29,5 +29,5 @@
 @import './pages/teacher.scss';
 @import './pages/booking-success.scss';
 @import './pages/user-page.scss';
-@import './pages/cart.scss';
-@import './pages/login.scss';
+@import './pages/_cart_pay.scss';
+@import './pages/_login_signup.scss';

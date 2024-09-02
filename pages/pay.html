@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Learning - 結帳頁面</title>
+  </head>
+  <body class="bg-neutral-10">
+    <%- include('./layout/header-authenticated.ejs'); -%>
+    <main class="pay-section wrap-sm">
+      <div class="container-xl">
+        <div class="cart-progress-section">
+          <div class="cart-progress-item position-relative m-4">
+            <div class="f-between-center w-100">
+              <button
+                type="button"
+                class="btn btn-sm btn-primary rounded-pill p-0 me-2"
+                style="width: 2rem; height:2rem;">
+                1
+              </button>
+              <p>確認訂單</p>
+              <hr>
+              <button
+                type="button"
+                class="btn btn-sm btn-primary rounded-pill p-0 me-2"
+                style="width: 2rem; height:2rem;">
+                2
+              </button>
+              <p class="d-none d-md-inline">
+                訂單資訊
+              </p>
+              <hr>
+              <button
+                type="button"
+                class="btn btn-sm btn-secondary rounded-pill p-0 me-2"
+                style="width: 2rem; height:2rem;">
+                3
+              </button>
+              <p class="d-none d-md-inline">
+                訂單完成
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 product-details-card px-0 px-lg-3 mt-4 mt-lg-6">
+            <div class="card border-0 shadow">
+              <div class="card-header bg-white d-flex align-items-center">
+                <h2>商品明細</h2>
+                <p class="media-fz-8 ms-4">共 2 項課程</p>
+              </div>
+              <div class="card-body py-0 px-3 px-lg-6">
+                <table class="product-details-card-table table">
+                  <tbody>
+                    <tr class="align-md-middle">
+                      <td class="w-100 d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img src="/assets/images/icons/number-primary-1.png" alt="number-1">
+                        </div>
+                        <p class="fs-7 ms-3">使用 HTML、CSS 開發一個網站</p>
+                        <h3 class="fs-7 text-end ms-auto d-lg-none" style="width: 124px;">NT$ 1,200</h3>
+                      </td>
+                      <td class="text-end px-3 d-none d-lg-table-cell" style="width: 140px;">
+                        <h3 class="fs-7">NT$ 1,200</h3>
+                      </td>
+                    </tr>
+                    <tr class="align-md-middle">
+                      <td class="w-100 d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img src="/assets/images/icons/number-primary-2.png" alt="number-2">
+                        </div>
+                        <p class="fs-7 ms-3">一變應萬變：RWD 響應式網頁設計</p>
+                        <h3 class="fs-7 text-end ms-auto d-lg-none" style="width: 124px;">NT$ 1,200</h3>
+                      </td>
+                      <td class="text-end px-3 d-none d-lg-table-cell" style="width: 140px;">
+                        <h3 class="fs-7">NT$ 1,200</h3>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow mt-4 mt-lg-8">
+              <div class="card-header bg-white d-flex align-items-center">
+                <h2>付款方式</h2>
+              </div>
+              <div class="card-body py-4 px-lg-6">
+                <div class="form-check d-flex">
+                  <div class="flex-shrink-0 py-5">
+                    <input class="form-check-input" type="radio" name="pay-with" id="creditCard" checked>
+                  </div>
+                  <div class="flex-grow-1">
+                    <label class="form-check-label d-flex align-items-center py-5" for="creditCard">
+                      <p>信用卡一次付清</p>
+                      <img
+                        src="/assets/images/icons/Type=VISA.png"
+                        alt="VISA-image"
+                        class="ms-6"
+                        style="width: 24px; height: 16px;">
+                      <img
+                        src="/assets/images/icons/Type=Mastercard.png"
+                        alt="Mastercard-image"
+                        class="ms-2"
+                        style="width: 24px; height: 16px;">
+                      <img
+                        src="/assets/images/icons/Type=JCB.png"
+                        alt="JCB-image"
+                        class="ms-2"
+                        style="width: 24px; height: 16px;">
+                    </label>
+                    <div class="pay-info-card bg-neutral-10 rounded-3 p-3 p-lg-6 d-none">
+                      <div class="userCredit-wrap">
+                        <div>
+                          <label for="userCreditCardNumber" class="form-label">
+                            <p>信用卡卡號<span class="text-danger ms-1">*</span></p>
+                          </label>
+                          <input type="text" class="form-control rounded-1 p-4 bg-white rounded-1 p-4" id="userCreditCardNumber" placeholder="**** **** **** ****" maxlength="19">
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <label for="credit-card-expiration" class="form-label">
+                              <p>信用卡有限期限<span class="text-danger ms-1">*</span></p>
+                            </label>
+                            <input type="text" class="form-control bg-white rounded-1 p-4" id="credit-card-expiration" name="credit-card-expiration" placeholder="MM / YY" maxlength="7" required="">
+                          </div>
+                          <div class="col-6">
+                            <label for="credit-card-cvc" class="form-label">
+                              <p>卡片背面後三碼<span class="text-danger ms-1">*</span></p>
+                            </label>
+                            <input type="text" class="form-control bg-white rounded-1 p-4" id="credit-card-cvc" name="credit-card-cvc" placeholder="CVC / CVV" pattern="\d{3,4}/" maxlength="3" required="">
+                          </div>
+                        </div>
+                      </div>
+                      <p class="media-fz-9 mt-4">
+                        本公司採用喬睿科技 TapPay 金流交易系統，消費者刷卡時直接在銀行端系統中交易，本公司不會留下您的信用卡資料，以保障你的權益，資料傳輸過程採用嚴密的 SSL 2048bit 加密技術保護。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check d-flex">
+                  <div class="flex-shrink-0 py-5">
+                    <input class="form-check-input" type="radio" name="pay-with" id="creditCardInstallment">
+                  </div>
+                  <div class="flex-grow-1">
+                    <label class="form-check-label d-flex align-items-center py-5" for="creditCardInstallment">
+                      <p>信用卡分期</p>
+                      <img
+                        src="/assets/images/icons/Type=VISA.png"
+                        alt="VISA-image"
+                        class="ms-6"
+                        style="width: 24px; height: 16px;">
+                      <img
+                        src="/assets/images/icons/Type=Mastercard.png"
+                        alt="Mastercard-image"
+                        class="ms-2"
+                        style="width: 24px; height: 16px;">
+                      <img
+                        src="/assets/images/icons/Type=JCB.png"
+                        alt="JCB-image"
+                        class="ms-2"
+                        style="width: 24px; height: 16px;">
+                    </label>
+                    <div class="pay-info-card bg-neutral-10 rounded-3 p-3 p-lg-6 d-none">
+                      <p class="media-fz-9">
+                        下一步將連至第三方金流服務進行辦卡，您所有的交易資訊皆獲得安全保護。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check d-flex">
+                  <div class="flex-shrink-0 py-5">
+                    <input class="form-check-input" type="radio" name="pay-with" id="linePay">
+                  </div>
+                  <div class="flex-grow-1">
+                    <label class="form-check-label d-flex align-items-center py-5" for="linePay">
+                      <p>LINE Pay</p>
+                      <img
+                        src="/assets/images/icons/LINE-Pay(h)_W238_n 2.png"
+                        alt="LINE-Pay-image"
+                        class="ms-6"
+                        style="width: 69px; height: 20px;">
+                    </label>
+                    <div class="pay-info-card bg-neutral-10 rounded-3 p-3 p-lg-6 d-none">
+                      <p class="media-fz-9">
+                        使用 LINE Pay 付款，可用 LINE Points 折抵。您將被導入「LINE Pay」付款頁面進行安全結帳。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check d-flex">
+                  <div class="flex-shrink-0 py-5">
+                    <input class="form-check-input" type="radio" name="pay-with" id="JKOpay">
+                  </div>
+                  <div class="flex-grow-1">
+                    <label class="form-check-label d-flex align-items-center py-5" for="JKOpay">
+                      <p>街口支付</p>
+                      <img
+                        src="/assets/images/icons/image 31.png"
+                        alt="JKOPay"
+                        class="ms-6"
+                        style="width: 49.32px; height: 20px;">
+                    </label>
+                    <div class="pay-info-card bg-neutral-10 rounded-3 p-3 p-lg-6 d-none">
+                      <p class="media-fz-9">
+                        可用街口幣折抵，街口支付全用戶不分等級，使用街利存帳戶付款享筆筆 2% 街口幣，回饋無上限！
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check d-flex">
+                  <div class="flex-shrink-0 py-5">
+                    <input class="form-check-input" type="radio" name="pay-with" id="ATM">
+                  </div>
+                  <div class="flex-grow-1">
+                    <label class="form-check-label d-flex align-items-center py-5" for="ATM">
+                      <p>ATM 轉帳</p>
+                    </label>
+                    <div class="pay-info-card bg-neutral-10 rounded-3 p-3 p-lg-6 d-none">
+                      <p class="media-fz-9">
+                        下一步將連至第三方金流選擇銀行並取得繳費資訊
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check d-flex">
+                  <div class="flex-shrink-0 py-5">
+                    <input class="form-check-input" type="radio" name="pay-with" id="supermarketPayment">
+                  </div>
+                  <div class="flex-grow-1">
+                    <label class="form-check-label d-flex align-items-center py-5" for="supermarketPayment">
+                      <p>超商付款</p>
+                    </label>
+                    <div class="pay-info-card bg-neutral-10 rounded-3 p-3 p-lg-6 d-none">
+                      <p class="media-fz-9">
+                        超商付款將加收 NT$30 手續費，若募資失敗手續費將不進行退款。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow mt-4 mt-lg-8">
+              <div class="card-header bg-white d-flex align-items-center">
+                <h2 class="fs-5">發票選項</h2>
+              </div>
+              <div class="card-body py-4 px-lg-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="autoFillBtn">
+                  帶入上次結帳資料
+                </button>
+                <form id="paymentForm" class="row">
+                  <div class="col-lg-6 pe-lg-0 mt-6">
+                    <label for="nameInput" class="form-label">
+                      <p>姓名<span class="text-danger ms-1">*</span></p>
+                    </label>
+                    <input type="text" class="form-control rounded-1 p-4" id="nameInput" placeholder="請填寫真實姓名">
+                  </div>
+                  <div class="col-lg-6 ps-lg-3 mt-6">
+                    <label for="emailInput" class="form-label">
+                      <p>聯絡用電子信箱<span class="text-danger ms-1">*</span></p>
+                    </label>
+                    <input type="email" class="form-control rounded-1 p-4" id="emailInput" placeholder="請填寫電子信箱">
+                  </div>
+                  <div class="col-lg-6 pe-lg-0 mt-6">
+                    <label for="invoiceSelect" class="form-label">
+                      <p>發票類型<span class="text-danger ms-1">*</span></p>
+                    </label>
+                    <select class="form-select rounded-1 p-4" id="invoiceSelect">
+                      <option value="electronic" selected>電子發票</option>
+                      <option value="tax">統編發票</option>
+                    </select>
+                    <div class="d-flex align-items-center mt-2">
+                      <img
+                        src="/assets/images/deco/flower-5.png"
+                        alt="deco-flower"
+                        style="width: 16px; height: 16px;">
+                      <p class="fs-8 ms-2">如需開立統編，請選擇統編發票</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ps-lg-3 mt-6" id="deliverySelectWrap">
+                    <label for="deliverySelect" class="form-label">
+                      <p>領取方式<span class="text-danger ms-1">*</span></p>
+                    </label>
+                    <select class="form-select rounded-1 p-4" id="deliverySelect">
+                      <option value="learning" selected>存在 Learning 中，中獎寄信通知</option>
+                      <option value="mobileBarcode">手機條碼載具</option>
+                      <option value="citizenCertificate">自然人憑證</option>
+                    </select>
+                  </div>
+                  <div class="row d-none" id="mobileBarcodeWrap">
+                    <div class="col-lg-12 mt-6">
+                      <label for="mobileBarcode" class="form-label">手機條碼載具<span class="text-danger ms-1">*</span></p></label>
+                      <input 
+                        type="text" 
+                        class="form-control rounded-1 p-4" 
+                        id="mobileBarcode" 
+                        placeholder="前面加上 / ，加上 7 個數字及大寫字母字元" 
+                        pattern="[a-zA-Z0-9]{8}" 
+                        maxlength="8" 
+                        required>
+                    </div>
+                  </div>
+                  <div class="row d-none" id="companyWrap">
+                    <div class="col-lg-6 pe-lg-0 mt-6">
+                      <label for="companyName" class="form-label">
+                        <p>公司抬頭<span class="text-danger ms-1">*</span></p></label>
+                      <input
+                        type="text"
+                        class="form-control rounded-1 p-4"
+                        id="companyName"
+                        placeholder="請輸入公司抬頭"
+                        required>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0 mt-6">
+                      <label for="companyTaxId" class="form-label">
+                        <p>公司統編<span class="text-danger ms-1">*</span></p></label>
+                      <input
+                        type="text"
+                        class="form-control rounded-1 p-4"
+                        id="companyTaxId"
+                        placeholder="請輸入公司統編"
+                        pattern="\d{8}"
+                        maxlength="8"
+                        required>
+                    </div>
+                    <div class="col-lg-3 pe-lg-0 mt-6">
+                      <label for="postalCode" class="form-label">
+                        <p>郵遞區號<span class="text-danger ms-1">*</span></p></label>
+                      <input
+                        type="text"
+                        class="form-control rounded-1 p-4"
+                        id="postalCode"
+                        placeholder="請輸入郵遞區號"
+                        pattern="\d{3,5}"
+                        maxlength="5"
+                        required>
+                    </div>
+                    <div class="col-lg-9 pe-lg-0 mt-6">
+                      <label for="companyAddress" class="form-label">
+                        <p>公司地址<span class="text-danger ms-1">*</span></p></label>
+                      <input
+                        type="text"
+                        class="form-control rounded-1 p-4"
+                        id="companyAddress"
+                        placeholder="請輸入公司地址"
+                        required>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- 電腦版明細卡片 -->
+          <div class="col-lg-4 mt-10 mt-lg-6 d-none d-lg-block">
+            <div class="card border-0 shadow">
+              <div class="card-body p-6">
+                <h1 class="fs-5">訂單明細</h1>
+                <table class="table mb-0 mt-8">
+                  <tbody>
+                    <tr class="align-middle">
+                      <th scope="row" class="border-0">
+                        <p class="fw-normal">2 項課程小計</p>
+                      </th>
+                      <td class="border-0 text-end">
+                        <p class="fw-semibold">NT$ 3600</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table mt-8 border-top">
+                  <tbody>
+                    <tr class="align-middle">
+                      <th scope="row" class="border-0">
+                        <p class="fw-normal pt-8">總計</p>
+                      </th>
+                      <td class="border-0 text-end">
+                        <h3 class="pt-8">NT$ 3,600</h3>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button
+                  id="toPayBtn"
+                  type="button"
+                  class="btn btn-neutral-40 link-neutral-60 w-100 mt-3"
+                  data-bs-toggle="modal" data-bs-target="#loadingModal" disabled>
+                    同意並付款
+                </button>
+                <div class="mt-4">
+                  <p class="fs-8">
+                    確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 手機版明細卡片 -->
+          <div class="media-totalPrice-card fixed-bottom bg-white border-top d-lg-none px-4 py-3">
+            <div class="f-between-center">
+              <div>
+                <a
+                  href="#"
+                  class="d-flex align-items-center fs-9 text-neutral-80"
+                  data-bs-toggle="modal"
+                  data-bs-target="#totalCardModal">
+                  展開明細
+                  <span class="material-symbols-outlined fs-7">
+                    keyboard_arrow_up
+                  </span>
+                </a>
+                <h6 class="fs-6">NT$ 3,600</h6>
+              </div>
+              <div>
+                <button
+                  id="media-toPayBtn"
+                  type="button"
+                  class="btn btn-neutral-40 link-neutral-60 w-100 ms-2"
+                  data-bs-toggle="modal" data-bs-target="#loadingModal" disabled>
+                  同意並付款
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 手機版明細卡片 - modal -->
+          <div class="media-totalPrice-card-modal modal fade" id="totalCardModal" tabindex="-1" aria-labelledby="totalCardModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content rounded-1">
+                <div class="modal-header bg-neutral-10">
+                  <p class="fs-8 fw-semibold text-black">
+                    訂單明細
+                  </p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-24">
+                  <table class="table mb-0">
+                    <tbody>
+                      <tr class="align-middle">
+                        <th scope="row" class="border-0">
+                          <p class="fs-8 fw-normal">2 項課程小計</p>
+                        </th>
+                        <td class="border-0 text-end">
+                          <p class="fs-8 fw-semibold">NT$ 3600</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table mt-4 border-top">
+                    <tbody>
+                      <tr class="align-middle">
+                        <th scope="row" class="border-0">
+                          <p class="fs-8 fw-normal pt-4">總計</p>
+                        </th>
+                        <td class="border-0 text-end">
+                          <h6 class="pt-8">NT$ 3,600</h6>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="mt-6">
+                    <p class="fs-8">
+                      確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。
+                    </p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+            <div class="media-totalPrice-card fixed-bottom bg-white border-top d-lg-none px-4 py-3">
+              <div class="f-between-center">
+                <div>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center fs-9 text-neutral-80"
+                    data-bs-toggle="modal"
+                    data-bs-target="#totalCardModal">
+                    收合明細
+                    <span class="material-symbols-outlined fs-7">
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+                  <h6 class="fs-6">NT$ 3,600</h6>
+                </div>
+                <div>
+                  <button
+                    id="mediaModal-toPayBtn"
+                    type="button"
+                    class="btn btn-neutral-40 link-neutral-60 w-100 ms-2"
+                    data-bs-toggle="modal" data-bs-target="#loadingModal" disabled>
+                    同意並付款
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading-Modal -->
+          <div class="loadingModal modal fade" id="loadingModal" tabindex="-1" aria-labelledby="loadingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered mx-auto">
+              <div class="modal-content">
+                <div class="modal-body text-center">
+                  <div class="loadingModal-content f-column-center">
+                      <div>
+                        <img
+                          src="/assets/images/icons/lottie.png"
+                          alt="lottie"
+                          class="lottie-icon">
+                        <img
+                          src="/assets/images/logo.png"
+                          alt="logo-image"
+                          class="logo-icon">
+                        <h6>正在處理您的訂單</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    // 信用卡input文字格式
+    document.getElementById('userCreditCardNumber').addEventListener('input', function (e) {
+      let input = e.target.value.replace(/\s+/g, '');
+      let formattedInput = input.match(/.{1,4}/g)?.join(' ') || '';
+      e.target.value = formattedInput;
+    });
+    document.getElementById('credit-card-expiration').addEventListener('input', function (e) {
+      let input = e.target.value.replace(/\s+/g, '').replace(/\//g, '');
+      if (input.length > 2) {
+          input = input.slice(0, 2) + ' / ' + input.slice(2);
+      }
+      e.target.value = input;
+    });
+
+    // checkbox選項跳出該info
+    document.addEventListener('DOMContentLoaded', function () {
+      let radios = document.querySelectorAll('input[name="pay-with"]');
+      let payInfoCards = document.querySelectorAll('.pay-info-card');
+
+      radios.forEach(function (radio) {
+        radio.addEventListener('change', function () {
+          payInfoCards.forEach(function (card) {
+            card.classList.add('d-none');
+          });
+
+          let selectedPayInfoCard = radio.closest('.form-check').querySelector('.pay-info-card');
+          if (selectedPayInfoCard) {
+            selectedPayInfoCard.classList.remove('d-none');
+          }
+        });
+      });
+
+      // 一鍵帶入
+      let checkedRadio = document.querySelector('input[name="pay-with"]:checked');
+        if (checkedRadio) {
+          checkedRadio.dispatchEvent(new Event('change'));
+        }
+      });
+
+    document.getElementById('autoFillBtn').addEventListener('click', function() {
+      const sampleData = {
+          name: 'Jessica Wang',
+          email: 'jessicadesigner@gmail.com',
+          invoice: 'electronic',
+          delivery: 'learning'
+      };
+
+      document.getElementById('nameInput').value = sampleData.name;
+      document.getElementById('emailInput').value = sampleData.email;
+      document.getElementById('invoiceSelect').value = sampleData.invoice;
+      document.getElementById('deliverySelect').value = sampleData.delivery;
+    });
+
+    // 手機載具
+    document.addEventListener('DOMContentLoaded', function() {
+      let deliverySelect = document.getElementById('deliverySelect');
+      let mobileBarcodeWrap = document.getElementById('mobileBarcodeWrap');
+
+      deliverySelect.addEventListener('change', function() {
+        if (this.value === 'mobileBarcode') {
+          mobileBarcodeWrap.classList.remove('d-none');
+        } else {
+          mobileBarcodeWrap.classList.add('d-none');
+        }
+      });
+    });
+
+    // 統編發票
+    document.addEventListener('DOMContentLoaded', function() {
+      let invoiceSelect = document.getElementById('invoiceSelect');
+      let companyWrap = document.getElementById('companyWrap');
+      let deliverySelectWrap = document.getElementById('deliverySelectWrap');
+
+      invoiceSelect.addEventListener('change', function() {
+        if (this.value === 'tax') {
+          companyWrap.classList.remove('d-none');
+          deliverySelectWrap.classList.add('d-none');
+          mobileBarcodeWrap.classList.add('d-none');
+        } else {
+          companyWrap.classList.add('d-none');
+          deliverySelectWrap.classList.remove('d-none');
+        }
+      });
+    });
+
+    // 驗證
+    (function () {
+      'use strict'
+
+      const form = document.querySelector('.paymentForm');
+      const fields = {
+        emailInput: document.getElementById('emailInput'),
+        nameInput: document.getElementById('nameInput'),
+        userCreditCardNumber: document.getElementById('userCreditCardNumber'),
+        creditCardExpiration: document.getElementById('credit-card-expiration'),
+        creditCardCvc: document.getElementById('credit-card-cvc')
+      };
+
+      const buttons = {
+        toPayButton: document.getElementById('toPayBtn'),
+        mediaToPayButton: document.getElementById('media-toPayBtn'),
+        mediaModalToPayButton: document.getElementById('mediaModal-toPayBtn')
+      };
+
+      function checkFormValidity() {
+        const isValid = Object.values(fields).every(input => input.value.trim() !== '');
+
+        const buttonClass = isValid ? 'btn-primary' : 'btn-neutral-40 link-neutral-60';
+        const disabledState = !isValid;
+
+        Object.values(buttons).forEach(button => {
+          button.className = `btn ${buttonClass}`;
+          button.disabled = disabledState;
+        });
+      }
+
+      Object.values(fields).forEach(input => {
+        input.addEventListener('input', checkFormValidity);
+      });
+    })();
+
+    </script>
+  </body>
+</html>

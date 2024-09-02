@@ -14,20 +14,20 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Learning - 登入</title>
+    <title>Learning - 註冊</title>
   </head>
   <body>
     <div class="d-flex">
-      <section class="login-banner-section d-none d-xxl-block">
+      <section class="signUp-banner-section d-none d-xxl-block">
         <img
           src="/assets/images/login.png"
           alt="login-banner-image"
           style="width: 728px; height: 1000px;">
       </section>
-      <main class="login-section w-100">
+      <main class="signUp-section w-100">
         <div class="f-column-center justify-content-center h-100">
-          <div class="login-wrap w-lg-50">
-            <h1>歡迎回來！</h1>
+          <div class="signUp-wrap w-lg-50">
+            <h1>歡迎加入 Learning</h1>
             <button type="button" class="btn btn-white border w-100 d-flex justify-content-center mt-6 mt-lg-10 position-relative">
               <img
                 src="/assets/images/icons/ic_google.png"
@@ -52,7 +52,7 @@
                 style="width: 24px; height: 24px;">
               使用 Apple 帳號登入
             </button>
-            <p class="text-black fw-semibold mt-6 mt-lg-10">或使用 Learning 帳號登入</p>
+            <p class="text-black fw-semibold mt-6 mt-lg-10">或使用 Learning 帳號註冊</p>
             <form class="mt-4">
               <div>
                 <label for="userMail" class="form-label mb-0">
@@ -79,28 +79,40 @@
                     class="password-icon-img position-absolute d-none"
                     style="width: 20px; height: 20px;">
               </div>
-              <div class="f-between-center mt-2">
-                <div class="form-check">
-                  <input 
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    記住帳號
-                  </label>
-                </div>
-                <a href="#" class="link-neutral-80 link-hover">忘記密碼？</a>
+              <div class="mt-4 position-relative">
+                <label for="userPassword-agian" class="form-label mb-0">
+                  <p>密碼<span class="text-danger ms-1">*</span></p>
+                </label>
+                <input
+                  type="password"
+                  class="form-control rounded-1 p-4 mt-2"
+                  id="userPassword-again"
+                  placeholder="請再輸入一次密碼">
+                  <img
+                    src="/assets/images/icons/ic_eye_close.png"
+                    alt="google-image"
+                    class="passwordAgain-icon-img position-absolute d-none"
+                    style="width: 20px; height: 20px;">
               </div>
               <button
-                id="loginBtn"
+                id="signUpBtn"
                 type="button"
                 class="btn btn-neutral-40 link-neutral-60 w-100 d-flex align-items-center justify-content-center mt-6 mt-lg-10" disabled>
-                立即登入
+                立即註冊
               </button>
+              <div class="d-flex mt-2 mt-lg-4">
+                <p class="fs-8">建立帳號即表示您同意我們的</p>
+                <a href="#" class="regulations-btn fs-8 link-neutral-80 ms-lg-1">
+                  服務條款
+                </a>
+                <p class="fs-8 ms-lg-1">及</p>
+                <a href="#" class="regulations-btn fs-8 link-neutral-80 ms-lg-1">
+                  隱私權政策
+                </a>
+              </div>
               <div class="d-flex mt-4 mt-lg-10">
-                <p>沒有 Learning 帳號嗎？</p>
-                <a href="sign-up.html" class="to-signUp-btn ms-2">立即註冊</a>
+                <p>已經有 Learning 帳號了嗎？</p>
+                <a href="sign-up.html" class="to-signUp-btn ms-2">立即登入</a>
               </div>
             </form>
           </div>
@@ -119,20 +131,22 @@
         let form = document.querySelector('.needs-validation');
         let emailInput = document.getElementById('userMail');
         let passwordInput = document.getElementById('userPassword');
-        let loginButton = document.getElementById('loginBtn');
+        let passwordAgainInput = document.getElementById('userPassword-again');
+        let signUpButton = document.getElementById('signUpBtn');
         let passwordIcon = document.querySelector('.password-icon-img');
-
+        let passwordAgainIcon = document.querySelector('.passwordAgain-icon-img');
+        
         function checkFormValidity() {
-          if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '') {
-            loginButton.classList.remove('btn-neutral-40');
-            loginButton.classList.remove('link-neutral-60');
-            loginButton.classList.add('btn-primary');
-            loginButton.disabled = false;
+          if (emailInput.value.trim() !== '' && passwordInput.value.trim() !== '' & passwordAgainInput.value.trim() !== '') {
+            signUpButton.classList.remove('btn-neutral-40');
+            signUpButton.classList.remove('link-neutral-60');
+            signUpButton.classList.add('btn-primary');
+            signUpButton.disabled = false;
           } else {
-            loginButton.classList.remove('btn-primary');
-            loginButton.classList.add('btn-neutral-40');
-            loginButton.classList.add('link-neutral-60');
-            loginButton.disabled = true;
+            signUpButton.classList.remove('btn-primary');
+            signUpButton.classList.add('btn-neutral-40');
+            signUpButton.classList.add('link-neutral-60');
+            signUpButton.disabled = true;
           }
 
           if (passwordInput.value.trim() !== '') {
@@ -140,10 +154,17 @@
           } else {
             passwordIcon.classList.add('d-none');
           }
+
+          if (passwordAgainInput.value.trim() !== '') {
+            passwordAgainIcon.classList.remove('d-none');
+          } else {
+            passwordAgainIcon.classList.add('d-none');
+          }
         }
 
         emailInput.addEventListener('input', checkFormValidity);
         passwordInput.addEventListener('input', checkFormValidity);
+        passwordAgainInput.addEventListener('input', checkFormValidity);
       })();
     </script>
   </body>

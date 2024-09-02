@@ -1059,8 +1059,8 @@ $input-group-addon-border-color:        $input-border-color !default;
 // scss-docs-end input-group-variables
 
 // scss-docs-start form-select-variables
-$form-select-padding-y:             $input-padding-y !default;
-$form-select-padding-x:             $input-padding-x !default;
+$form-select-padding-y:             1rem; // $input-padding-y !default; custom
+$form-select-padding-x:             1rem; // $input-padding-x !default; custom
 $form-select-font-family:           $input-font-family !default;
 $form-select-font-size:             $input-font-size !default;
 $form-select-indicator-padding:     $form-select-padding-x * 3 !default; // Extra padding for background-image
@@ -1085,8 +1085,8 @@ $form-select-border-color:        $input-border-color !default;
 $form-select-border-radius:       $input-border-radius !default;
 $form-select-box-shadow:          var(--#{$prefix}box-shadow-inset) !default;
 
-$form-select-focus-border-color:  $input-focus-border-color !default;
-$form-select-focus-width:         $input-focus-width !default;
+$form-select-focus-border-color:  $neutral-40; // $input-focus-border-color !default; custom
+$form-select-focus-width:         none; // $input-focus-width !default; custom
 $form-select-focus-box-shadow:    0 0 0 $form-select-focus-width $input-btn-focus-color !default;
 
 $form-select-padding-y-sm:        $input-padding-y-sm !default;
