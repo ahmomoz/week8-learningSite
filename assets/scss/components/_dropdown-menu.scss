@@ -35,7 +35,25 @@
 /* nav-user-dropdown-menu */
 .nav-user-dropdown-menu {
   width: 237px;
+}
 
+/* media-nav-user-dropdown-menu */
+.media-nav-user-dropdown-menu{
+  height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+/* .unauthenticated-nav-list-group */
+.unauthenticated-nav-list-group {
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+}
+
+/* nav-user-dropdown-menu, 
+  media-nav-user-dropdown-menu, 
+  nav-bottom-btn */
+.nav-user-dropdown-menu,
+.media-nav-user-dropdown-menu,
+.nav-bottom-btn {
   .list-group-item {
     border: 0;
     border-radius: 12px;

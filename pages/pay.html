@@ -280,15 +280,17 @@
                     <label for="invoiceSelect" class="form-label">
                       <p>發票類型<span class="text-danger ms-1">*</span></p>
                     </label>
-                    <select class="form-select rounded-1 p-4" id="invoiceSelect">
-                      <option value="electronic" selected>電子發票</option>
-                      <option value="tax">統編發票</option>
-                    </select>
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle form-select text-start rounded-1 p-4" href="#" role="button" id="invoiceDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        電子發票
+                      </a>
+                      <ul class="dropdown-menu w-100 shadow rounded-1 p-2 mt-2" aria-labelledby="invoiceDropdown">
+                        <li><a class="dropdown-item p-4" href="#" data-value="electronic">電子發票</a></li>
+                        <li><a class="dropdown-item p-4" href="#" data-value="tax">統編發票</a></li>
+                      </ul>
+                    </div>
                     <div class="d-flex align-items-center mt-2">
-                      <img
-                        src="/assets/images/deco/flower-5.png"
-                        alt="deco-flower"
-                        style="width: 16px; height: 16px;">
+                      <img src="/assets/images/deco/flower-5.png" alt="deco-flower" style="width: 16px; height: 16px;">
                       <p class="fs-8 ms-2">如需開立統編，請選擇統編發票</p>
                     </div>
                   </div>
@@ -296,11 +298,16 @@
                     <label for="deliverySelect" class="form-label">
                       <p>領取方式<span class="text-danger ms-1">*</span></p>
                     </label>
-                    <select class="form-select rounded-1 p-4" id="deliverySelect">
-                      <option value="learning" selected>存在 Learning 中，中獎寄信通知</option>
-                      <option value="mobileBarcode">手機條碼載具</option>
-                      <option value="citizenCertificate">自然人憑證</option>
-                    </select>
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle form-select text-start rounded-1 p-4" href="#" role="button" id="deliveryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        存在 Learning 中，中獎寄信通知
+                      </a>
+                      <ul class="dropdown-menu w-100 shadow rounded-1 p-2 mt-2" aria-labelledby="deliveryDropdown">
+                        <li><a class="dropdown-item p-4" href="#" data-value="learning">存在 Learning 中，中獎寄信通知</a></li>
+                        <li><a class="dropdown-item p-4" href="#" data-value="mobileBarcode">手機條碼載具</a></li>
+                        <li><a class="dropdown-item p-4" href="#" data-value="citizenCertificate">自然人憑證</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="row d-none" id="mobileBarcodeWrap">
                     <div class="col-lg-12 mt-6">
@@ -600,37 +607,48 @@
       document.getElementById('deliverySelect').value = sampleData.delivery;
     });
 
-    // 手機載具
+    // 手機載具、統編發票
     document.addEventListener('DOMContentLoaded', function() {
-      let deliverySelect = document.getElementById('deliverySelect');
-      let mobileBarcodeWrap = document.getElementById('mobileBarcodeWrap');
-
-      deliverySelect.addEventListener('change', function() {
-        if (this.value === 'mobileBarcode') {
-          mobileBarcodeWrap.classList.remove('d-none');
-        } else {
-          mobileBarcodeWrap.classList.add('d-none');
-        }
-      });
-    });
-
-    // 統編發票
-    document.addEventListener('DOMContentLoaded', function() {
-      let invoiceSelect = document.getElementById('invoiceSelect');
+      let invoiceDropdown = document.getElementById('invoiceDropdown');
       let companyWrap = document.getElementById('companyWrap');
       let deliverySelectWrap = document.getElementById('deliverySelectWrap');
+      let invoiceItems = document.querySelectorAll('#invoiceDropdown + .dropdown-menu .dropdown-item');
+      let deliveryDropdown = document.getElementById('deliveryDropdown');
+      let mobileBarcodeWrap = document.getElementById('mobileBarcodeWrap');
+      let deliveryItems = document.querySelectorAll('#deliveryDropdown + .dropdown-menu .dropdown-item');
 
-      invoiceSelect.addEventListener('change', function() {
-        if (this.value === 'tax') {
-          companyWrap.classList.remove('d-none');
-          deliverySelectWrap.classList.add('d-none');
-          mobileBarcodeWrap.classList.add('d-none');
-        } else {
-          companyWrap.classList.add('d-none');
-          deliverySelectWrap.classList.remove('d-none');
-        }
+      invoiceItems.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+          event.preventDefault();
+          let selectedValue = this.getAttribute('data-value');
+          invoiceDropdown.textContent = this.textContent;
+
+          if (selectedValue === 'tax') {
+            companyWrap.classList.remove('d-none');
+            deliverySelectWrap.classList.add('d-none');
+            mobileBarcodeWrap.classList.add('d-none');
+          } else {
+            companyWrap.classList.add('d-none');
+            deliverySelectWrap.classList.remove('d-none');
+          }
+        });
+      });
+
+      deliveryItems.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+          event.preventDefault();
+          let selectedValue = this.getAttribute('data-value');
+          deliveryDropdown.textContent = this.textContent;
+
+          if (selectedValue === 'mobileBarcode') {
+            mobileBarcodeWrap.classList.remove('d-none');
+          } else {
+            mobileBarcodeWrap.classList.add('d-none');
+          }
+        });
       });
     });
+
 
     // 驗證
     (function () {

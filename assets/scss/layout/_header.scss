@@ -17,6 +17,7 @@
     background-color: $white;
 
     @include lg-pc {
+      box-shadow: none;
       padding: 12px;
       border-radius: 0;
     }

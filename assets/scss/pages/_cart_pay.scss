@@ -113,6 +113,27 @@
       width: 100%;
     }
   }
+  .dropdown-toggle {
+    background-color: $white;
+    color: $black;
+    border-color: $neutral-40;
+    font-weight: 400;
+  }
+
+  .dropdown-menu {
+    border: none;
+  }
+
+  .dropdown-item:hover {
+    background-color: $primary-10;
+    font-weight: 600;
+    color: $primary-100;
+    border-radius: 8px;
+  }
+
+  .btn.dropdown-toggle::after {
+    display: none;
+  }
 }
 
 .loadingModal {

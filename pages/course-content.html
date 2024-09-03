@@ -140,7 +140,9 @@
         </nav>
       </div>
     </nav>
-    <main class="course-content-info-section wrap-sm">
+    <main
+      id="course-content-info-section"
+      class="course-content-info-section wrap-sm">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
@@ -908,7 +910,7 @@
                   </p>
                 </div>
                 <div class="d-flex align-items-center mt-6">
-                  <a href="#" class="to-buy-btn btn btn-primary">
+                  <a href="cart.html" class="to-buy-btn btn btn-primary">
                     立即購買
                   </a>
                   <a href="#" class="btn btn-outline-primary d-flex align-items-center p-4 ms-4">
@@ -920,6 +922,7 @@
               </div>
             </div>
           </div>
+          
           <!-- 手機版價格卡片 -->
           <div class="media-price-card fixed-bottom bg-white border-top d-lg-none px-4 py-3">
             <div class="f-between-center">
@@ -949,6 +952,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+    // 全部展開按鈕
     $(document).ready(function() {
       let allExpanded = false; 
 
@@ -971,6 +975,7 @@
       });
     });
 
+    // 往上滑nav跑出來
     let lastScrollTop = 0;
     const mainNavbar = document.getElementById('navbar');
     const infoNavbar = document.getElementById('infoNavbar');
@@ -990,6 +995,20 @@
 
         lastScrollTop = scrollTop;
       }
+    });
+
+    // nav變色
+    $(document).ready(() => {
+      $(document).scroll(() => {
+        let topNav = $('#infoNavbar').offset().top; 
+        let courseTop = $('#course-content-info-section').offset().top; 
+
+        if(topNav > courseTop){
+          $('#infoNavbar').removeClass('bg-neutral-10').addClass('bg-white'); 
+        } else {
+          $('#infoNavbar').addClass('bg-neutral-10').removeClass('bg-white'); 
+        }
+      });
     });
     </script>
   </body>
